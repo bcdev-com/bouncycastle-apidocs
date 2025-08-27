@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Srp6Client | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Srp6Client | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client" class="text-break">
+Class Srp6Client  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Agreement.html">Agreement</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Agreement.Srp.html">Srp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Srp6Client</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Srp6Client</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client__ctor_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client__ctor" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.#ctor">
+  Srp6Client()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Srp6Client()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_B" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.B">
+  B
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger B</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_Key" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.Key">
+  Key
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger Key</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_M1" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.M1">
+  M1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger M1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_M2" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.M2">
+  M2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger M2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_N" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.N">
+  N
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger N</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_S" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.S">
+  S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_digest" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.digest">
+  digest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDigest digest</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_g" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.g">
+  g
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger g</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_privA" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.privA">
+  privA
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger privA</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_pubA" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.pubA">
+  pubA
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger pubA</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_random" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.random">
+  random
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SecureRandom random</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_u" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.u">
+  u
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger u</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_x" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.x">
+  x
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger x</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_CalculateClientEvidenceMessage_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.CalculateClientEvidenceMessage*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_CalculateClientEvidenceMessage" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.CalculateClientEvidenceMessage">
+  CalculateClientEvidenceMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger CalculateClientEvidenceMessage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_CalculateSecret_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.CalculateSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_CalculateSecret_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.CalculateSecret(Org.BouncyCastle.Math.BigInteger)">
+  CalculateSecret(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger CalculateSecret(BigInteger serverB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverB</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_CalculateSessionKey_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.CalculateSessionKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_CalculateSessionKey" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.CalculateSessionKey">
+  CalculateSessionKey()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger CalculateSessionKey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_GenerateClientCredentials_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.GenerateClientCredentials*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_GenerateClientCredentials_System_Byte___System_Byte___System_Byte___" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.GenerateClientCredentials(System.Byte[],System.Byte[],System.Byte[])">
+  GenerateClientCredentials(byte[], byte[], byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger GenerateClientCredentials(byte[] salt, byte[] identity, byte[] password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>salt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>identity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_Init_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_Init_Org_BouncyCastle_Crypto_Parameters_Srp6GroupParameters_Org_BouncyCastle_Crypto_IDigest_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.Init(Org.BouncyCastle.Crypto.Parameters.Srp6GroupParameters,Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Security.SecureRandom)">
+  Init(Srp6GroupParameters, IDigest, SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init(Srp6GroupParameters group, IDigest digest, SecureRandom random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.Srp6GroupParameters.html">Srp6GroupParameters</a></dt>
+    <dd></dd>
+    <dt><code>digest</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+    <dt><code>random</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_Init_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_Init_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Crypto_IDigest_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.Init(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Security.SecureRandom)">
+  Init(BigInteger, BigInteger, IDigest, SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init(BigInteger N, BigInteger g, IDigest digest, SecureRandom random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>N</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>g</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>digest</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+    <dt><code>random</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_SelectPrivateValue_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.SelectPrivateValue*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_SelectPrivateValue" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.SelectPrivateValue">
+  SelectPrivateValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual BigInteger SelectPrivateValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_VerifyServerEvidenceMessage_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.VerifyServerEvidenceMessage*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_Srp_Srp6Client_VerifyServerEvidenceMessage_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Crypto.Agreement.Srp.Srp6Client.VerifyServerEvidenceMessage(Org.BouncyCastle.Math.BigInteger)">
+  VerifyServerEvidenceMessage(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool VerifyServerEvidenceMessage(BigInteger serverM2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverM2</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

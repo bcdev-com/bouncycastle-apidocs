@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SerpentEngineBase | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SerpentEngineBase | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase" class="text-break">
+Class SerpentEngineBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Engines.html">Engines</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SerpentEngineBase : IBlockCipher</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SerpentEngineBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.Engines.SerpentEngine.html">SerpentEngine</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.Engines.TnepresEngine.html">TnepresEngine</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_BlockSize" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.BlockSize">
+  BlockSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly int BlockSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_X0" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X0">
+  X0
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int X0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_X1" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X1">
+  X1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int X1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_X2" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X2">
+  X2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int X2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_X3" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X3">
+  X3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int X3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_encrypting" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.encrypting">
+  encrypting
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool encrypting</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_wKey" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.wKey">
+  wKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] wKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_AlgorithmName_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.AlgorithmName*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_AlgorithmName" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.AlgorithmName">
+  AlgorithmName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the algorithm this cipher implements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AlgorithmName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_GetBlockSize_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_GetBlockSize" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize">
+  GetBlockSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetBlockSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The block size for this cipher, in bytes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib0_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib0_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib0(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib0(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib1_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib1_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib1(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib1(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib2_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib2_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib2(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib2(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib3_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib3_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib3(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib3(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib4_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib4_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib4(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib4(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib5_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib5_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib5(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib5(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib6_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib6_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib6(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib6(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib7_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Ib7_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Ib7(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Ib7(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Init_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Init_System_Boolean_Org_BouncyCastle_Crypto_ICipherParameters_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)">
+  Init(bool, ICipherParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init(bool encrypting, ICipherParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encrypting</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="Org.BouncyCastle.Crypto.ICipherParameters.html">ICipherParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_InverseLT_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_InverseLT" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT">
+  InverseLT()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InverseLT()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_LT_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_LT" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT">
+  LT()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LT()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_ProcessBlock_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_ProcessBlock_System_Byte___System_Int32_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)">
+  ProcessBlock(byte[], int, byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ProcessBlock(byte[] input, int inOff, byte[] output, int outOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>inOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>outOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_ProcessBlock_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_ProcessBlock_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+  ProcessBlock(ReadOnlySpan&lt;byte&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process a block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ProcessBlock(ReadOnlySpan&lt;byte&gt; input, Span&lt;byte&gt; output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The input block as a span.</p>
+</dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The output span.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes processed and produced.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.DataLengthException.html">DataLengthException</a></dt>
+    <dd><p>If input block is wrong size, or output span too small.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb0_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb0_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb0(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb0(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb1_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb1_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb1(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb1(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb2_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb2_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb2(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb2(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb3_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb3_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb3(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb3(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb4_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb4_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb4(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb4(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb5_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb5_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb5(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb5(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb6_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb6_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb6(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb6(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb7_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Engines_SerpentEngineBase_Sb7_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Sb7(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Sb7(int a, int b, int c, int d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

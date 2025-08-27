@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CertificateRequestMessageBuilder | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CertificateRequestMessageBuilder | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder">
+
+
+
+  <h1 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder" class="text-break">
+Class CertificateRequestMessageBuilder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crmf.html">Crmf</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CertificateRequestMessageBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CertificateRequestMessageBuilder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder__ctor_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder__ctor_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.#ctor(Org.BouncyCastle.Math.BigInteger)">
+  CertificateRequestMessageBuilder(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder(BigInteger certReqId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certReqId</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_AddControl_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.AddControl*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_AddControl_Org_BouncyCastle_Crmf_IControl_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.AddControl(Org.BouncyCastle.Crmf.IControl)">
+  AddControl(IControl)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder AddControl(IControl control)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>control</code> <a class="xref" href="Org.BouncyCastle.Crmf.IControl.html">IControl</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_AddExtension_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_AddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.AddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  AddExtension(DerObjectIdentifier, bool, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder AddExtension(DerObjectIdentifier oid, bool critical, Asn1Encodable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_AddExtension_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_AddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_System_Byte___" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.AddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean,System.Byte[])">
+  AddExtension(DerObjectIdentifier, bool, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder AddExtension(DerObjectIdentifier oid, bool critical, byte[] value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_Build_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.Build*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_Build" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.Build">
+  Build()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessage Build()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessage.html">CertificateRequestMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoPKMAC_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoPKMAC*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoPKMAC_Org_BouncyCastle_Crmf_PKMacBuilder_System_Char___" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoPKMAC(Org.BouncyCastle.Crmf.PKMacBuilder,System.Char[])">
+  SetAuthInfoPKMAC(PKMacBuilder, char[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;SetAuthInfoPKMacBuilder&#39; instead&quot;)]
+public CertificateRequestMessageBuilder SetAuthInfoPKMAC(PKMacBuilder pkmacFactory, char[] password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pkmacFactory</code> <a class="xref" href="Org.BouncyCastle.Crmf.PKMacBuilder.html">PKMacBuilder</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoPKMacBuilder_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoPKMacBuilder*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoPKMacBuilder_Org_BouncyCastle_Crmf_PKMacBuilder_System_Char___" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoPKMacBuilder(Org.BouncyCastle.Crmf.PKMacBuilder,System.Char[])">
+  SetAuthInfoPKMacBuilder(PKMacBuilder, char[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetAuthInfoPKMacBuilder(PKMacBuilder pkmacFactory, char[] password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pkmacFactory</code> <a class="xref" href="Org.BouncyCastle.Crmf.PKMacBuilder.html">PKMacBuilder</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoPKMacBuilder_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoPKMacBuilder*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoPKMacBuilder_Org_BouncyCastle_Crmf_PKMacBuilder_System_ReadOnlySpan_System_Char__" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoPKMacBuilder(Org.BouncyCastle.Crmf.PKMacBuilder,System.ReadOnlySpan{System.Char})">
+  SetAuthInfoPKMacBuilder(PKMacBuilder, ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetAuthInfoPKMacBuilder(PKMacBuilder pkmacFactory, ReadOnlySpan&lt;char&gt; password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pkmacFactory</code> <a class="xref" href="Org.BouncyCastle.Crmf.PKMacBuilder.html">PKMacBuilder</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoSender_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoSender*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoSender_Org_BouncyCastle_Asn1_X509_GeneralName_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoSender(Org.BouncyCastle.Asn1.X509.GeneralName)">
+  SetAuthInfoSender(GeneralName)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetAuthInfoSender(GeneralName sender)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.GeneralName.html">GeneralName</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoSender_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoSender*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetAuthInfoSender_Org_BouncyCastle_Asn1_X509_X509Name_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetAuthInfoSender(Org.BouncyCastle.Asn1.X509.X509Name)">
+  SetAuthInfoSender(X509Name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetAuthInfoSender(X509Name sender)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetIssuer_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetIssuer*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetIssuer_Org_BouncyCastle_Asn1_X509_X509Name_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetIssuer(Org.BouncyCastle.Asn1.X509.X509Name)">
+  SetIssuer(X509Name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetIssuer(X509Name issuer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issuer</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionAgreeMac_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionAgreeMac*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionAgreeMac_Org_BouncyCastle_Asn1_Crmf_PKMacValue_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionAgreeMac(Org.BouncyCastle.Asn1.Crmf.PKMacValue)">
+  SetProofOfPossessionAgreeMac(PKMacValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetProofOfPossessionAgreeMac(PKMacValue macValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>macValue</code> <a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PKMacValue.html">PKMacValue</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionRaVerified_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionRaVerified*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionRaVerified" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionRaVerified">
+  SetProofOfPossessionRaVerified()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetProofOfPossessionRaVerified()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionSignKeySigner_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionSignKeySigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionSignKeySigner_Org_BouncyCastle_Crypto_ISignatureFactory_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionSignKeySigner(Org.BouncyCastle.Crypto.ISignatureFactory)">
+  SetProofOfPossessionSignKeySigner(ISignatureFactory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetProofOfPossessionSignKeySigner(ISignatureFactory popoSignatureFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>popoSignatureFactory</code> <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionSubsequentMessage_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionSubsequentMessage*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionSubsequentMessage_Org_BouncyCastle_Asn1_Crmf_SubsequentMessage_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionSubsequentMessage(Org.BouncyCastle.Asn1.Crmf.SubsequentMessage)">
+  SetProofOfPossessionSubsequentMessage(SubsequentMessage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetProofOfPossessionSubsequentMessage(SubsequentMessage msg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msg</code> <a class="xref" href="Org.BouncyCastle.Asn1.Crmf.SubsequentMessage.html">SubsequentMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionSubsequentMessage_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionSubsequentMessage*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetProofOfPossessionSubsequentMessage_System_Int32_Org_BouncyCastle_Asn1_Crmf_SubsequentMessage_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetProofOfPossessionSubsequentMessage(System.Int32,Org.BouncyCastle.Asn1.Crmf.SubsequentMessage)">
+  SetProofOfPossessionSubsequentMessage(int, SubsequentMessage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetProofOfPossessionSubsequentMessage(int type, SubsequentMessage msg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>msg</code> <a class="xref" href="Org.BouncyCastle.Asn1.Crmf.SubsequentMessage.html">SubsequentMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetPublicKey_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetPublicKey_Org_BouncyCastle_Asn1_X509_SubjectPublicKeyInfo_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetPublicKey(Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo)">
+  SetPublicKey(SubjectPublicKeyInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;SetSubjectPublicKeyInfo&#39; instead&quot;)]
+public CertificateRequestMessageBuilder SetPublicKey(SubjectPublicKeyInfo publicKeyInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publicKeyInfo</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo.html">SubjectPublicKeyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetPublicKey_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetPublicKey_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  SetPublicKey(AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetPublicKey(AsymmetricKeyParameter publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetRegInfo_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetRegInfo*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetRegInfo_Org_BouncyCastle_Asn1_Crmf_AttributeTypeAndValue___" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetRegInfo(Org.BouncyCastle.Asn1.Crmf.AttributeTypeAndValue[])">
+  SetRegInfo(AttributeTypeAndValue[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetRegInfo(AttributeTypeAndValue[] regInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regInfo</code> <a class="xref" href="Org.BouncyCastle.Asn1.Crmf.AttributeTypeAndValue.html">AttributeTypeAndValue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSerialNumber_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSerialNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSerialNumber_Org_BouncyCastle_Asn1_DerInteger_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSerialNumber(Org.BouncyCastle.Asn1.DerInteger)">
+  SetSerialNumber(DerInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetSerialNumber(DerInteger serialNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerInteger.html">DerInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSerialNumber_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSerialNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSerialNumber_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSerialNumber(Org.BouncyCastle.Math.BigInteger)">
+  SetSerialNumber(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetSerialNumber(BigInteger serialNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSubject_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSubject*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSubject_Org_BouncyCastle_Asn1_X509_X509Name_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSubject(Org.BouncyCastle.Asn1.X509.X509Name)">
+  SetSubject(X509Name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetSubject(X509Name subject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subject</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSubjectPublicKeyInfo_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSubjectPublicKeyInfo*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetSubjectPublicKeyInfo_Org_BouncyCastle_Asn1_X509_SubjectPublicKeyInfo_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetSubjectPublicKeyInfo(Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo)">
+  SetSubjectPublicKeyInfo(SubjectPublicKeyInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetSubjectPublicKeyInfo(SubjectPublicKeyInfo spki)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spki</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo.html">SubjectPublicKeyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetValidity_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetValidity*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetValidity_Org_BouncyCastle_Asn1_Crmf_OptionalValidity_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetValidity(Org.BouncyCastle.Asn1.Crmf.OptionalValidity)">
+  SetValidity(OptionalValidity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetValidity(OptionalValidity validity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>validity</code> <a class="xref" href="Org.BouncyCastle.Asn1.Crmf.OptionalValidity.html">OptionalValidity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetValidity_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetValidity*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessageBuilder_SetValidity_System_Nullable_System_DateTime__System_Nullable_System_DateTime__" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.SetValidity(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+  SetValidity(DateTime?, DateTime?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessageBuilder SetValidity(DateTime? notBefore, DateTime? notAfter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notBefore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>notAfter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.CertificateRequestMessageBuilder.html">CertificateRequestMessageBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

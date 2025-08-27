@@ -1,0 +1,5007 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PkcsObjectIdentifiers | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PkcsObjectIdentifiers | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers" class="text-break">
+Class PkcsObjectIdentifiers  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a>.<a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.html">Pkcs</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PkcsObjectIdentifiers</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PkcsObjectIdentifiers</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_BagTypes" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.BagTypes">
+  BagTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BagTypes = &quot;1.2.840.113549.1.12.10.1&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_CannotDecryptAny" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.CannotDecryptAny">
+  CannotDecryptAny
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier CannotDecryptAny</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_CertBag" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.CertBag">
+  CertBag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier CertBag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_CertTypes" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.CertTypes">
+  CertTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CertTypes = &quot;1.2.840.113549.1.9.22&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_CrlBag" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.CrlBag">
+  CrlBag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier CrlBag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_CrlTypes" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.CrlTypes">
+  CrlTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CrlTypes = &quot;1.2.840.113549.1.9.23&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Data" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Data">
+  Data
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Data</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_DesEde3Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.DesEde3Cbc">
+  DesEde3Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DesEde3Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_DhKeyAgreement" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.DhKeyAgreement">
+  DhKeyAgreement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DhKeyAgreement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_DigestAlgorithm" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.DigestAlgorithm">
+  DigestAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DigestAlgorithm = &quot;1.2.840.113549.2&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_DigestedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.DigestedData">
+  DigestedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DigestedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_EncryptedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.EncryptedData">
+  EncryptedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier EncryptedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_EncryptionAlgorithm" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.EncryptionAlgorithm">
+  EncryptionAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string EncryptionAlgorithm = &quot;1.2.840.113549.3&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_EnvelopedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.EnvelopedData">
+  EnvelopedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier EnvelopedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAA" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAA">
+  IdAA
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IdAA = &quot;1.2.840.113549.1.9.16.2&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAAsymmDecryptKeyID" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAAsymmDecryptKeyID">
+  IdAAAsymmDecryptKeyID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAAsymmDecryptKeyID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAACommunityIdentifiers" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAACommunityIdentifiers">
+  IdAACommunityIdentifiers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAACommunityIdentifiers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAContentHint" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAContentHint">
+  IdAAContentHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAContentHint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAContentIdentifier" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAContentIdentifier">
+  IdAAContentIdentifier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAContentIdentifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAContentReference" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAContentReference">
+  IdAAContentReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAContentReference</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAADecryptKeyID" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAADecryptKeyID">
+  IdAADecryptKeyID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAADecryptKeyID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEncrypKeyPref" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEncrypKeyPref">
+  IdAAEncrypKeyPref
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEncrypKeyPref</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsArchiveTimestamp" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsArchiveTimestamp">
+  IdAAEtsArchiveTimestamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsArchiveTimestamp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsCertCrlTimestamp" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsCertCrlTimestamp">
+  IdAAEtsCertCrlTimestamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsCertCrlTimestamp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsCertValues" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsCertValues">
+  IdAAEtsCertValues
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsCertValues</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsCertificateRefs" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsCertificateRefs">
+  IdAAEtsCertificateRefs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsCertificateRefs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsCommitmentType" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsCommitmentType">
+  IdAAEtsCommitmentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsCommitmentType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsContentTimestamp" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsContentTimestamp">
+  IdAAEtsContentTimestamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsContentTimestamp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsEscTimeStamp" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsEscTimeStamp">
+  IdAAEtsEscTimeStamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsEscTimeStamp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsOtherSigCert" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsOtherSigCert">
+  IdAAEtsOtherSigCert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsOtherSigCert</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsRevocationRefs" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsRevocationRefs">
+  IdAAEtsRevocationRefs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsRevocationRefs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsRevocationValues" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsRevocationValues">
+  IdAAEtsRevocationValues
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsRevocationValues</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsSigPolicyID" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsSigPolicyID">
+  IdAAEtsSigPolicyID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsSigPolicyID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsSignerAttr" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsSignerAttr">
+  IdAAEtsSignerAttr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsSignerAttr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAEtsSignerLocation" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAEtsSignerLocation">
+  IdAAEtsSignerLocation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAEtsSignerLocation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAImplCompressAlgs" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAImplCompressAlgs">
+  IdAAImplCompressAlgs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAImplCompressAlgs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAImplCryptoAlgs" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAImplCryptoAlgs">
+  IdAAImplCryptoAlgs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAImplCryptoAlgs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAMsgSigDigest" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAMsgSigDigest">
+  IdAAMsgSigDigest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAMsgSigDigest</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAOid" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAOid">
+  IdAAOid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;id_aa&#39; instead&quot;)]
+public static readonly DerObjectIdentifier IdAAOid</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAAReceiptRequest" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAAReceiptRequest">
+  IdAAReceiptRequest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAAReceiptRequest</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAASignatureTimeStampToken" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAASignatureTimeStampToken">
+  IdAASignatureTimeStampToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAASignatureTimeStampToken</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAASigningCertificate" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAASigningCertificate">
+  IdAASigningCertificate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAASigningCertificate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAASigningCertificateV2" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAASigningCertificateV2">
+  IdAASigningCertificateV2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAASigningCertificateV2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlg" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlg">
+  IdAlg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;smime_alg&#39; instead&quot;)]
+public static readonly DerObjectIdentifier IdAlg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgAeadChaCha20Poly1305" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgAeadChaCha20Poly1305">
+  IdAlgAeadChaCha20Poly1305
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgAeadChaCha20Poly1305</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgCms3DesWrap" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgCms3DesWrap">
+  IdAlgCms3DesWrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgCms3DesWrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgCmsRC2Wrap" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgCmsRC2Wrap">
+  IdAlgCmsRC2Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgCmsRC2Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgEsdh" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgEsdh">
+  IdAlgEsdh
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgEsdh</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgHkdfWithSha256" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgHkdfWithSha256">
+  IdAlgHkdfWithSha256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgHkdfWithSha256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgHkdfWithSha384" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgHkdfWithSha384">
+  IdAlgHkdfWithSha384
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgHkdfWithSha384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgHkdfWithSha512" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgHkdfWithSha512">
+  IdAlgHkdfWithSha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgHkdfWithSha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgHssLmsHashsig" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgHssLmsHashsig">
+  IdAlgHssLmsHashsig
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgHssLmsHashsig</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgPwriKek" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgPwriKek">
+  IdAlgPwriKek
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgPwriKek</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgSsdh" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgSsdh">
+  IdAlgSsdh
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgSsdh</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdAlgZlibCompress" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdAlgZlibCompress">
+  IdAlgZlibCompress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAlgZlibCompress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCT" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCT">
+  IdCT
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IdCT = &quot;1.2.840.113549.1.9.16.1&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCTAuthData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCTAuthData">
+  IdCTAuthData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCTAuthData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCTAuthEnvelopedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCTAuthEnvelopedData">
+  IdCTAuthEnvelopedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCTAuthEnvelopedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCTCompressedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCTCompressedData">
+  IdCTCompressedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCTCompressedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCTTimestampedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCTTimestampedData">
+  IdCTTimestampedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCTTimestampedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCTTstInfo" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCTTstInfo">
+  IdCTTstInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCTTstInfo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCti" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCti">
+  IdCti
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IdCti = &quot;1.2.840.113549.1.9.16.6&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCtiEtsProofOfApproval" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCtiEtsProofOfApproval">
+  IdCtiEtsProofOfApproval
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCtiEtsProofOfApproval</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCtiEtsProofOfCreation" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCtiEtsProofOfCreation">
+  IdCtiEtsProofOfCreation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCtiEtsProofOfCreation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCtiEtsProofOfDelivery" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCtiEtsProofOfDelivery">
+  IdCtiEtsProofOfDelivery
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCtiEtsProofOfDelivery</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCtiEtsProofOfOrigin" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCtiEtsProofOfOrigin">
+  IdCtiEtsProofOfOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCtiEtsProofOfOrigin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCtiEtsProofOfReceipt" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCtiEtsProofOfReceipt">
+  IdCtiEtsProofOfReceipt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCtiEtsProofOfReceipt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdCtiEtsProofOfSender" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdCtiEtsProofOfSender">
+  IdCtiEtsProofOfSender
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdCtiEtsProofOfSender</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha1" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha1">
+  IdHmacWithSha1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha224" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha224">
+  IdHmacWithSha224
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha256" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha256">
+  IdHmacWithSha256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha384" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha384">
+  IdHmacWithSha384
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha512" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha512">
+  IdHmacWithSha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha512_224" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha512_224">
+  IdHmacWithSha512_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha512_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdHmacWithSha512_256" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdHmacWithSha512_256">
+  IdHmacWithSha512_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHmacWithSha512_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdMgf1" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdMgf1">
+  IdMgf1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdMgf1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdPSpecified" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdPSpecified">
+  IdPSpecified
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdPSpecified</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdPbeS2" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdPbeS2">
+  IdPbeS2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdPbeS2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdPbkdf2" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdPbkdf2">
+  IdPbkdf2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdPbkdf2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdPbmac1" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdPbmac1">
+  IdPbmac1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdPbmac1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdRsaKem" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdRsaKem">
+  IdRsaKem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsaKem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdRsaesOaep" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdRsaesOaep">
+  IdRsaesOaep
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsaesOaep</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdRsassaPss" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdRsassaPss">
+  IdRsassaPss
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsassaPss</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdSmime" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdSmime">
+  IdSmime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSmime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdSpq" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdSpq">
+  IdSpq
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IdSpq = &quot;1.2.840.113549.1.9.16.5&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdSpqEtsUNotice" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdSpqEtsUNotice">
+  IdSpqEtsUNotice
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSpqEtsUNotice</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_IdSpqEtsUri" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.IdSpqEtsUri">
+  IdSpqEtsUri
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSpqEtsUri</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_KeyBag" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.KeyBag">
+  KeyBag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier KeyBag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_MD2" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.MD2">
+  MD2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier MD2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_MD2WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.MD2WithRsaEncryption">
+  MD2WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier MD2WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_MD4" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.MD4">
+  MD4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier MD4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_MD4WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.MD4WithRsaEncryption">
+  MD4WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier MD4WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_MD5" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.MD5">
+  MD5
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier MD5</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_MD5WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.MD5WithRsaEncryption">
+  MD5WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier MD5WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithMD2AndDesCbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithMD2AndDesCbc">
+  PbeWithMD2AndDesCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithMD2AndDesCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithMD2AndRC2Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithMD2AndRC2Cbc">
+  PbeWithMD2AndRC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithMD2AndRC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithMD5AndDesCbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithMD5AndDesCbc">
+  PbeWithMD5AndDesCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithMD5AndDesCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithMD5AndRC2Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithMD5AndRC2Cbc">
+  PbeWithMD5AndRC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithMD5AndRC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithSha1AndDesCbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithSha1AndDesCbc">
+  PbeWithSha1AndDesCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithSha1AndDesCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithSha1AndRC2Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithSha1AndRC2Cbc">
+  PbeWithSha1AndRC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithSha1AndRC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithShaAnd128BitRC2Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithShaAnd128BitRC2Cbc">
+  PbeWithShaAnd128BitRC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithShaAnd128BitRC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithShaAnd128BitRC4" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithShaAnd128BitRC4">
+  PbeWithShaAnd128BitRC4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithShaAnd128BitRC4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithShaAnd2KeyTripleDesCbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithShaAnd2KeyTripleDesCbc">
+  PbeWithShaAnd2KeyTripleDesCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithShaAnd2KeyTripleDesCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithShaAnd3KeyTripleDesCbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithShaAnd3KeyTripleDesCbc">
+  PbeWithShaAnd3KeyTripleDesCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithShaAnd3KeyTripleDesCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbeWithShaAnd40BitRC4" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbeWithShaAnd40BitRC4">
+  PbeWithShaAnd40BitRC4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbeWithShaAnd40BitRC4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PbewithShaAnd40BitRC2Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PbewithShaAnd40BitRC2Cbc">
+  PbewithShaAnd40BitRC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PbewithShaAnd40BitRC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs1" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs1">
+  Pkcs1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs1 = &quot;1.2.840.113549.1.1&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs12" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs12">
+  Pkcs12
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs12 = &quot;1.2.840.113549.1.12&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs12PbeIds" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs12PbeIds">
+  Pkcs12PbeIds
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs12PbeIds = &quot;1.2.840.113549.1.12.1&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs3" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs3">
+  Pkcs3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs3 = &quot;1.2.840.113549.1.3&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs5" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs5">
+  Pkcs5
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs5 = &quot;1.2.840.113549.1.5&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs7" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs7">
+  Pkcs7
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs7 = &quot;1.2.840.113549.1.7&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs8ShroudedKeyBag" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs8ShroudedKeyBag">
+  Pkcs8ShroudedKeyBag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs8ShroudedKeyBag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9">
+  Pkcs9
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Pkcs9 = &quot;1.2.840.113549.1.9&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtBinarySigningTime" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtBinarySigningTime">
+  Pkcs9AtBinarySigningTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtBinarySigningTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtChallengePassword" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtChallengePassword">
+  Pkcs9AtChallengePassword
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtChallengePassword</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtContentType" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtContentType">
+  Pkcs9AtContentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtContentType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtCounterSignature" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtCounterSignature">
+  Pkcs9AtCounterSignature
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtCounterSignature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtEmailAddress" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtEmailAddress">
+  Pkcs9AtEmailAddress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtEmailAddress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtExtendedCertificateAttributes" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtExtendedCertificateAttributes">
+  Pkcs9AtExtendedCertificateAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtExtendedCertificateAttributes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtExtensionRequest" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtExtensionRequest">
+  Pkcs9AtExtensionRequest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtExtensionRequest</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtFriendlyName" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtFriendlyName">
+  Pkcs9AtFriendlyName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtFriendlyName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtLocalKeyID" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtLocalKeyID">
+  Pkcs9AtLocalKeyID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtLocalKeyID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtMessageDigest" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtMessageDigest">
+  Pkcs9AtMessageDigest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtMessageDigest</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtSigningDescription" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtSigningDescription">
+  Pkcs9AtSigningDescription
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtSigningDescription</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtSigningTime" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtSigningTime">
+  Pkcs9AtSigningTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtSigningTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtSmimeCapabilities" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtSmimeCapabilities">
+  Pkcs9AtSmimeCapabilities
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtSmimeCapabilities</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtUnstructuredAddress" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtUnstructuredAddress">
+  Pkcs9AtUnstructuredAddress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtUnstructuredAddress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Pkcs9AtUnstructuredName" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Pkcs9AtUnstructuredName">
+  Pkcs9AtUnstructuredName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Pkcs9AtUnstructuredName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_PreferSignedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.PreferSignedData">
+  PreferSignedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier PreferSignedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_RC2Cbc" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.RC2Cbc">
+  RC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier RC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_RsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.RsaEncryption">
+  RsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier RsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SafeContentsBag" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SafeContentsBag">
+  SafeContentsBag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SafeContentsBag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SdsiCertificate" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SdsiCertificate">
+  SdsiCertificate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SdsiCertificate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SecretBag" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SecretBag">
+  SecretBag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SecretBag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha1WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha1WithRsaEncryption">
+  Sha1WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha1WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha224WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha224WithRsaEncryption">
+  Sha224WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha224WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha256WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha256WithRsaEncryption">
+  Sha256WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha256WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha384WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha384WithRsaEncryption">
+  Sha384WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha384WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha512WithRsaEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha512WithRsaEncryption">
+  Sha512WithRsaEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha512WithRsaEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha512_224WithRSAEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha512_224WithRSAEncryption">
+  Sha512_224WithRSAEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha512_224WithRSAEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_Sha512_256WithRSAEncryption" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.Sha512_256WithRSAEncryption">
+  Sha512_256WithRSAEncryption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Sha512_256WithRSAEncryption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SignedAndEnvelopedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SignedAndEnvelopedData">
+  SignedAndEnvelopedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SignedAndEnvelopedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SignedData" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SignedData">
+  SignedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SignedData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SmimeCapabilitiesVersions" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SmimeCapabilitiesVersions">
+  SmimeCapabilitiesVersions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SmimeCapabilitiesVersions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_SrsaOaepEncryptionSet" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.SrsaOaepEncryptionSet">
+  SrsaOaepEncryptionSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SrsaOaepEncryptionSet</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_X509Certificate" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.X509Certificate">
+  X509Certificate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier X509Certificate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_X509Crl" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.X509Crl">
+  X509Crl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier X509Crl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_id_aa" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.id_aa">
+  id_aa
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_aa</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_id_aa_cmsAlgorithmProtect" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.id_aa_cmsAlgorithmProtect">
+  id_aa_cmsAlgorithmProtect
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_aa_cmsAlgorithmProtect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_id_alg" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.id_alg">
+  id_alg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;smime_alg&#39; instead&quot;)]
+public static readonly DerObjectIdentifier id_alg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_id_ct" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.id_ct">
+  id_ct
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_ct</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_id_cti" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.id_cti">
+  id_cti
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_cti</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_id_spq" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.id_spq">
+  id_spq
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_spq</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_pkcs_1" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.pkcs_1">
+  pkcs_1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier pkcs_1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_pkcs_3" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.pkcs_3">
+  pkcs_3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier pkcs_3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_pkcs_5" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.pkcs_5">
+  pkcs_5
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier pkcs_5</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_pkcs_7" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.pkcs_7">
+  pkcs_7
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier pkcs_7</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_pkcs_9" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.pkcs_9">
+  pkcs_9
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier pkcs_9</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_rc4" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.rc4">
+  rc4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier rc4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Pkcs_PkcsObjectIdentifiers_smime_alg" data-uid="Org.BouncyCastle.Asn1.Pkcs.PkcsObjectIdentifiers.smime_alg">
+  smime_alg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier smime_alg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

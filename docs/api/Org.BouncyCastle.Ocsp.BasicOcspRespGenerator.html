@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BasicOcspRespGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BasicOcspRespGenerator | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator" class="text-break">
+Class BasicOcspRespGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Ocsp.html">Ocsp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BasicOcspRespGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BasicOcspRespGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator__ctor_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator__ctor_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.#ctor(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  BasicOcspRespGenerator(AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicOcspRespGenerator(AsymmetricKeyParameter publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator__ctor_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator__ctor_Org_BouncyCastle_Ocsp_RespID_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.#ctor(Org.BouncyCastle.Ocsp.RespID)">
+  BasicOcspRespGenerator(RespID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicOcspRespGenerator(RespID responderID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>responderID</code> <a class="xref" href="Org.BouncyCastle.Ocsp.RespID.html">RespID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_SignatureAlgNames_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.SignatureAlgNames*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_SignatureAlgNames" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.SignatureAlgNames">
+  SignatureAlgNames
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SignatureAlgNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_Org_BouncyCastle_Ocsp_CertificateID_Org_BouncyCastle_Ocsp_CertificateStatus_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse(Org.BouncyCastle.Ocsp.CertificateID,Org.BouncyCastle.Ocsp.CertificateStatus)">
+  AddResponse(CertificateID, CertificateStatus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResponse(CertificateID certID, CertificateStatus certStatus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certID</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateID.html">CertificateID</a></dt>
+    <dd></dd>
+    <dt><code>certStatus</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateStatus.html">CertificateStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_Org_BouncyCastle_Ocsp_CertificateID_Org_BouncyCastle_Ocsp_CertificateStatus_Org_BouncyCastle_Asn1_X509_X509Extensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse(Org.BouncyCastle.Ocsp.CertificateID,Org.BouncyCastle.Ocsp.CertificateStatus,Org.BouncyCastle.Asn1.X509.X509Extensions)">
+  AddResponse(CertificateID, CertificateStatus, X509Extensions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResponse(CertificateID certID, CertificateStatus certStatus, X509Extensions singleExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certID</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateID.html">CertificateID</a></dt>
+    <dd></dd>
+    <dt><code>certStatus</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateStatus.html">CertificateStatus</a></dt>
+    <dd></dd>
+    <dt><code>singleExtensions</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_Org_BouncyCastle_Ocsp_CertificateID_Org_BouncyCastle_Ocsp_CertificateStatus_System_DateTime_System_Nullable_System_DateTime__Org_BouncyCastle_Asn1_X509_X509Extensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse(Org.BouncyCastle.Ocsp.CertificateID,Org.BouncyCastle.Ocsp.CertificateStatus,System.DateTime,System.Nullable{System.DateTime},Org.BouncyCastle.Asn1.X509.X509Extensions)">
+  AddResponse(CertificateID, CertificateStatus, DateTime, DateTime?, X509Extensions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResponse(CertificateID certID, CertificateStatus certStatus, DateTime thisUpdate, DateTime? nextUpdate, X509Extensions singleExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certID</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateID.html">CertificateID</a></dt>
+    <dd></dd>
+    <dt><code>certStatus</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateStatus.html">CertificateStatus</a></dt>
+    <dd></dd>
+    <dt><code>thisUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>nextUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>singleExtensions</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_AddResponse_Org_BouncyCastle_Ocsp_CertificateID_Org_BouncyCastle_Ocsp_CertificateStatus_System_Nullable_System_DateTime__Org_BouncyCastle_Asn1_X509_X509Extensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.AddResponse(Org.BouncyCastle.Ocsp.CertificateID,Org.BouncyCastle.Ocsp.CertificateStatus,System.Nullable{System.DateTime},Org.BouncyCastle.Asn1.X509.X509Extensions)">
+  AddResponse(CertificateID, CertificateStatus, DateTime?, X509Extensions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResponse(CertificateID certID, CertificateStatus certStatus, DateTime? nextUpdate, X509Extensions singleExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certID</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateID.html">CertificateID</a></dt>
+    <dd></dd>
+    <dt><code>certStatus</code> <a class="xref" href="Org.BouncyCastle.Ocsp.CertificateStatus.html">CertificateStatus</a></dt>
+    <dd></dd>
+    <dt><code>nextUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>singleExtensions</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_Generate_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_Generate_Org_BouncyCastle_Crypto_ISignatureFactory_Org_BouncyCastle_X509_X509Certificate___System_DateTime_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.Generate(Org.BouncyCastle.Crypto.ISignatureFactory,Org.BouncyCastle.X509.X509Certificate[],System.DateTime)">
+  Generate(ISignatureFactory, X509Certificate[], DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate the signed response using the passed in signature calculator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicOcspResp Generate(ISignatureFactory signatureCalculatorFactory, X509Certificate[] chain, DateTime producedAt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureCalculatorFactory</code> <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a></dt>
+    <dd><p>Implementation of signing calculator factory.</p>
+</dd>
+    <dt><code>chain</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>[]</dt>
+    <dd><p>The certificate chain associated with the response signer.</p>
+</dd>
+    <dt><code>producedAt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>&quot;produced at&quot; date.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.BasicOcspResp.html">BasicOcspResp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_Generate_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_Generate_System_String_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate___System_DateTime_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.Generate(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate[],System.DateTime)">
+  Generate(string, AsymmetricKeyParameter, X509Certificate[], DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicOcspResp Generate(string signingAlgorithm, AsymmetricKeyParameter privateKey, X509Certificate[] chain, DateTime thisUpdate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signingAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>chain</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>[]</dt>
+    <dd></dd>
+    <dt><code>thisUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.BasicOcspResp.html">BasicOcspResp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_Generate_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_Generate_System_String_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate___System_DateTime_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.Generate(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate[],System.DateTime,Org.BouncyCastle.Security.SecureRandom)">
+  Generate(string, AsymmetricKeyParameter, X509Certificate[], DateTime, SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicOcspResp Generate(string signingAlgorithm, AsymmetricKeyParameter privateKey, X509Certificate[] chain, DateTime producedAt, SecureRandom random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signingAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>chain</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>[]</dt>
+    <dd></dd>
+    <dt><code>producedAt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>random</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.BasicOcspResp.html">BasicOcspResp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_SetResponseExtensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.SetResponseExtensions*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspRespGenerator_SetResponseExtensions_Org_BouncyCastle_Asn1_X509_X509Extensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspRespGenerator.SetResponseExtensions(Org.BouncyCastle.Asn1.X509.X509Extensions)">
+  SetResponseExtensions(X509Extensions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResponseExtensions(X509Extensions responseExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>responseExtensions</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

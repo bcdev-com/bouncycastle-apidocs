@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttributeCertificateHolder | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttributeCertificateHolder | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder">
+
+
+
+  <h1 id="Org_BouncyCastle_X509_AttributeCertificateHolder" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder" class="text-break">
+Class AttributeCertificateHolder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.X509.html">X509</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AttributeCertificateHolder : IEquatable&lt;AttributeCertificateHolder&gt;, ISelector&lt;X509Certificate&gt;, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AttributeCertificateHolder</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.AttributeCertificateHolder.html">AttributeCertificateHolder</a>&gt;</div>
+      <div><a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_X509_AttributeCertificateHolder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The Holder object.</p>
+<pre>
+Holder ::= SEQUENCE {
+	baseCertificateID   [0] IssuerSerial OPTIONAL,
+		-- the issuer and serial number of
+		-- the holder's Public Key Certificate
+	entityName          [1] GeneralNames OPTIONAL,
+		-- the name of the claimant or role
+	objectDigestInfo    [2] ObjectDigestInfo OPTIONAL
+		-- used to directly authenticate the holder,
+		-- for example, an executable
+}
+</pre>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_Org_BouncyCastle_Asn1_X509_X509Name_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor(Org.BouncyCastle.Asn1.X509.X509Name)">
+  AttributeCertificateHolder(X509Name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeCertificateHolder(X509Name principal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>principal</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Asn1_DerInteger_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor(Org.BouncyCastle.Asn1.X509.X509Name,Org.BouncyCastle.Asn1.DerInteger)">
+  AttributeCertificateHolder(X509Name, DerInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeCertificateHolder(X509Name issuerName, DerInteger serialNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issuerName</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerInteger.html">DerInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor(Org.BouncyCastle.Asn1.X509.X509Name,Org.BouncyCastle.Math.BigInteger)">
+  AttributeCertificateHolder(X509Name, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeCertificateHolder(X509Name issuerName, BigInteger serialNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issuerName</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor(Org.BouncyCastle.X509.X509Certificate)">
+  AttributeCertificateHolder(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeCertificateHolder(X509Certificate cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder__ctor_System_Int32_System_String_System_String_System_Byte___" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.#ctor(System.Int32,System.String,System.String,System.Byte[])">
+  AttributeCertificateHolder(int, string, string, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeCertificateHolder(int digestedObjectType, string digestAlgorithm, string otherObjectTypeID, byte[] objectDigest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>digestedObjectType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>digestAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>otherObjectTypeID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>objectDigest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_DigestAlgorithm_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.DigestAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_DigestAlgorithm" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.DigestAlgorithm">
+  DigestAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DigestAlgorithm { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_DigestedObjectType_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.DigestedObjectType*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_DigestedObjectType" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.DigestedObjectType">
+  DigestedObjectType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DigestedObjectType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_OtherObjectTypeID_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.OtherObjectTypeID*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_OtherObjectTypeID" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.OtherObjectTypeID">
+  OtherObjectTypeID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OtherObjectTypeID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_SerialNumber_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.SerialNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_SerialNumber" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.SerialNumber">
+  SerialNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger SerialNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_Clone_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Clone*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_Clone" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new object that is a copy of the current instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>A new object that is a copy of this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_Equals_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_Equals_Org_BouncyCastle_X509_AttributeCertificateHolder_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Equals(Org.BouncyCastle.X509.AttributeCertificateHolder)">
+  Equals(AttributeCertificateHolder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(AttributeCertificateHolder other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Org.BouncyCastle.X509.AttributeCertificateHolder.html">AttributeCertificateHolder</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_Equals_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_Equals_System_Object_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetEntityNames_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetEntityNames*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetEntityNames" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetEntityNames">
+  GetEntityNames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Name[] GetEntityNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetHashCode_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetHashCode" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetIssuer_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetIssuer*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetIssuer" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetIssuer">
+  GetIssuer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Name[] GetIssuer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetObjectDigest_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetObjectDigest*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_GetObjectDigest" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.GetObjectDigest">
+  GetObjectDigest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetObjectDigest()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_AttributeCertificateHolder_Match_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Match*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_AttributeCertificateHolder_Match_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.X509.AttributeCertificateHolder.Match(Org.BouncyCastle.X509.X509Certificate)">
+  Match(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Match the passed in object, returning true if it would be selected by this selector, false
+otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Match(X509Certificate x509Cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x509Cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><pre><code class="lang-csharp">true</code></pre> if the objects is matched by this selector, false otherwise.
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

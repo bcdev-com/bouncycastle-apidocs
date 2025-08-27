@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CertificateRequest | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CertificateRequest | BouncyCastle Docs ">
+      
+      <meta name="description" content="Parsing and encoding of a CertificateRequest struct from RFC 4346.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.CertificateRequest">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_CertificateRequest" data-uid="Org.BouncyCastle.Tls.CertificateRequest" class="text-break">
+Class CertificateRequest  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Parsing and encoding of a <i>CertificateRequest</i> struct from RFC 4346.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CertificateRequest</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CertificateRequest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_Tls_CertificateRequest_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><pre>
+struct {
+  ClientCertificateType certificate_types&lt;1..2^8-1&gt;;
+  DistinguishedName certificate_authorities&lt;3..2^16-1&gt;;
+} CertificateRequest;
+</pre>
+<p>Updated for RFC 5246:</p>
+<pre>
+struct {
+  ClientCertificateType certificate_types &lt;1..2 ^ 8 - 1&gt;;
+  SignatureAndHashAlgorithm supported_signature_algorithms &lt;2 ^ 16 - 1&gt;;
+  DistinguishedName certificate_authorities &lt;0..2 ^ 16 - 1&gt;;
+} CertificateRequest;
+</pre>
+<p>Revised for RFC 8446:</p>
+<pre>
+struct {
+  opaque certificate_request_context &lt;0..2 ^ 8 - 1&gt;;
+  Extension extensions &lt;2..2 ^ 16 - 1&gt;;
+} CertificateRequest;
+</pre>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest__ctor_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest__ctor_System_Byte___System_Collections_Generic_IList_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm__System_Collections_Generic_IList_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm__System_Collections_Generic_IList_Org_BouncyCastle_Asn1_X509_X509Name__" data-uid="Org.BouncyCastle.Tls.CertificateRequest.#ctor(System.Byte[],System.Collections.Generic.IList{Org.BouncyCastle.Tls.SignatureAndHashAlgorithm},System.Collections.Generic.IList{Org.BouncyCastle.Tls.SignatureAndHashAlgorithm},System.Collections.Generic.IList{Org.BouncyCastle.Asn1.X509.X509Name})">
+  CertificateRequest(byte[], IList&lt;SignatureAndHashAlgorithm&gt;, IList&lt;SignatureAndHashAlgorithm&gt;, IList&lt;X509Name&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequest(byte[] certificateRequestContext, IList&lt;SignatureAndHashAlgorithm&gt; supportedSignatureAlgorithms, IList&lt;SignatureAndHashAlgorithm&gt; supportedSignatureAlgorithmsCert, IList&lt;X509Name&gt; certificateAuthorities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certificateRequestContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>supportedSignatureAlgorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>supportedSignatureAlgorithmsCert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>certificateAuthorities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest__ctor_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest__ctor_System_Int16___System_Collections_Generic_IList_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm__System_Collections_Generic_IList_Org_BouncyCastle_Asn1_X509_X509Name__" data-uid="Org.BouncyCastle.Tls.CertificateRequest.#ctor(System.Int16[],System.Collections.Generic.IList{Org.BouncyCastle.Tls.SignatureAndHashAlgorithm},System.Collections.Generic.IList{Org.BouncyCastle.Asn1.X509.X509Name})">
+  CertificateRequest(short[], IList&lt;SignatureAndHashAlgorithm&gt;, IList&lt;X509Name&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequest(short[] certificateTypes, IList&lt;SignatureAndHashAlgorithm&gt; supportedSignatureAlgorithms, IList&lt;X509Name&gt; certificateAuthorities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certificateTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p>see <a class="xref" href="Org.BouncyCastle.Tls.ClientCertificateType.html">ClientCertificateType</a> for valid constants.</p>
+</dd>
+    <dt><code>supportedSignatureAlgorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>certificateAuthorities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>&gt;</dt>
+    <dd><p>an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_CertificateAuthorities_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.CertificateAuthorities*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_CertificateAuthorities" data-uid="Org.BouncyCastle.Tls.CertificateRequest.CertificateAuthorities">
+  CertificateAuthorities
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;X509Name&gt; CertificateAuthorities { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>&gt;</dt>
+    <dd><p>an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_CertificateTypes_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.CertificateTypes*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_CertificateTypes" data-uid="Org.BouncyCastle.Tls.CertificateRequest.CertificateTypes">
+  CertificateTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short[] CertificateTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p>an array of certificate types</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="Org.BouncyCastle.Tls.ClientCertificateType.html">ClientCertificateType</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_SupportedSignatureAlgorithms_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.SupportedSignatureAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_SupportedSignatureAlgorithms" data-uid="Org.BouncyCastle.Tls.CertificateRequest.SupportedSignatureAlgorithms">
+  SupportedSignatureAlgorithms
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;SignatureAndHashAlgorithm&gt; SupportedSignatureAlgorithms { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd><p>an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of <a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a> (or null before TLS 1.2).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_SupportedSignatureAlgorithmsCert_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.SupportedSignatureAlgorithmsCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_SupportedSignatureAlgorithmsCert" data-uid="Org.BouncyCastle.Tls.CertificateRequest.SupportedSignatureAlgorithmsCert">
+  SupportedSignatureAlgorithmsCert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;SignatureAndHashAlgorithm&gt; SupportedSignatureAlgorithmsCert { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd><p>an optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of <a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>. May be non-null from
+TLS 1.3 onwards.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_Encode_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_Encode_Org_BouncyCastle_Tls_TlsContext_System_IO_Stream_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.Encode(Org.BouncyCastle.Tls.TlsContext,System.IO.Stream)">
+  Encode(TlsContext, Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encode this <a class="xref" href="Org.BouncyCastle.Tls.CertificateRequest.html">CertificateRequest</a> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Encode(TlsContext context, Stream output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a></dt>
+    <dd><p>the <a class="xref" href="Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a> of the current connection.</p>
+</dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> to encode to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_GetCertificateRequestContext_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.GetCertificateRequestContext*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_GetCertificateRequestContext" data-uid="Org.BouncyCastle.Tls.CertificateRequest.GetCertificateRequestContext">
+  GetCertificateRequestContext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetCertificateRequestContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_HasCertificateRequestContext_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.HasCertificateRequestContext*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_HasCertificateRequestContext_System_Byte___" data-uid="Org.BouncyCastle.Tls.CertificateRequest.HasCertificateRequestContext(System.Byte[])">
+  HasCertificateRequestContext(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCertificateRequestContext(byte[] certificateRequestContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certificateRequestContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_CertificateRequest_Parse_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.Parse*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_CertificateRequest_Parse_Org_BouncyCastle_Tls_TlsContext_System_IO_Stream_" data-uid="Org.BouncyCastle.Tls.CertificateRequest.Parse(Org.BouncyCastle.Tls.TlsContext,System.IO.Stream)">
+  Parse(TlsContext, Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parse a <a class="xref" href="Org.BouncyCastle.Tls.CertificateRequest.html">CertificateRequest</a> from a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CertificateRequest Parse(TlsContext context, Stream input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a></dt>
+    <dd><p>the <a class="xref" href="Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a> of the current connection.</p>
+</dd>
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> to parse from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateRequest.html">CertificateRequest</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.CertificateRequest.html">CertificateRequest</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Org.BouncyCastle.Tls.ClientCertificateType.html">ClientCertificateType</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

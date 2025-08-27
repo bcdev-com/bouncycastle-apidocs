@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface TlsPeer | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface TlsPeer | BouncyCastle Docs ">
+      
+      <meta name="description" content="Base interface for a (D)TLS endpoint.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.TlsPeer">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_TlsPeer" data-uid="Org.BouncyCastle.Tls.TlsPeer" class="text-break">
+Interface TlsPeer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base interface for a (D)TLS endpoint.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface TlsPeer</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_Crypto_" data-uid="Org.BouncyCastle.Tls.TlsPeer.Crypto*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_Crypto" data-uid="Org.BouncyCastle.Tls.TlsPeer.Crypto">
+  Crypto
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsCrypto Crypto { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCrypto.html">TlsCrypto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_IgnoreCorruptDtlsRecords_" data-uid="Org.BouncyCastle.Tls.TlsPeer.IgnoreCorruptDtlsRecords*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_IgnoreCorruptDtlsRecords" data-uid="Org.BouncyCastle.Tls.TlsPeer.IgnoreCorruptDtlsRecords">
+  IgnoreCorruptDtlsRecords
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether a DTLS connection should ignore corrupt records (bad_record_mac) instead of
+failing the connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IgnoreCorruptDtlsRecords { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The value <code>true</code> to ignore corrupt DTLS records, or <code>false</code> to fail the connection.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_IgnoreCorruptDtlsRecords_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Called only once at the start of a connection and applies throughout.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_AllowLegacyResumption_" data-uid="Org.BouncyCastle.Tls.TlsPeer.AllowLegacyResumption*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_AllowLegacyResumption" data-uid="Org.BouncyCastle.Tls.TlsPeer.AllowLegacyResumption">
+  AllowLegacyResumption()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AllowLegacyResumption()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_Cancel_" data-uid="Org.BouncyCastle.Tls.TlsPeer.Cancel*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_Cancel" data-uid="Org.BouncyCastle.Tls.TlsPeer.Cancel">
+  Cancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Cancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetCipherSuites_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetCipherSuites*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetCipherSuites" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetCipherSuites">
+  GetCipherSuites()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] GetCipherSuites()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetHandshakeTimeoutMillis_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetHandshakeTimeoutMillis*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetHandshakeTimeoutMillis" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetHandshakeTimeoutMillis">
+  GetHandshakeTimeoutMillis()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specify the timeout, in milliseconds, to use for the complete handshake process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetHandshakeTimeoutMillis()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the handshake timeout, in milliseconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_GetHandshakeTimeoutMillis_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>NOTE: Currently only respected by DTLS protocols. Negative values are not allowed. A timeout of zero means
+an infinite timeout (i.e.the handshake will never time out).</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetHeartbeat_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetHeartbeat*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetHeartbeat" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetHeartbeat">
+  GetHeartbeat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return a <a class="xref" href="Org.BouncyCastle.Tls.TlsHeartbeat.html">TlsHeartbeat</a> instance that will control the generation of heartbeats
+locally (if permitted by the remote peer), or null to not generate heartbeats. Heartbeats are described in
+RFC 6520.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsHeartbeat GetHeartbeat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsHeartbeat.html">TlsHeartbeat</a></dt>
+    <dd><p>an instance of <a class="xref" href="Org.BouncyCastle.Tls.TlsHeartbeat.html">TlsHeartbeat</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsHeartbeat.html">DefaultTlsHeartbeat</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetHeartbeatPolicy_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetHeartbeatPolicy*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetHeartbeatPolicy" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetHeartbeatPolicy">
+  GetHeartbeatPolicy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the heartbeat mode applicable to the remote peer. Heartbeats are described in RFC 6520.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">short GetHeartbeatPolicy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>the <a class="xref" href="Org.BouncyCastle.Tls.HeartbeatMode.html">HeartbeatMode</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_GetHeartbeatPolicy_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="Org.BouncyCastle.Tls.HeartbeatMode.html">HeartbeatMode</a> for appropriate return values.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetKeyExchangeFactory_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetKeyExchangeFactory*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetKeyExchangeFactory" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetKeyExchangeFactory">
+  GetKeyExchangeFactory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsKeyExchangeFactory GetKeyExchangeFactory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchangeFactory.html">TlsKeyExchangeFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetMaxCertificateChainLength_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetMaxCertificateChainLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetMaxCertificateChainLength" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetMaxCertificateChainLength">
+  GetMaxCertificateChainLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetMaxCertificateChainLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetMaxHandshakeMessageSize_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetMaxHandshakeMessageSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetMaxHandshakeMessageSize" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetMaxHandshakeMessageSize">
+  GetMaxHandshakeMessageSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetMaxHandshakeMessageSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetProtocolVersions_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetProtocolVersions*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetProtocolVersions" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetProtocolVersions">
+  GetProtocolVersions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion[] GetProtocolVersions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_GetPskKeyExchangeModes_" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetPskKeyExchangeModes*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_GetPskKeyExchangeModes" data-uid="Org.BouncyCastle.Tls.TlsPeer.GetPskKeyExchangeModes">
+  GetPskKeyExchangeModes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">short[] GetPskKeyExchangeModes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_NotifyAlertRaised_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyAlertRaised*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_NotifyAlertRaised_System_Int16_System_Int16_System_String_System_Exception_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyAlertRaised(System.Int16,System.Int16,System.String,System.Exception)">
+  NotifyAlertRaised(short, short, string, Exception)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method will be called when an alert is raised by the protocol.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyAlertRaised(short alertLevel, short alertDescription, string message, Exception cause)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alertLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="Org.BouncyCastle.Tls.AlertLevel.html">AlertLevel</a></p>
+</dd>
+    <dt><code>alertDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="Org.BouncyCastle.Tls.AlertDescription.html">AlertDescription</a></p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A human-readable message explaining what caused this alert. May be null.</p>
+</dd>
+    <dt><code>cause</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> that caused this alert to be raised. May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_NotifyAlertReceived_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyAlertReceived*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_NotifyAlertReceived_System_Int16_System_Int16_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyAlertReceived(System.Int16,System.Int16)">
+  NotifyAlertReceived(short, short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method will be called when an alert is received from the remote peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyAlertReceived(short alertLevel, short alertDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alertLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="Org.BouncyCastle.Tls.AlertLevel.html">AlertLevel</a></p>
+</dd>
+    <dt><code>alertDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="Org.BouncyCastle.Tls.AlertDescription.html">AlertDescription</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_NotifyCloseHandle_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyCloseHandle*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_NotifyCloseHandle_Org_BouncyCastle_Tls_TlsCloseable_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyCloseHandle(Org.BouncyCastle.Tls.TlsCloseable)">
+  NotifyCloseHandle(TlsCloseable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyCloseHandle(TlsCloseable closehandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>closehandle</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsCloseable.html">TlsCloseable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeBeginning_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyHandshakeBeginning*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeBeginning" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyHandshakeBeginning">
+  NotifyHandshakeBeginning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Notifies the peer that a new handshake is about to begin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyHandshakeBeginning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeComplete_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyHandshakeComplete*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeComplete" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifyHandshakeComplete">
+  NotifyHandshakeComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Notifies the peer that the handshake has been successfully completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyHandshakeComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_NotifySecureRenegotiation_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifySecureRenegotiation*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_NotifySecureRenegotiation_System_Boolean_" data-uid="Org.BouncyCastle.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)">
+  NotifySecureRenegotiation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>RFC 5746 3.4/3.6. In case this is false, peers may want to terminate the handshake instead of
+continuing; see Section 4.1/4.3 for discussion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifySecureRenegotiation(bool secureRenegotiation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>secureRenegotiation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_NotifySecureRenegotiation_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>NOTE: TLS 1.3 forbids renegotiation, so this is never called when TLS 1.3 (or later) was negotiated.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_RequiresCloseNotify_" data-uid="Org.BouncyCastle.Tls.TlsPeer.RequiresCloseNotify*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_RequiresCloseNotify" data-uid="Org.BouncyCastle.Tls.TlsPeer.RequiresCloseNotify">
+  RequiresCloseNotify()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RequiresCloseNotify()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_RequiresCloseNotify_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This option is provided as a last resort for interoperability with TLS peers that fail to correctly send a
+close_notify alert at end of stream. Implementations SHOULD return true; caution is advised if returning
+false without a full understanding of the implications.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_RequiresExtendedMasterSecret_" data-uid="Org.BouncyCastle.Tls.TlsPeer.RequiresExtendedMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_RequiresExtendedMasterSecret" data-uid="Org.BouncyCastle.Tls.TlsPeer.RequiresExtendedMasterSecret">
+  RequiresExtendedMasterSecret()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RequiresExtendedMasterSecret()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the handshake should be aborted when the peer does not negotiate the
+extended_master_secret extension, or <code>false</code> to support legacy interoperability.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_RequiresExtendedMasterSecret_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This implementation supports RFC 7627 and will always negotiate the extended_master_secret
+extension where possible. When connecting to a peer that does not offer/accept this extension, it is
+recommended to abort the handshake.This option is provided for interoperability with legacy peers, although
+some TLS features will be disabled in that case (see RFC 7627 5.4).</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedMasterSecret_" data-uid="Org.BouncyCastle.Tls.TlsPeer.ShouldUseExtendedMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedMasterSecret" data-uid="Org.BouncyCastle.Tls.TlsPeer.ShouldUseExtendedMasterSecret">
+  ShouldUseExtendedMasterSecret()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ShouldUseExtendedMasterSecret()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedPadding_" data-uid="Org.BouncyCastle.Tls.TlsPeer.ShouldUseExtendedPadding*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedPadding" data-uid="Org.BouncyCastle.Tls.TlsPeer.ShouldUseExtendedPadding">
+  ShouldUseExtendedPadding()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>See RFC 5246 6.2.3.2. Controls whether block cipher encryption may randomly add extra padding
+beyond the minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ShouldUseExtendedPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if random extra padding should be added during block cipher encryption, or
+<code>false</code> to always use the minimum amount of required padding.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedPadding_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that in configurations where this is known to be potential security risk this setting will be ignored
+(and extended padding disabled). Extra padding is always supported when decrypting received records.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseGmtUnixTime_" data-uid="Org.BouncyCastle.Tls.TlsPeer.ShouldUseGmtUnixTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseGmtUnixTime" data-uid="Org.BouncyCastle.Tls.TlsPeer.ShouldUseGmtUnixTime">
+  ShouldUseGmtUnixTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>draft-mathewson-no-gmtunixtime-00 2. &quot;If existing users of a TLS implementation may rely on
+gmt_unix_time containing the current time, we recommend that implementors MAY provide the ability to set
+gmt_unix_time as an option only, off by default.&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ShouldUseGmtUnixTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the current time should be used in the gmt_unix_time field of Random, or
+<code>false</code> if gmt_unix_time should contain a cryptographically random value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsPeer_ShouldUseGmtUnixTime_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>NOTE: For a server that has negotiated TLS 1.3 (or later), or a client that has offered TLS 1.3 (or later),
+this is not called and gmt_unix_time is not used.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

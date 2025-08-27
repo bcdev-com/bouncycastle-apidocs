@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DefaultTlsKeyExchangeFactory | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DefaultTlsKeyExchangeFactory | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory" class="text-break">
+Class DefaultTlsKeyExchangeFactory  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DefaultTlsKeyExchangeFactory : AbstractTlsKeyExchangeFactory, TlsKeyExchangeFactory</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchangeFactory.html">AbstractTlsKeyExchangeFactory</a></div>
+      <div><span class="xref">DefaultTlsKeyExchangeFactory</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchangeFactory.html">TlsKeyExchangeFactory</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDHKeyExchange_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDHKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDHKeyExchange_System_Int32_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDHKeyExchange(System.Int32)">
+  CreateDHKeyExchange(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateDHKeyExchange(int keyExchange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDHanonKeyExchangeClient_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDHanonKeyExchangeClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDHanonKeyExchangeClient_System_Int32_Org_BouncyCastle_Tls_TlsDHGroupVerifier_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDHanonKeyExchangeClient(System.Int32,Org.BouncyCastle.Tls.TlsDHGroupVerifier)">
+  CreateDHanonKeyExchangeClient(int, TlsDHGroupVerifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateDHanonKeyExchangeClient(int keyExchange, TlsDHGroupVerifier dhGroupVerifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dhGroupVerifier</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsDHGroupVerifier.html">TlsDHGroupVerifier</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDHanonKeyExchangeServer_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDHanonKeyExchangeServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDHanonKeyExchangeServer_System_Int32_Org_BouncyCastle_Tls_Crypto_TlsDHConfig_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDHanonKeyExchangeServer(System.Int32,Org.BouncyCastle.Tls.Crypto.TlsDHConfig)">
+  CreateDHanonKeyExchangeServer(int, TlsDHConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateDHanonKeyExchangeServer(int keyExchange, TlsDHConfig dhConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dhConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDHConfig.html">TlsDHConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDheKeyExchangeClient_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDheKeyExchangeClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDheKeyExchangeClient_System_Int32_Org_BouncyCastle_Tls_TlsDHGroupVerifier_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDheKeyExchangeClient(System.Int32,Org.BouncyCastle.Tls.TlsDHGroupVerifier)">
+  CreateDheKeyExchangeClient(int, TlsDHGroupVerifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateDheKeyExchangeClient(int keyExchange, TlsDHGroupVerifier dhGroupVerifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dhGroupVerifier</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsDHGroupVerifier.html">TlsDHGroupVerifier</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDheKeyExchangeServer_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDheKeyExchangeServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateDheKeyExchangeServer_System_Int32_Org_BouncyCastle_Tls_Crypto_TlsDHConfig_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateDheKeyExchangeServer(System.Int32,Org.BouncyCastle.Tls.Crypto.TlsDHConfig)">
+  CreateDheKeyExchangeServer(int, TlsDHConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateDheKeyExchangeServer(int keyExchange, TlsDHConfig dhConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dhConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDHConfig.html">TlsDHConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDHKeyExchange_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDHKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDHKeyExchange_System_Int32_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDHKeyExchange(System.Int32)">
+  CreateECDHKeyExchange(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateECDHKeyExchange(int keyExchange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDHanonKeyExchangeClient_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDHanonKeyExchangeClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDHanonKeyExchangeClient_System_Int32_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDHanonKeyExchangeClient(System.Int32)">
+  CreateECDHanonKeyExchangeClient(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateECDHanonKeyExchangeClient(int keyExchange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDHanonKeyExchangeServer_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDHanonKeyExchangeServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDHanonKeyExchangeServer_System_Int32_Org_BouncyCastle_Tls_Crypto_TlsECConfig_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDHanonKeyExchangeServer(System.Int32,Org.BouncyCastle.Tls.Crypto.TlsECConfig)">
+  CreateECDHanonKeyExchangeServer(int, TlsECConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateECDHanonKeyExchangeServer(int keyExchange, TlsECConfig ecConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ecConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsECConfig.html">TlsECConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDheKeyExchangeClient_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDheKeyExchangeClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDheKeyExchangeClient_System_Int32_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDheKeyExchangeClient(System.Int32)">
+  CreateECDheKeyExchangeClient(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateECDheKeyExchangeClient(int keyExchange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDheKeyExchangeServer_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDheKeyExchangeServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateECDheKeyExchangeServer_System_Int32_Org_BouncyCastle_Tls_Crypto_TlsECConfig_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateECDheKeyExchangeServer(System.Int32,Org.BouncyCastle.Tls.Crypto.TlsECConfig)">
+  CreateECDheKeyExchangeServer(int, TlsECConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateECDheKeyExchangeServer(int keyExchange, TlsECConfig ecConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ecConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsECConfig.html">TlsECConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreatePskKeyExchangeClient_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreatePskKeyExchangeClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreatePskKeyExchangeClient_System_Int32_Org_BouncyCastle_Tls_TlsPskIdentity_Org_BouncyCastle_Tls_TlsDHGroupVerifier_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreatePskKeyExchangeClient(System.Int32,Org.BouncyCastle.Tls.TlsPskIdentity,Org.BouncyCastle.Tls.TlsDHGroupVerifier)">
+  CreatePskKeyExchangeClient(int, TlsPskIdentity, TlsDHGroupVerifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreatePskKeyExchangeClient(int keyExchange, TlsPskIdentity pskIdentity, TlsDHGroupVerifier dhGroupVerifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pskIdentity</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsPskIdentity.html">TlsPskIdentity</a></dt>
+    <dd></dd>
+    <dt><code>dhGroupVerifier</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsDHGroupVerifier.html">TlsDHGroupVerifier</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreatePskKeyExchangeServer_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreatePskKeyExchangeServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreatePskKeyExchangeServer_System_Int32_Org_BouncyCastle_Tls_TlsPskIdentityManager_Org_BouncyCastle_Tls_Crypto_TlsDHConfig_Org_BouncyCastle_Tls_Crypto_TlsECConfig_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreatePskKeyExchangeServer(System.Int32,Org.BouncyCastle.Tls.TlsPskIdentityManager,Org.BouncyCastle.Tls.Crypto.TlsDHConfig,Org.BouncyCastle.Tls.Crypto.TlsECConfig)">
+  CreatePskKeyExchangeServer(int, TlsPskIdentityManager, TlsDHConfig, TlsECConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreatePskKeyExchangeServer(int keyExchange, TlsPskIdentityManager pskIdentityManager, TlsDHConfig dhConfig, TlsECConfig ecConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pskIdentityManager</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></dt>
+    <dd></dd>
+    <dt><code>dhConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDHConfig.html">TlsDHConfig</a></dt>
+    <dd></dd>
+    <dt><code>ecConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsECConfig.html">TlsECConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateRsaKeyExchange_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateRsaKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateRsaKeyExchange_System_Int32_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateRsaKeyExchange(System.Int32)">
+  CreateRsaKeyExchange(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateRsaKeyExchange(int keyExchange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateSrpKeyExchangeClient_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateSrpKeyExchangeClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateSrpKeyExchangeClient_System_Int32_Org_BouncyCastle_Tls_TlsSrpIdentity_Org_BouncyCastle_Tls_TlsSrpConfigVerifier_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateSrpKeyExchangeClient(System.Int32,Org.BouncyCastle.Tls.TlsSrpIdentity,Org.BouncyCastle.Tls.TlsSrpConfigVerifier)">
+  CreateSrpKeyExchangeClient(int, TlsSrpIdentity, TlsSrpConfigVerifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateSrpKeyExchangeClient(int keyExchange, TlsSrpIdentity srpIdentity, TlsSrpConfigVerifier srpConfigVerifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>srpIdentity</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpIdentity.html">TlsSrpIdentity</a></dt>
+    <dd></dd>
+    <dt><code>srpConfigVerifier</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpConfigVerifier.html">TlsSrpConfigVerifier</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateSrpKeyExchangeServer_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateSrpKeyExchangeServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DefaultTlsKeyExchangeFactory_CreateSrpKeyExchangeServer_System_Int32_Org_BouncyCastle_Tls_TlsSrpLoginParameters_" data-uid="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.CreateSrpKeyExchangeServer(System.Int32,Org.BouncyCastle.Tls.TlsSrpLoginParameters)">
+  CreateSrpKeyExchangeServer(int, TlsSrpLoginParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKeyExchange CreateSrpKeyExchangeServer(int keyExchange, TlsSrpLoginParameters loginParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>loginParameters</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpLoginParameters.html">TlsSrpLoginParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class X448Field | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class X448Field | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field">
+
+
+
+  <h1 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field" class="text-break">
+Class X448Field  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Math.html">Math</a>.<a class="xref" href="Org.BouncyCastle.Math.EC.html">EC</a>.<a class="xref" href="Org.BouncyCastle.Math.EC.Rfc7748.html">Rfc7748</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static class X448Field</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">X448Field</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Size" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Size">
+  Size
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int Size = 16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Add_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Add*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Add_System_ReadOnlySpan_System_UInt32__System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Add(System.ReadOnlySpan{System.UInt32},System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  Add(ReadOnlySpan&lt;uint&gt;, ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(ReadOnlySpan&lt;uint&gt; x, ReadOnlySpan&lt;uint&gt; y, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Add_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Add*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Add_System_UInt32___System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Add(System.UInt32[],System.UInt32[],System.UInt32[])">
+  Add(uint[], uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(uint[] x, uint[] y, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AddOne_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AddOne*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AddOne_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AddOne(System.UInt32[])">
+  AddOne(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOne(uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AddOne_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AddOne*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AddOne_System_UInt32___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AddOne(System.UInt32[],System.Int32)">
+  AddOne(uint[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOne(uint[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AreEqual_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AreEqual*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AreEqual_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AreEqual(System.UInt32[],System.UInt32[])">
+  AreEqual(uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AreEqual(uint[] x, uint[] y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AreEqualVar_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AreEqualVar*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_AreEqualVar_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.AreEqualVar(System.UInt32[],System.UInt32[])">
+  AreEqualVar(uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AreEqualVar(uint[] x, uint[] y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CMov_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CMov*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CMov_System_Int32_System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CMov(System.Int32,System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  CMov(int, ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CMov(int cond, ReadOnlySpan&lt;uint&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CMov_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CMov*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CMov_System_Int32_System_UInt32___System_Int32_System_UInt32___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CMov(System.Int32,System.UInt32[],System.Int32,System.UInt32[],System.Int32)">
+  CMov(int, uint[], int, uint[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CMov(int cond, uint[] x, int xOff, uint[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>xOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CNegate_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CNegate*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CNegate_System_Int32_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CNegate(System.Int32,System.UInt32[])">
+  CNegate(int, uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CNegate(int negate, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>negate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CSwap_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CSwap*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CSwap_System_Int32_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CSwap(System.Int32,System.UInt32[],System.UInt32[])">
+  CSwap(int, uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CSwap(int swap, uint[] a, uint[] b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>swap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Carry_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Carry*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Carry_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Carry(System.UInt32[])">
+  Carry(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Carry(uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Copy_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Copy*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Copy_System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Copy(System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  Copy(ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(ReadOnlySpan&lt;uint&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Copy_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Copy*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Copy_System_UInt32___System_Int32_System_UInt32___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Copy(System.UInt32[],System.Int32,System.UInt32[],System.Int32)">
+  Copy(uint[], int, uint[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(uint[] x, int xOff, uint[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>xOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Create_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Create*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Create" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Create">
+  Create()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] Create()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CreateTable_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CreateTable*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_CreateTable_System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.CreateTable(System.Int32)">
+  CreateTable(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] CreateTable(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_System_Byte___System_Int32_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode(System.Byte[],System.Int32,System.UInt32[])">
+  Decode(byte[], int, uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(byte[] x, int xOff, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>xOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_System_Byte___System_Int32_System_UInt32___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode(System.Byte[],System.Int32,System.UInt32[],System.Int32)">
+  Decode(byte[], int, uint[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(byte[] x, int xOff, uint[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>xOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_System_Byte___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode(System.Byte[],System.UInt32[])">
+  Decode(byte[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(byte[] x, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_System_ReadOnlySpan_System_Byte__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode(System.ReadOnlySpan{System.Byte},System.Span{System.UInt32})">
+  Decode(ReadOnlySpan&lt;byte&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(ReadOnlySpan&lt;byte&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode(System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  Decode(ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(ReadOnlySpan&lt;uint&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Decode_System_UInt32___System_Int32_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Decode(System.UInt32[],System.Int32,System.UInt32[])">
+  Decode(uint[], int, uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(uint[] x, int xOff, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>xOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_System_ReadOnlySpan_System_UInt32__System_Span_System_Byte__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode(System.ReadOnlySpan{System.UInt32},System.Span{System.Byte})">
+  Encode(ReadOnlySpan&lt;uint&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(ReadOnlySpan&lt;uint&gt; x, Span&lt;byte&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode(System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  Encode(ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(ReadOnlySpan&lt;uint&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_System_UInt32___System_Byte___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode(System.UInt32[],System.Byte[])">
+  Encode(uint[], byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(uint[] x, byte[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_System_UInt32___System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode(System.UInt32[],System.Byte[],System.Int32)">
+  Encode(uint[], byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(uint[] x, byte[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_System_UInt32___System_Int32_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode(System.UInt32[],System.Int32,System.Byte[],System.Int32)">
+  Encode(uint[], int, byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(uint[] x, int xOff, byte[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>xOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Encode_System_UInt32___System_UInt32___System_Int32_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Encode(System.UInt32[],System.UInt32[],System.Int32)">
+  Encode(uint[], uint[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(uint[] x, uint[] z, int zOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>zOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Inv_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Inv*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Inv_System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Inv(System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  Inv(ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Inv(ReadOnlySpan&lt;uint&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Inv_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Inv*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Inv_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Inv(System.UInt32[],System.UInt32[])">
+  Inv(uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Inv(uint[] x, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_InvVar_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.InvVar*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_InvVar_System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.InvVar(System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  InvVar(ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvVar(ReadOnlySpan&lt;uint&gt; x, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_InvVar_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.InvVar*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_InvVar_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.InvVar(System.UInt32[],System.UInt32[])">
+  InvVar(uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvVar(uint[] x, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsOne_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsOne*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsOne_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsOne(System.UInt32[])">
+  IsOne(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IsOne(uint[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsOneVar_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsOneVar*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsOneVar_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsOneVar(System.UInt32[])">
+  IsOneVar(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOneVar(uint[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsZero_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsZero*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsZero_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsZero(System.UInt32[])">
+  IsZero(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IsZero(uint[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsZeroVar_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsZeroVar*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_IsZeroVar_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.IsZeroVar(System.UInt32[])">
+  IsZeroVar(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsZeroVar(uint[] x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Mul_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Mul*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Mul_System_UInt32___System_UInt32_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Mul(System.UInt32[],System.UInt32,System.UInt32[])">
+  Mul(uint[], uint, uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mul(uint[] x, uint y, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Mul_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Mul*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Mul_System_UInt32___System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Mul(System.UInt32[],System.UInt32[],System.UInt32[])">
+  Mul(uint[], uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mul(uint[] x, uint[] y, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Negate_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Negate*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Negate_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Negate(System.UInt32[],System.UInt32[])">
+  Negate(uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Negate(uint[] x, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Normalize_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Normalize*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Normalize_System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Normalize(System.Span{System.UInt32})">
+  Normalize(Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Normalize(Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Normalize_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Normalize*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Normalize_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Normalize(System.UInt32[])">
+  Normalize(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Normalize(uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_One_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.One*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_One_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.One(System.UInt32[])">
+  One(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void One(uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sqr_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sqr*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sqr_System_UInt32___System_Int32_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sqr(System.UInt32[],System.Int32,System.UInt32[])">
+  Sqr(uint[], int, uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Sqr(uint[] x, int n, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sqr_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sqr*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sqr_System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sqr(System.UInt32[],System.UInt32[])">
+  Sqr(uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Sqr(uint[] x, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_SqrtRatioVar_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.SqrtRatioVar*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_SqrtRatioVar_System_UInt32___System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.SqrtRatioVar(System.UInt32[],System.UInt32[],System.UInt32[])">
+  SqrtRatioVar(uint[], uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SqrtRatioVar(uint[] u, uint[] v, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>u</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sub_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sub*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sub_System_ReadOnlySpan_System_UInt32__System_ReadOnlySpan_System_UInt32__System_Span_System_UInt32__" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sub(System.ReadOnlySpan{System.UInt32},System.ReadOnlySpan{System.UInt32},System.Span{System.UInt32})">
+  Sub(ReadOnlySpan&lt;uint&gt;, ReadOnlySpan&lt;uint&gt;, Span&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Sub(ReadOnlySpan&lt;uint&gt; x, ReadOnlySpan&lt;uint&gt; y, Span&lt;uint&gt; z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sub_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sub*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Sub_System_UInt32___System_UInt32___System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Sub(System.UInt32[],System.UInt32[],System.UInt32[])">
+  Sub(uint[], uint[], uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Sub(uint[] x, uint[] y, uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_SubOne_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.SubOne*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_SubOne_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.SubOne(System.UInt32[])">
+  SubOne(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SubOne(uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Zero_" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Zero*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_Rfc7748_X448Field_Zero_System_UInt32___" data-uid="Org.BouncyCastle.Math.EC.Rfc7748.X448Field.Zero(System.UInt32[])">
+  Zero(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Zero(uint[] z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

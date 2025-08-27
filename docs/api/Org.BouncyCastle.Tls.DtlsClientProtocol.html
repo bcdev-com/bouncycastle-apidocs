@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DtlsClientProtocol | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DtlsClientProtocol | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_DtlsClientProtocol" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol" class="text-break">
+Class DtlsClientProtocol  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DtlsClientProtocol : DtlsProtocol</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.DtlsProtocol.html">DtlsProtocol</a></div>
+      <div><span class="xref">DtlsClientProtocol</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol__ctor_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol__ctor" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.#ctor">
+  DtlsClientProtocol()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DtlsClientProtocol()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_CancelSession_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.CancelSession*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_CancelSession_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.CancelSession(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState)">
+  CancelSession(ClientHandshakeState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CancelSession(DtlsClientProtocol.ClientHandshakeState state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_Connect_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.Connect*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_Connect_Org_BouncyCastle_Tls_TlsClient_Org_BouncyCastle_Tls_DatagramTransport_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.Connect(Org.BouncyCastle.Tls.TlsClient,Org.BouncyCastle.Tls.DatagramTransport)">
+  Connect(TlsClient, DatagramTransport)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DtlsTransport Connect(TlsClient client, DatagramTransport transport)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>client</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsClient.html">TlsClient</a></dt>
+    <dd></dd>
+    <dt><code>transport</code> <a class="xref" href="Org.BouncyCastle.Tls.DatagramTransport.html">DatagramTransport</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsTransport.html">DtlsTransport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_EstablishSession_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.EstablishSession*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_EstablishSession_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_Org_BouncyCastle_Tls_TlsSession_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.EstablishSession(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,Org.BouncyCastle.Tls.TlsSession)">
+  EstablishSession(ClientHandshakeState, TlsSession)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool EstablishSession(DtlsClientProtocol.ClientHandshakeState state, TlsSession sessionToResume)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>sessionToResume</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_GenerateCertificateVerify_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.GenerateCertificateVerify*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_GenerateCertificateVerify_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_Org_BouncyCastle_Tls_DigitallySigned_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.GenerateCertificateVerify(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,Org.BouncyCastle.Tls.DigitallySigned)">
+  GenerateCertificateVerify(ClientHandshakeState, DigitallySigned)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateCertificateVerify(DtlsClientProtocol.ClientHandshakeState state, DigitallySigned certificateVerify)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>certificateVerify</code> <a class="xref" href="Org.BouncyCastle.Tls.DigitallySigned.html">DigitallySigned</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_GenerateClientHello_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.GenerateClientHello*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_GenerateClientHello_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.GenerateClientHello(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState)">
+  GenerateClientHello(ClientHandshakeState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateClientHello(DtlsClientProtocol.ClientHandshakeState state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_GenerateClientKeyExchange_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.GenerateClientKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_GenerateClientKeyExchange_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.GenerateClientKeyExchange(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState)">
+  GenerateClientKeyExchange(ClientHandshakeState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateClientKeyExchange(DtlsClientProtocol.ClientHandshakeState state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_InvalidateSession_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.InvalidateSession*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_InvalidateSession_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.InvalidateSession(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState)">
+  InvalidateSession(ClientHandshakeState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvalidateSession(DtlsClientProtocol.ClientHandshakeState state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_PatchClientHelloWithCookie_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.PatchClientHelloWithCookie*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_PatchClientHelloWithCookie_System_Byte___System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.PatchClientHelloWithCookie(System.Byte[],System.Byte[])">
+  PatchClientHelloWithCookie(byte[], byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static byte[] PatchClientHelloWithCookie(byte[] clientHelloBody, byte[] cookie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientHelloBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>cookie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessCertificateRequest_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessCertificateRequest*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessCertificateRequest_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessCertificateRequest(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessCertificateRequest(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessCertificateRequest(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessCertificateStatus_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessCertificateStatus*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessCertificateStatus_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessCertificateStatus(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessCertificateStatus(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessCertificateStatus(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessHelloVerifyRequest_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessHelloVerifyRequest*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessHelloVerifyRequest_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessHelloVerifyRequest(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessHelloVerifyRequest(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] ProcessHelloVerifyRequest(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessNewSessionTicket_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessNewSessionTicket*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessNewSessionTicket_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessNewSessionTicket(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessNewSessionTicket(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessNewSessionTicket(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerCertificate_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerCertificate_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerCertificate(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessServerCertificate(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerCertificate(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerHello_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerHello*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerHello_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerHello(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessServerHello(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerHello(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerKeyExchange_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerKeyExchange_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerKeyExchange(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessServerKeyExchange(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerKeyExchange(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerSupplementalData_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerSupplementalData*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ProcessServerSupplementalData_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ProcessServerSupplementalData(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">
+  ProcessServerSupplementalData(ClientHandshakeState, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerSupplementalData(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_DtlsClientProtocol_ReportServerVersion_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ReportServerVersion*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_DtlsClientProtocol_ReportServerVersion_Org_BouncyCastle_Tls_DtlsClientProtocol_ClientHandshakeState_Org_BouncyCastle_Tls_ProtocolVersion_" data-uid="Org.BouncyCastle.Tls.DtlsClientProtocol.ReportServerVersion(Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState,Org.BouncyCastle.Tls.ProtocolVersion)">
+  ReportServerVersion(ClientHandshakeState, ProtocolVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ReportServerVersion(DtlsClientProtocol.ClientHandshakeState state, ProtocolVersion server_version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a>.<a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">ClientHandshakeState</a></dt>
+    <dd></dd>
+    <dt><code>server_version</code> <a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

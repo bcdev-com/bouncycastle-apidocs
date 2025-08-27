@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class KMacWithShake128Params | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class KMacWithShake128Params | BouncyCastle Docs ">
+      
+      <meta name="description" content="KMACwithSHAKE128-params ::= SEQUENCE { kMACOutputLength     INTEGER DEFAULT 256, -- Output length in bits customizationString  OCTET STRING DEFAULT &#39;&#39;H }">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params" class="text-break">
+Class KMacWithShake128Params  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a>.<a class="xref" href="Org.BouncyCastle.Asn1.Nist.html">Nist</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>KMACwithSHAKE128-params ::= SEQUENCE {
+kMACOutputLength     INTEGER DEFAULT 256, -- Output length in bits
+customizationString  OCTET STRING DEFAULT ''H
+}</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class KMacWithShake128Params : Asn1Encodable, IAsn1Convertible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></div>
+      <div><span class="xref">KMacWithShake128Params</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Ber">Asn1Encodable.Ber</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Der">Asn1Encodable.Der</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_DL">Asn1Encodable.DL</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_System_IO_Stream_">Asn1Encodable.EncodeTo(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_System_IO_Stream_System_String_">Asn1Encodable.EncodeTo(Stream, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded">Asn1Encodable.GetEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_System_String_">Asn1Encodable.GetEncoded(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded">Asn1Encodable.GetDerEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode">Asn1Encodable.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Equals_System_Object_">Asn1Encodable.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params__ctor_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params__ctor_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.#ctor(System.Int32)">
+  KMacWithShake128Params(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KMacWithShake128Params(int outputLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params__ctor_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params__ctor_System_Int32_System_Byte___" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.#ctor(System.Int32,System.Byte[])">
+  KMacWithShake128Params(int, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KMacWithShake128Params(int outputLength, byte[] customizationString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>customizationString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_DefaultCustomizationString" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.DefaultCustomizationString">
+  DefaultCustomizationString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Asn1OctetString DefaultCustomizationString</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1OctetString.html">Asn1OctetString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_DefaultOutputLength" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.DefaultOutputLength">
+  DefaultOutputLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerInteger DefaultOutputLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerInteger.html">DerInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_CustomizationString_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.CustomizationString*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_CustomizationString" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.CustomizationString">
+  CustomizationString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] CustomizationString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_OutputLength_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.OutputLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_OutputLength" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.OutputLength">
+  OutputLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutputLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)">
+  GetInstance(Asn1TaggedObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KMacWithShake128Params GetInstance(Asn1TaggedObject taggedObject, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.html">KMacWithShake128Params</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_GetInstance_System_Object_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.GetInstance(System.Object)">
+  GetInstance(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KMacWithShake128Params GetInstance(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.html">KMacWithShake128Params</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_GetTagged_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.GetTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_GetTagged_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.GetTagged(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)">
+  GetTagged(Asn1TaggedObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KMacWithShake128Params GetTagged(Asn1TaggedObject taggedObject, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.html">KMacWithShake128Params</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_ToAsn1Object_" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.ToAsn1Object*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_KMacWithShake128Params_ToAsn1Object" data-uid="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.ToAsn1Object">
+  ToAsn1Object()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Asn1Object ToAsn1Object()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

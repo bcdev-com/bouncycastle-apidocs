@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BcTlsCrypto | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BcTlsCrypto | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto" class="text-break">
+Class BcTlsCrypto  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a>.<a class="xref" href="Org.BouncyCastle.Tls.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.html">Impl</a>.<a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.BC.html">BC</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BcTlsCrypto : AbstractTlsCrypto, TlsCrypto</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.AbstractTlsCrypto.html">AbstractTlsCrypto</a></div>
+      <div><span class="xref">BcTlsCrypto</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCrypto.html">TlsCrypto</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.AbstractTlsCrypto.html#Org_BouncyCastle_Tls_Crypto_Impl_AbstractTlsCrypto_CreateCertificate_System_Byte___">AbstractTlsCrypto.CreateCertificate(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.AbstractTlsCrypto.html#Org_BouncyCastle_Tls_Crypto_Impl_AbstractTlsCrypto_AdoptSecret_Org_BouncyCastle_Tls_Crypto_TlsSecret_">AbstractTlsCrypto.AdoptSecret(TlsSecret)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto__ctor_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto__ctor" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.#ctor">
+  BcTlsCrypto()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BcTlsCrypto()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto__ctor_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto__ctor_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.#ctor(Org.BouncyCastle.Security.SecureRandom)">
+  BcTlsCrypto(SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BcTlsCrypto(SecureRandom entropySource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entropySource</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_SecureRandom_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.SecureRandom*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_SecureRandom" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.SecureRandom">
+  SecureRandom
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the primary (safest) SecureRandom for this crypto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SecureRandom SecureRandom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd><p>a SecureRandom suitable for key generation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CloneDigest_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CloneDigest*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CloneDigest_System_Int32_Org_BouncyCastle_Crypto_IDigest_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CloneDigest(System.Int32,Org.BouncyCastle.Crypto.IDigest)">
+  CloneDigest(int, IDigest)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDigest CloneDigest(int cryptoHashAlgorithm, IDigest digest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>digest</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Aes_Ccm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Aes_Ccm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Aes_Ccm" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Aes_Ccm">
+  CreateAeadCipher_Aes_Ccm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual CcmBlockCipher CreateAeadCipher_Aes_Ccm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.CcmBlockCipher.html">CcmBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Aes_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Aes_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Aes_Gcm" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Aes_Gcm">
+  CreateAeadCipher_Aes_Gcm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IAeadCipher CreateAeadCipher_Aes_Gcm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html">IAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Aria_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Aria_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Aria_Gcm" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Aria_Gcm">
+  CreateAeadCipher_Aria_Gcm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IAeadCipher CreateAeadCipher_Aria_Gcm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html">IAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Camellia_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Camellia_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_Camellia_Gcm" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_Camellia_Gcm">
+  CreateAeadCipher_Camellia_Gcm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IAeadCipher CreateAeadCipher_Camellia_Gcm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html">IAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_SM4_Ccm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_SM4_Ccm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_SM4_Ccm" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_SM4_Ccm">
+  CreateAeadCipher_SM4_Ccm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual CcmBlockCipher CreateAeadCipher_SM4_Ccm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.CcmBlockCipher.html">CcmBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_SM4_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_SM4_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAeadCipher_SM4_Gcm" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAeadCipher_SM4_Gcm">
+  CreateAeadCipher_SM4_Gcm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IAeadCipher CreateAeadCipher_SM4_Gcm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html">IAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAesEngine_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAesEngine*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAesEngine" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAesEngine">
+  CreateAesEngine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateAesEngine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAriaEngine_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAriaEngine*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateAriaEngine" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateAriaEngine">
+  CreateAriaEngine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateAriaEngine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateBlockCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateBlockCipher*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateBlockCipher_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateBlockCipher(System.Int32)">
+  CreateBlockCipher(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateBlockCipher(int encryptionAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encryptionAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCamelliaEngine_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCamelliaEngine*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCamelliaEngine" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCamelliaEngine">
+  CreateCamelliaEngine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateCamelliaEngine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCbcBlockCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCbcBlockCipher*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCbcBlockCipher_Org_BouncyCastle_Crypto_IBlockCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCbcBlockCipher(Org.BouncyCastle.Crypto.IBlockCipher)">
+  CreateCbcBlockCipher(IBlockCipher)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateCbcBlockCipher(IBlockCipher blockCipher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockCipher</code> <a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCbcBlockCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCbcBlockCipher*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCbcBlockCipher_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCbcBlockCipher(System.Int32)">
+  CreateCbcBlockCipher(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateCbcBlockCipher(int encryptionAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encryptionAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCcmMode_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCcmMode*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCcmMode_Org_BouncyCastle_Crypto_IBlockCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCcmMode(Org.BouncyCastle.Crypto.IBlockCipher)">
+  CreateCcmMode(IBlockCipher)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual CcmBlockCipher CreateCcmMode(IBlockCipher engine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.CcmBlockCipher.html">CcmBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCertificate_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCertificate_System_Int16_System_Byte___" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCertificate(System.Int16,System.Byte[])">
+  CreateCertificate(short, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a TlsCertificate from an ASN.1 binary encoding of a certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsCertificate CreateCertificate(short type, byte[] encoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>Certificate type as per IANA TLS Certificate Types registry.</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>DER/BER encoding of the certificate of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a></dt>
+    <dd><p>a TlsCertificate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>if there is an issue on decoding or constructing the certificate.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateChaCha20Poly1305_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateChaCha20Poly1305*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateChaCha20Poly1305_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateChaCha20Poly1305(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters)">
+  CreateChaCha20Poly1305(TlsCryptoParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsCipher CreateChaCha20Poly1305(TlsCryptoParameters cryptoParams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32)">
+  CreateCipher(TlsCryptoParameters, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a cipher for the specified encryption and MAC algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsCipher CreateCipher(TlsCryptoParameters cryptoParams, int encryptionAlgorithm, int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd><p>context specific parameters.</p>
+</dd>
+    <dt><code>encryptionAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the encryption algorithm to be employed by the cipher.</p>
+</dd>
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the MAC algorithm to be employed by the cipher.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a> implementing the encryption and MAC algorithms.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See enumeration classes <a class="xref" href="Org.BouncyCastle.Tls.EncryptionAlgorithm.html">EncryptionAlgorithm</a>, <a class="xref" href="Org.BouncyCastle.Tls.MacAlgorithm.html">MacAlgorithm</a> for appropriate
+argument values.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Aes_Ccm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Aes_Ccm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Aes_Ccm_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Aes_Ccm(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32)">
+  CreateCipher_Aes_Ccm(TlsCryptoParameters, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsAeadCipher CreateCipher_Aes_Ccm(TlsCryptoParameters cryptoParams, int cipherKeySize, int macSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>cipherKeySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.html">TlsAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Aes_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Aes_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Aes_Gcm_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Aes_Gcm(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32)">
+  CreateCipher_Aes_Gcm(TlsCryptoParameters, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsAeadCipher CreateCipher_Aes_Gcm(TlsCryptoParameters cryptoParams, int cipherKeySize, int macSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>cipherKeySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.html">TlsAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Aria_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Aria_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Aria_Gcm_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Aria_Gcm(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32)">
+  CreateCipher_Aria_Gcm(TlsCryptoParameters, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsAeadCipher CreateCipher_Aria_Gcm(TlsCryptoParameters cryptoParams, int cipherKeySize, int macSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>cipherKeySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.html">TlsAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Camellia_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Camellia_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Camellia_Gcm_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Camellia_Gcm(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32)">
+  CreateCipher_Camellia_Gcm(TlsCryptoParameters, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsAeadCipher CreateCipher_Camellia_Gcm(TlsCryptoParameters cryptoParams, int cipherKeySize, int macSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>cipherKeySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.html">TlsAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Cbc_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Cbc*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_Cbc_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_Cbc(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32,System.Int32)">
+  CreateCipher_Cbc(TlsCryptoParameters, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsCipher CreateCipher_Cbc(TlsCryptoParameters cryptoParams, int encryptionAlgorithm, int cipherKeySize, int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>encryptionAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cipherKeySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_SM4_Ccm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_SM4_Ccm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_SM4_Ccm_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_SM4_Ccm(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters)">
+  CreateCipher_SM4_Ccm(TlsCryptoParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsAeadCipher CreateCipher_SM4_Ccm(TlsCryptoParameters cryptoParams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.html">TlsAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_SM4_Gcm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_SM4_Gcm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateCipher_SM4_Gcm_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateCipher_SM4_Gcm(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters)">
+  CreateCipher_SM4_Gcm(TlsCryptoParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsAeadCipher CreateCipher_SM4_Gcm(TlsCryptoParameters cryptoParams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.html">TlsAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateDHDomain_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateDHDomain*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateDHDomain_Org_BouncyCastle_Tls_Crypto_TlsDHConfig_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateDHDomain(Org.BouncyCastle.Tls.Crypto.TlsDHConfig)">
+  CreateDHDomain(TlsDHConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a domain object supporting the domain parameters described in dhConfig.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsDHDomain CreateDHDomain(TlsDHConfig dhConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dhConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDHConfig.html">TlsDHConfig</a></dt>
+    <dd><p>the config describing the DH parameters to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDHDomain.html">TlsDHDomain</a></dt>
+    <dd><p>a TlsDHDomain supporting the parameters in dhConfig.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateDesEdeEngine_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateDesEdeEngine*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateDesEdeEngine" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateDesEdeEngine">
+  CreateDesEdeEngine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateDesEdeEngine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateDigest_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateDigest*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateDigest_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateDigest(System.Int32)">
+  CreateDigest(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDigest CreateDigest(int cryptoHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateECDomain_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateECDomain*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateECDomain_Org_BouncyCastle_Tls_Crypto_TlsECConfig_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateECDomain(Org.BouncyCastle.Tls.Crypto.TlsECConfig)">
+  CreateECDomain(TlsECConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a domain object supporting the domain parameters described in ecConfig.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsECDomain CreateECDomain(TlsECConfig ecConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ecConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsECConfig.html">TlsECConfig</a></dt>
+    <dd><p>the config describing the EC parameters to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsECDomain.html">TlsECDomain</a></dt>
+    <dd><p>a TlsECDomain supporting the parameters in ecConfig.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateGcmMode_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateGcmMode*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateGcmMode_Org_BouncyCastle_Crypto_IBlockCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateGcmMode(Org.BouncyCastle.Crypto.IBlockCipher)">
+  CreateGcmMode(IBlockCipher)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IAeadCipher CreateGcmMode(IBlockCipher engine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html">IAeadCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHash_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHash*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHash_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHash(System.Int32)">
+  CreateHash(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a suitable hash for the hash algorithm identifier passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsHash CreateHash(int cryptoHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the hash algorithm the hash needs to implement.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHash.html">TlsHash</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHash.html">TlsHash</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHash_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="Org.BouncyCastle.Tls.Crypto.CryptoHashAlgorithm.html">CryptoHashAlgorithm</a> for appropriate argument values.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmac_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHmac*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmac_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHmac(System.Int32)">
+  CreateHmac(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a suitable HMAC for the MAC algorithm identifier passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsHmac CreateHmac(int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the MAC algorithm the HMAC needs to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmac_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="Org.BouncyCastle.Tls.MacAlgorithm.html">MacAlgorithm</a> for appropriate argument values.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmacForHash_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHmacForHash*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmacForHash_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHmacForHash(System.Int32)">
+  CreateHmacForHash(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a suitable HMAC using the hash algorithm identifier passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsHmac CreateHmacForHash(int cryptoHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the hash algorithm the HMAC should use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmacForHash_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="Org.BouncyCastle.Tls.Crypto.CryptoHashAlgorithm.html">CryptoHashAlgorithm</a> for appropriate argument values.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmac_Ssl_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHmac_Ssl*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateHmac_Ssl_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateHmac_Ssl(System.Int32)">
+  CreateHmac_Ssl(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsHmac CreateHmac_Ssl(int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateKemDomain_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateKemDomain*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateKemDomain_Org_BouncyCastle_Tls_Crypto_TlsKemConfig_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateKemDomain(Org.BouncyCastle.Tls.Crypto.TlsKemConfig)">
+  CreateKemDomain(TlsKemConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a domain object supporting the domain parameters described in kemConfig.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsKemDomain CreateKemDomain(TlsKemConfig kemConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kemConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsKemConfig.html">TlsKemConfig</a></dt>
+    <dd><p>the config describing the KEM parameters to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsKemDomain.html">TlsKemDomain</a></dt>
+    <dd><p>a TlsKemDomain supporting the parameters in kemConfig.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateMac_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateMac*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateMac_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateMac(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32)">
+  CreateMac(TlsCryptoParameters, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsHmac CreateMac(TlsCryptoParameters cryptoParams, int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNonceGenerator_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateNonceGenerator*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNonceGenerator_System_Byte___" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateNonceGenerator(System.Byte[])">
+  CreateNonceGenerator(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a nonce generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsNonceGenerator CreateNonceGenerator(byte[] additionalSeedMaterial)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>additionalSeedMaterial</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>context-specific seed material</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsNonceGenerator.html">TlsNonceGenerator</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsNonceGenerator.html">TlsNonceGenerator</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNonceGenerator_System_Byte____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Each call should construct a new generator, and the generator should be returned from this call only after
+automatically seeding from this <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCrypto.html">TlsCrypto</a>'s entropy source, and from the provided additional
+seed material. The output of each returned generator must be completely independent of the others.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNonceGenerator_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateNonceGenerator*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNonceGenerator_System_ReadOnlySpan_System_Byte__" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateNonceGenerator(System.ReadOnlySpan{System.Byte})">
+  CreateNonceGenerator(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsNonceGenerator CreateNonceGenerator(ReadOnlySpan&lt;byte&gt; additionalSeedMaterial)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>additionalSeedMaterial</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsNonceGenerator.html">TlsNonceGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNullCipher_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateNullCipher*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateNullCipher_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateNullCipher(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32)">
+  CreateNullCipher(TlsCryptoParameters, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsNullCipher CreateNullCipher(TlsCryptoParameters cryptoParams, int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsNullCipher.html">TlsNullCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSM4Engine_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSM4Engine*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSM4Engine" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSM4Engine">
+  CreateSM4Engine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateSM4Engine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSecret_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSecret_System_Byte___" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSecret(System.Byte[])">
+  CreateSecret(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a TlsSecret object based on provided data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSecret CreateSecret(byte[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>the data to base the TlsSecret on.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd><p>a TlsSecret based on the provided data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSeedEngine_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSeedEngine*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSeedEngine" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSeedEngine">
+  CreateSeedEngine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IBlockCipher CreateSeedEngine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSrp6Client_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSrp6Client*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSrp6Client_Org_BouncyCastle_Tls_Crypto_TlsSrpConfig_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSrp6Client(Org.BouncyCastle.Tls.Crypto.TlsSrpConfig)">
+  CreateSrp6Client(TlsSrpConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an SRP-6 client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSrp6Client CreateSrp6Client(TlsSrpConfig srpConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>srpConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrpConfig.html">TlsSrpConfig</a></dt>
+    <dd><p>client config.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrp6Client.html">TlsSrp6Client</a></dt>
+    <dd><p>an initialised SRP6 client object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSrp6Server_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSrp6Server*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSrp6Server_Org_BouncyCastle_Tls_Crypto_TlsSrpConfig_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSrp6Server(Org.BouncyCastle.Tls.Crypto.TlsSrpConfig,Org.BouncyCastle.Math.BigInteger)">
+  CreateSrp6Server(TlsSrpConfig, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an SRP-6 server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSrp6Server CreateSrp6Server(TlsSrpConfig srpConfig, BigInteger srpVerifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>srpConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrpConfig.html">TlsSrpConfig</a></dt>
+    <dd><p>server config.</p>
+</dd>
+    <dt><code>srpVerifier</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd><p>the SRP6 verifier value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrp6Server.html">TlsSrp6Server</a></dt>
+    <dd><p>an initialised SRP6 server object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSrp6VerifierGenerator_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSrp6VerifierGenerator*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_CreateSrp6VerifierGenerator_Org_BouncyCastle_Tls_Crypto_TlsSrpConfig_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.CreateSrp6VerifierGenerator(Org.BouncyCastle.Tls.Crypto.TlsSrpConfig)">
+  CreateSrp6VerifierGenerator(TlsSrpConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an SRP-6 verifier generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSrp6VerifierGenerator CreateSrp6VerifierGenerator(TlsSrpConfig srpConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>srpConfig</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrpConfig.html">TlsSrpConfig</a></dt>
+    <dd><p>generator config.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrp6VerifierGenerator.html">TlsSrp6VerifierGenerator</a></dt>
+    <dd><p>an initialized SRP6 verifier generator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_GenerateRsaPreMasterSecret_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.GenerateRsaPreMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_GenerateRsaPreMasterSecret_Org_BouncyCastle_Tls_ProtocolVersion_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.GenerateRsaPreMasterSecret(Org.BouncyCastle.Tls.ProtocolVersion)">
+  GenerateRsaPreMasterSecret(ProtocolVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a TlsSecret object containing a randomly-generated RSA PreMasterSecret</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSecret GenerateRsaPreMasterSecret(ProtocolVersion version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>version</code> <a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd><p>a TlsSecret containing the PreMasterSecret.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasAnyStreamVerifiers_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasAnyStreamVerifiers*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasAnyStreamVerifiers_System_Collections_Generic_IList_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm__" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasAnyStreamVerifiers(System.Collections.Generic.IList{Org.BouncyCastle.Tls.SignatureAndHashAlgorithm})">
+  HasAnyStreamVerifiers(IList&lt;SignatureAndHashAlgorithm&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto would use a stream verifier for any of the passed in algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasAnyStreamVerifiers(IList&lt;SignatureAndHashAlgorithm&gt; signatureAndHashAlgorithms)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureAndHashAlgorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">list</a> of
+<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance would use a stream verifier for any of the passed in algorithms, otherwise
+false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasAnyStreamVerifiers_System_Collections_Generic_IList_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is only relevant to handshakes negotiating (D)TLS 1.2.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasAnyStreamVerifiersLegacy_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasAnyStreamVerifiersLegacy*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasAnyStreamVerifiersLegacy_System_Int16___" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasAnyStreamVerifiersLegacy(System.Int16[])">
+  HasAnyStreamVerifiersLegacy(short[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto would use a stream verifier for any of the passed in algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasAnyStreamVerifiersLegacy(short[] clientCertificateTypes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientCertificateTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p>An array of <a class="xref" href="Org.BouncyCastle.Tls.ClientCertificateType.html">ClientCertificateType</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance would use a stream verifier for any of the passed in algorithms, otherwise
+false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasAnyStreamVerifiersLegacy_System_Int16____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is only relevant to handshakes negotiating (D)TLS versions older than 1.2.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasCryptoHashAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasCryptoHashAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasCryptoHashAlgorithm_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasCryptoHashAlgorithm(System.Int32)">
+  HasCryptoHashAlgorithm(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in hash algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasCryptoHashAlgorithm(int cryptoHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the algorithm of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if cryptoHashAlgorithm is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasCryptoSignatureAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasCryptoSignatureAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasCryptoSignatureAlgorithm_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasCryptoSignatureAlgorithm(System.Int32)">
+  HasCryptoSignatureAlgorithm(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature algorithm (not necessarily in
+combination with EVERY hash algorithm).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasCryptoSignatureAlgorithm(int cryptoSignatureAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoSignatureAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the algorithm of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if cryptoSignatureAlgorithm is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasDHAgreement_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasDHAgreement*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasDHAgreement" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasDHAgreement">
+  HasDHAgreement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support DH key agreement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasDHAgreement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance can support DH key agreement, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasECDHAgreement_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasECDHAgreement*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasECDHAgreement" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasECDHAgreement">
+  HasECDHAgreement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support ECDH key agreement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasECDHAgreement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance can support ECDH key agreement, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasEncryptionAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasEncryptionAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasEncryptionAlgorithm_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasEncryptionAlgorithm(System.Int32)">
+  HasEncryptionAlgorithm(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in block/stream encryption algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasEncryptionAlgorithm(int encryptionAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encryptionAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the algorithm of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if encryptionAlgorithm is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasHkdfAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasHkdfAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasHkdfAlgorithm_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasHkdfAlgorithm(System.Int32)">
+  HasHkdfAlgorithm(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support HKDF with the passed in hash algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasHkdfAlgorithm(int cryptoHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the algorithm of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if HKDF is supported with cryptoHashAlgorithm, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasKemAgreement_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasKemAgreement*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasKemAgreement" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasKemAgreement">
+  HasKemAgreement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support KEM key agreement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasKemAgreement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance can support KEM key agreement, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasMacAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasMacAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasMacAlgorithm_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasMacAlgorithm(System.Int32)">
+  HasMacAlgorithm(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in MAC algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasMacAlgorithm(int macAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>macAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the algorithm of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if macAlgorithm is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasNamedGroup_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasNamedGroup*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasNamedGroup_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasNamedGroup(System.Int32)">
+  HasNamedGroup(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto supports the passed in <a class="xref" href="Org.BouncyCastle.Tls.NamedGroup.html">named group</a>
+value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasNamedGroup(int namedGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>namedGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance supports the passed in <a class="xref" href="Org.BouncyCastle.Tls.NamedGroup.html">named group</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasRsaEncryption_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasRsaEncryption*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasRsaEncryption" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasRsaEncryption">
+  HasRsaEncryption()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support RSA encryption/decryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasRsaEncryption()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance can support RSA encryption/decryption, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSignatureAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSignatureAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSignatureAlgorithm_System_Int16_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSignatureAlgorithm(System.Int16)">
+  HasSignatureAlgorithm(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature algorithm (not necessarily in
+combination with EVERY hash algorithm).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasSignatureAlgorithm(short signatureAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if signatureAlgorithm is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSignatureAndHashAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSignatureAndHashAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSignatureAndHashAlgorithm_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSignatureAndHashAlgorithm(Org.BouncyCastle.Tls.SignatureAndHashAlgorithm)">
+  HasSignatureAndHashAlgorithm(SignatureAndHashAlgorithm)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasSignatureAndHashAlgorithm(SignatureAndHashAlgorithm sigAndHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sigAndHashAlgorithm</code> <a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a></dt>
+    <dd><p>the algorithm of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if sigAndHashAlgorithm is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSignatureScheme_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSignatureScheme*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSignatureScheme_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSignatureScheme(System.Int32)">
+  HasSignatureScheme(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature scheme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasSignatureScheme(int signatureScheme)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the scheme of interest.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if signatureScheme is supported, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSrpAuthentication_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSrpAuthentication*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HasSrpAuthentication" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HasSrpAuthentication">
+  HasSrpAuthentication()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support SRP authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasSrpAuthentication()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance can support SRP authentication, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HkdfInit_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HkdfInit*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_HkdfInit_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.HkdfInit(System.Int32)">
+  HkdfInit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Setup an initial &quot;secret&quot; for a chain of HKDF calls (RFC 5869), containing a string of HashLen
+zeroes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSecret HkdfInit(int cryptoHashAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoHashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the hash algorithm to instantiate HMAC with. See
+<a class="xref" href="Org.BouncyCastle.Tls.Crypto.CryptoHashAlgorithm.html">CryptoHashAlgorithm</a> for values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class X509V3CertificateGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class X509V3CertificateGenerator | BouncyCastle Docs ">
+      
+      <meta name="description" content="A class to Generate Version 3 X509Certificates.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_X509_X509V3CertificateGenerator" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator" class="text-break">
+Class X509V3CertificateGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.X509.html">X509</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A class to Generate Version 3 X509Certificates.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class X509V3CertificateGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">X509V3CertificateGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator__ctor_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator__ctor" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.#ctor">
+  X509V3CertificateGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509V3CertificateGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator__ctor_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator__ctor_Org_BouncyCastle_Asn1_X509_X509CertificateStructure_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.#ctor(Org.BouncyCastle.Asn1.X509.X509CertificateStructure)">
+  X509V3CertificateGenerator(X509CertificateStructure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509V3CertificateGenerator(X509CertificateStructure template)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>template</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509CertificateStructure.html">X509CertificateStructure</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator__ctor_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator__ctor_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.#ctor(Org.BouncyCastle.X509.X509Certificate)">
+  X509V3CertificateGenerator(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a generator for a version 3 certificate, initialised with another certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509V3CertificateGenerator(X509Certificate template)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>template</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd><p>Template certificate to base the new one on.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SignatureAlgNames_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SignatureAlgNames*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SignatureAlgNames" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SignatureAlgNames">
+  SignatureAlgNames
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows enumeration of the signature names supported by the generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Will be removed&quot;)]
+public IEnumerable&lt;string&gt; SignatureAlgNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_Org_BouncyCastle_Asn1_X509_X509Extension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,Org.BouncyCastle.Asn1.X509.X509Extension)">
+  AddExtension(DerObjectIdentifier, X509Extension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(DerObjectIdentifier oid, X509Extension x509Extension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+    <dt><code>x509Extension</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extension.html">X509Extension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  AddExtension(DerObjectIdentifier, bool, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an extension to this certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(DerObjectIdentifier oid, bool critical, Asn1Encodable extensionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd><p>Its Object Identifier.</p>
+</dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is it critical.</p>
+</dd>
+    <dt><code>extensionValue</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_Org_BouncyCastle_Asn1_IAsn1Convertible_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean,Org.BouncyCastle.Asn1.IAsn1Convertible)">
+  AddExtension(DerObjectIdentifier, bool, IAsn1Convertible)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an extension to this certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(DerObjectIdentifier oid, bool critical, IAsn1Convertible extensionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd><p>Its Object Identifier.</p>
+</dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is it critical.</p>
+</dd>
+    <dt><code>extensionValue</code> <a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_System_Byte___" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean,System.Byte[])">
+  AddExtension(DerObjectIdentifier, bool, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an extension to this certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(DerObjectIdentifier oid, bool critical, byte[] extensionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd><p>Its Object Identifier.</p>
+</dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is it critical.</p>
+</dd>
+    <dt><code>extensionValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>byte[] containing the value of this extension.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_Org_BouncyCastle_Asn1_X509_Extension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(Org.BouncyCastle.Asn1.X509.Extension)">
+  AddExtension(Extension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(Extension extension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extension</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.Extension.html">Extension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_System_String_System_Boolean_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(System.String,System.Boolean,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  AddExtension(string, bool, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an extension using a string with a dotted decimal OID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(string oid, bool critical, Asn1Encodable extensionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string containing a dotted decimal Object Identifier.</p>
+</dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is it critical.</p>
+</dd>
+    <dt><code>extensionValue</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_System_String_System_Boolean_Org_BouncyCastle_Asn1_IAsn1Convertible_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(System.String,System.Boolean,Org.BouncyCastle.Asn1.IAsn1Convertible)">
+  AddExtension(string, bool, IAsn1Convertible)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an extension using a string with a dotted decimal OID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(string oid, bool critical, IAsn1Convertible extensionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string containing a dotted decimal Object Identifier.</p>
+</dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is it critical.</p>
+</dd>
+    <dt><code>extensionValue</code> <a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtension_System_String_System_Boolean_System_Byte___" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtension(System.String,System.Boolean,System.Byte[])">
+  AddExtension(string, bool, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an extension using a string with a dotted decimal OID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtension(string oid, bool critical, byte[] extensionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string containing a dotted decimal Object Identifier.</p>
+</dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is it critical.</p>
+</dd>
+    <dt><code>extensionValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>byte[] containing the value of this extension.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtensions_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtensions*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_AddExtensions_Org_BouncyCastle_Asn1_X509_X509Extensions_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.AddExtensions(Org.BouncyCastle.Asn1.X509.X509Extensions)">
+  AddExtensions(X509Extensions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExtensions(X509Extensions extensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extensions</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_CopyAndAddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.CopyAndAddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_CopyAndAddExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.CopyAndAddExtension(Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean,Org.BouncyCastle.X509.X509Certificate)">
+  CopyAndAddExtension(DerObjectIdentifier, bool, X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyAndAddExtension(DerObjectIdentifier oid, bool critical, X509Certificate cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_CopyAndAddExtension_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.CopyAndAddExtension*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_CopyAndAddExtension_System_String_System_Boolean_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.CopyAndAddExtension(System.String,System.Boolean,Org.BouncyCastle.X509.X509Certificate)">
+  CopyAndAddExtension(string, bool, X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a given extension field for the standard extensions tag (tag 3),
+copying the extension value from another certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyAndAddExtension(string oid, bool critical, X509Certificate cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>critical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_Generate_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_Generate_Org_BouncyCastle_Crypto_ISignatureFactory_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.Generate(Org.BouncyCastle.Crypto.ISignatureFactory)">
+  Generate(ISignatureFactory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate a new <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a> using the provided <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Certificate Generate(ISignatureFactory signatureFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureFactory</code> <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">signature factory</a> with the necessary
+algorithm details.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd><p>An <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_Generate_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_Generate_Org_BouncyCastle_Crypto_ISignatureFactory_System_Boolean_Org_BouncyCastle_Crypto_ISignatureFactory_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.Generate(Org.BouncyCastle.Crypto.ISignatureFactory,System.Boolean,Org.BouncyCastle.Crypto.ISignatureFactory)">
+  Generate(ISignatureFactory, bool, ISignatureFactory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate a new <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a> using the provided <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a> and
+containing altSignatureAlgorithm and altSignatureValue extensions based on the passed
+<code class="paramref">altSignatureFactory</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Certificate Generate(ISignatureFactory signatureFactory, bool isCritical, ISignatureFactory altSignatureFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureFactory</code> <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">signature factory</a> with the necessary
+algorithm details.</p>
+</dd>
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the 'alt' extensions should be marked critical.</p>
+</dd>
+    <dt><code>altSignatureFactory</code> <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">ISignatureFactory</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Crypto.ISignatureFactory.html">signature factory</a> used to create the
+altSignatureAlgorithm and altSignatureValue extensions.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd><p>An <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_Reset_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.Reset*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_Reset" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reset the Generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetIssuerDN_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetIssuerDN*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetIssuerDN_Org_BouncyCastle_Asn1_X509_X509Name_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetIssuerDN(Org.BouncyCastle.Asn1.X509.X509Name)">
+  SetIssuerDN(X509Name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the distinguished name of the issuer.
+The issuer is the entity which is signing the certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIssuerDN(X509Name issuer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issuer</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd><p>The issuer's DN.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetIssuerUniqueID_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetIssuerUniqueID*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetIssuerUniqueID_System_Boolean___" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetIssuerUniqueID(System.Boolean[])">
+  SetIssuerUniqueID(bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the issuer unique ID - note: it is very rare that it is correct to do this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIssuerUniqueID(bool[] uniqueID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uniqueID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetNotAfter_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetNotAfter*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetNotAfter_System_DateTime_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetNotAfter(System.DateTime)">
+  SetNotAfter(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the date after which this certificate will no longer be valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNotAfter(DateTime date)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>date</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetNotBefore_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetNotBefore*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetNotBefore_System_DateTime_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetNotBefore(System.DateTime)">
+  SetNotBefore(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the date that this certificate is to be valid from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNotBefore(DateTime date)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>date</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetPublicKey_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetPublicKey_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  SetPublicKey(AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the public key that this certificate identifies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPublicKey(AsymmetricKeyParameter publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSerialNumber_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSerialNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSerialNumber_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSerialNumber(Org.BouncyCastle.Math.BigInteger)">
+  SetSerialNumber(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the certificate's serial number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSerialNumber(BigInteger serialNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd><p>The serial number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSerialNumber_Org_BouncyCastle_Math_BigInteger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Make serial numbers long, if you have no serial number policy make sure the number is at least 16 bytes of secure random data.
+You will be surprised how ugly a serial number collision can Get.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSubjectDN_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSubjectDN*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSubjectDN_Org_BouncyCastle_Asn1_X509_X509Name_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSubjectDN(Org.BouncyCastle.Asn1.X509.X509Name)">
+  SetSubjectDN(X509Name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the DN of the entity that this certificate is about.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSubjectDN(X509Name subject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subject</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSubjectPublicKeyInfo_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSubjectPublicKeyInfo*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSubjectPublicKeyInfo_Org_BouncyCastle_Asn1_X509_SubjectPublicKeyInfo_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSubjectPublicKeyInfo(Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo)">
+  SetSubjectPublicKeyInfo(SubjectPublicKeyInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the SubjectPublicKeyInfo for the public key that this certificate identifies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSubjectPublicKeyInfo(SubjectPublicKeyInfo subjectPublicKeyInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subjectPublicKeyInfo</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo.html">SubjectPublicKeyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSubjectUniqueID_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSubjectUniqueID*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetSubjectUniqueID_System_Boolean___" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetSubjectUniqueID(System.Boolean[])">
+  SetSubjectUniqueID(bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the subject unique ID - note: it is very rare that it is correct to do this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSubjectUniqueID(bool[] uniqueID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uniqueID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetValidity_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetValidity*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509V3CertificateGenerator_SetValidity_Org_BouncyCastle_Asn1_X509_Validity_" data-uid="Org.BouncyCastle.X509.X509V3CertificateGenerator.SetValidity(Org.BouncyCastle.Asn1.X509.Validity)">
+  SetValidity(Validity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValidity(Validity validity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>validity</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.Validity.html">Validity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

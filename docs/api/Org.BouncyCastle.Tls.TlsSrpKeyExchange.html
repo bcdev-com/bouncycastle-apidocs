@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TlsSrpKeyExchange | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TlsSrpKeyExchange | BouncyCastle Docs ">
+      
+      <meta name="description" content="(D)TLS SRP key exchange (RFC 5054).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange" class="text-break">
+Class TlsSrpKeyExchange  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>(D)TLS SRP key exchange (RFC 5054).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TlsSrpKeyExchange : AbstractTlsKeyExchange, TlsKeyExchange</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html">AbstractTlsKeyExchange</a></div>
+      <div><span class="xref">TlsSrpKeyExchange</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_m_keyExchange">AbstractTlsKeyExchange.m_keyExchange</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_m_context">AbstractTlsKeyExchange.m_context</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_Init_Org_BouncyCastle_Tls_TlsContext_">AbstractTlsKeyExchange.Init(TlsContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_SkipServerKeyExchange">AbstractTlsKeyExchange.SkipServerKeyExchange()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_GetClientCertificateTypes">AbstractTlsKeyExchange.GetClientCertificateTypes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_SkipClientCredentials">AbstractTlsKeyExchange.SkipClientCredentials()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessClientCertificate_Org_BouncyCastle_Tls_Certificate_">AbstractTlsKeyExchange.ProcessClientCertificate(Certificate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#Org_BouncyCastle_Tls_AbstractTlsKeyExchange_RequiresCertificateVerify">AbstractTlsKeyExchange.RequiresCertificateVerify</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange__ctor_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange__ctor_System_Int32_Org_BouncyCastle_Tls_TlsSrpIdentity_Org_BouncyCastle_Tls_TlsSrpConfigVerifier_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.#ctor(System.Int32,Org.BouncyCastle.Tls.TlsSrpIdentity,Org.BouncyCastle.Tls.TlsSrpConfigVerifier)">
+  TlsSrpKeyExchange(int, TlsSrpIdentity, TlsSrpConfigVerifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSrpKeyExchange(int keyExchange, TlsSrpIdentity srpIdentity, TlsSrpConfigVerifier srpConfigVerifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>srpIdentity</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpIdentity.html">TlsSrpIdentity</a></dt>
+    <dd></dd>
+    <dt><code>srpConfigVerifier</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpConfigVerifier.html">TlsSrpConfigVerifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange__ctor_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange__ctor_System_Int32_Org_BouncyCastle_Tls_TlsSrpLoginParameters_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.#ctor(System.Int32,Org.BouncyCastle.Tls.TlsSrpLoginParameters)">
+  TlsSrpKeyExchange(int, TlsSrpLoginParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSrpKeyExchange(int keyExchange, TlsSrpLoginParameters srpLoginParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyExchange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>srpLoginParameters</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpLoginParameters.html">TlsSrpLoginParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_serverCertificate" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_serverCertificate">
+  m_serverCertificate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsCertificate m_serverCertificate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_serverCredentials" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_serverCredentials">
+  m_serverCredentials
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsCredentialedSigner m_serverCredentials</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedSigner.html">TlsCredentialedSigner</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpClient" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpClient">
+  m_srpClient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsSrp6Client m_srpClient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrp6Client.html">TlsSrp6Client</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpConfigVerifier" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpConfigVerifier">
+  m_srpConfigVerifier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsSrpConfigVerifier m_srpConfigVerifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpConfigVerifier.html">TlsSrpConfigVerifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpIdentity" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpIdentity">
+  m_srpIdentity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsSrpIdentity m_srpIdentity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpIdentity.html">TlsSrpIdentity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpLoginParameters" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpLoginParameters">
+  m_srpLoginParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsSrpLoginParameters m_srpLoginParameters</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpLoginParameters.html">TlsSrpLoginParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpPeerCredentials" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpPeerCredentials">
+  m_srpPeerCredentials
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger m_srpPeerCredentials</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpSalt" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpSalt">
+  m_srpSalt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] m_srpSalt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_m_srpServer" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.m_srpServer">
+  m_srpServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsSrp6Server m_srpServer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSrp6Server.html">TlsSrp6Server</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_RequiresServerKeyExchange_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.RequiresServerKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_RequiresServerKeyExchange" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.RequiresServerKeyExchange">
+  RequiresServerKeyExchange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool RequiresServerKeyExchange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_GenerateClientKeyExchange_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.GenerateClientKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_GenerateClientKeyExchange_System_IO_Stream_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.GenerateClientKeyExchange(System.IO.Stream)">
+  GenerateClientKeyExchange(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GenerateClientKeyExchange(Stream output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_GeneratePreMasterSecret_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.GeneratePreMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_GeneratePreMasterSecret" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.GeneratePreMasterSecret">
+  GeneratePreMasterSecret()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSecret GeneratePreMasterSecret()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_GenerateServerKeyExchange_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.GenerateServerKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_GenerateServerKeyExchange" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.GenerateServerKeyExchange">
+  GenerateServerKeyExchange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] GenerateServerKeyExchange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessClientCredentials_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessClientCredentials*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessClientCredentials_Org_BouncyCastle_Tls_TlsCredentials_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Tls.TlsCredentials)">
+  ProcessClientCredentials(TlsCredentials)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessClientCredentials(TlsCredentials clientCredentials)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientCredentials</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessClientKeyExchange_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessClientKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessClientKeyExchange_System_IO_Stream_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessClientKeyExchange(System.IO.Stream)">
+  ProcessClientKeyExchange(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessClientKeyExchange(Stream input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessServerCertificate_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessServerCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessServerCertificate_Org_BouncyCastle_Tls_Certificate_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Tls.Certificate)">
+  ProcessServerCertificate(Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerCertificate(Certificate serverCertificate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverCertificate</code> <a class="xref" href="Org.BouncyCastle.Tls.Certificate.html">Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessServerCredentials_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessServerCredentials*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessServerCredentials_Org_BouncyCastle_Tls_TlsCredentials_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Tls.TlsCredentials)">
+  ProcessServerCredentials(TlsCredentials)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerCredentials(TlsCredentials serverCredentials)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverCredentials</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessServerKeyExchange_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessServerKeyExchange*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ProcessServerKeyExchange_System_IO_Stream_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ProcessServerKeyExchange(System.IO.Stream)">
+  ProcessServerKeyExchange(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerKeyExchange(Stream input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_SkipServerCredentials_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.SkipServerCredentials*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_SkipServerCredentials" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.SkipServerCredentials">
+  SkipServerCredentials()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SkipServerCredentials()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ValidatePublicValue_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ValidatePublicValue*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsSrpKeyExchange_ValidatePublicValue_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Tls.TlsSrpKeyExchange.ValidatePublicValue(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)">
+  ValidatePublicValue(BigInteger, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static BigInteger ValidatePublicValue(BigInteger N, BigInteger val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>N</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>val</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

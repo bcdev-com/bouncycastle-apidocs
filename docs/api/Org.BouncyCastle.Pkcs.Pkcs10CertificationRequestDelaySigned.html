@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Pkcs10CertificationRequestDelaySigned | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Pkcs10CertificationRequestDelaySigned | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned">
+
+
+
+  <h1 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned" class="text-break">
+Class Pkcs10CertificationRequestDelaySigned  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Pkcs.html">Pkcs</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Pkcs10CertificationRequestDelaySigned : Pkcs10CertificationRequest, IAsn1Convertible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html">CertificationRequest</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html">Pkcs10CertificationRequest</a></div>
+      <div><span class="xref">Pkcs10CertificationRequestDelaySigned</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequest_GetPublicKey">Pkcs10CertificationRequest.GetPublicKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequest_Verify">Pkcs10CertificationRequest.Verify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequest_Verify_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_">Pkcs10CertificationRequest.Verify(AsymmetricKeyParameter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequest_Verify_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_">Pkcs10CertificationRequest.Verify(IVerifierFactoryProvider)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequest_Verify_Org_BouncyCastle_Crypto_IVerifierFactory_">Pkcs10CertificationRequest.Verify(IVerifierFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequest_GetRequestedExtensions">Pkcs10CertificationRequest.GetRequestedExtensions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_GetInstance_System_Object_">CertificationRequest.GetInstance(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_">CertificationRequest.GetInstance(Asn1TaggedObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_GetTagged_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_">CertificationRequest.GetTagged(Asn1TaggedObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_reqInfo">CertificationRequest.reqInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_sigAlgId">CertificationRequest.sigAlgId</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_sigBits">CertificationRequest.sigBits</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_GetCertificationRequestInfo">CertificationRequest.GetCertificationRequestInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_SignatureAlgorithm">CertificationRequest.SignatureAlgorithm</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_Signature">CertificationRequest.Signature</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_GetSignatureOctets">CertificationRequest.GetSignatureOctets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html#Org_BouncyCastle_Asn1_Pkcs_CertificationRequest_ToAsn1Object">CertificationRequest.ToAsn1Object()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Ber">Asn1Encodable.Ber</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Der">Asn1Encodable.Der</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_DL">Asn1Encodable.DL</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_System_IO_Stream_">Asn1Encodable.EncodeTo(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_System_IO_Stream_System_String_">Asn1Encodable.EncodeTo(Stream, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded">Asn1Encodable.GetEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_System_String_">Asn1Encodable.GetEncoded(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded">Asn1Encodable.GetDerEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode">Asn1Encodable.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Equals_System_Object_">Asn1Encodable.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A class for creating and verifying Pkcs10 Certification requests (this is an extension on <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequest.html">Pkcs10CertificationRequest</a>).
+The requests are made using delay signing. This is useful for situations where
+the private key is in another environment and not directly accessible (e.g. HSM)
+So the first step creates the request, then the signing is done outside this
+object and the signature is then used to complete the request.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor">
+  Pkcs10CertificationRequestDelaySigned()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pkcs10CertificationRequestDelaySigned()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_Org_BouncyCastle_Asn1_Asn1Sequence_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(Org.BouncyCastle.Asn1.Asn1Sequence)">
+  Pkcs10CertificationRequestDelaySigned(Asn1Sequence)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(Asn1Sequence seq)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seq</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html">Asn1Sequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_Byte___" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(System.Byte[])">
+  Pkcs10CertificationRequestDelaySigned(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(byte[] encoded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_IO_Stream_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(System.IO.Stream)">
+  Pkcs10CertificationRequestDelaySigned(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(Stream input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_String_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Asn1_X509_SubjectPublicKeyInfo_Org_BouncyCastle_Asn1_Asn1Set_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(System.String,Org.BouncyCastle.Asn1.X509.X509Name,Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo,Org.BouncyCastle.Asn1.Asn1Set)">
+  Pkcs10CertificationRequestDelaySigned(string, X509Name, SubjectPublicKeyInfo, Asn1Set)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantiate a Pkcs10CertificationRequest object with the necessary credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(string signatureAlgorithm, X509Name subject, SubjectPublicKeyInfo pubInfo, Asn1Set attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of Sig Alg.</p>
+</dd>
+    <dt><code>subject</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd><p>X509Name of subject eg OU=&quot;My unit.&quot; O=&quot;My Organisatioin&quot; C=&quot;au&quot;</p>
+</dd>
+    <dt><code>pubInfo</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo.html">SubjectPublicKeyInfo</a></dt>
+    <dd><p>SubjectPublicKeyInfo to be included in cert request.</p>
+</dd>
+    <dt><code>attributes</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Set.html">Asn1Set</a></dt>
+    <dd><p>Asn1Set of Attributes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_String_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Asn1_X509_SubjectPublicKeyInfo_Org_BouncyCastle_Asn1_Asn1Set__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>After the object is constructed use the <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_GetDataToSign">GetDataToSign()</a> and finally the
+SignRequest methods to finalize the request.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_String_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Asn1_X509_SubjectPublicKeyInfo_Org_BouncyCastle_Asn1_Asn1Set_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(System.String,Org.BouncyCastle.Asn1.X509.X509Name,Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo,Org.BouncyCastle.Asn1.Asn1Set,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  Pkcs10CertificationRequestDelaySigned(string, X509Name, SubjectPublicKeyInfo, Asn1Set, AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(string signatureAlgorithm, X509Name subject, SubjectPublicKeyInfo pubInfo, Asn1Set attributes, AsymmetricKeyParameter signingKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>subject</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+    <dt><code>pubInfo</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo.html">SubjectPublicKeyInfo</a></dt>
+    <dd></dd>
+    <dt><code>attributes</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Set.html">Asn1Set</a></dt>
+    <dd></dd>
+    <dt><code>signingKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_String_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_Asn1_Asn1Set_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(System.String,Org.BouncyCastle.Asn1.X509.X509Name,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.Asn1.Asn1Set)">
+  Pkcs10CertificationRequestDelaySigned(string, X509Name, AsymmetricKeyParameter, Asn1Set)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantiate a Pkcs10CertificationRequest object with the necessary credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(string signatureAlgorithm, X509Name subject, AsymmetricKeyParameter publicKey, Asn1Set attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of Sig Alg.</p>
+</dd>
+    <dt><code>subject</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd><p>X509Name of subject eg OU=&quot;My unit.&quot; O=&quot;My Organisatioin&quot; C=&quot;au&quot;</p>
+</dd>
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd><p>Public key to be included in cert request.</p>
+</dd>
+    <dt><code>attributes</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Set.html">Asn1Set</a></dt>
+    <dd><p>Asn1Set of Attributes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_String_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_Asn1_Asn1Set__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>After the object is constructed use the <a class="xref" href="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.html#Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_GetDataToSign">GetDataToSign()</a> and finally the
+SignRequest methods to finalize the request.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned__ctor_System_String_Org_BouncyCastle_Asn1_X509_X509Name_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_Asn1_Asn1Set_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.#ctor(System.String,Org.BouncyCastle.Asn1.X509.X509Name,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.Asn1.Asn1Set,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  Pkcs10CertificationRequestDelaySigned(string, X509Name, AsymmetricKeyParameter, Asn1Set, AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pkcs10CertificationRequestDelaySigned(string signatureAlgorithm, X509Name subject, AsymmetricKeyParameter publicKey, Asn1Set attributes, AsymmetricKeyParameter signingKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signatureAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>subject</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>attributes</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Set.html">Asn1Set</a></dt>
+    <dd></dd>
+    <dt><code>signingKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_GetDataToSign_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.GetDataToSign*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_GetDataToSign" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.GetDataToSign">
+  GetDataToSign()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetDataToSign()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_SignRequest_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.SignRequest*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_SignRequest_Org_BouncyCastle_Asn1_DerBitString_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.SignRequest(Org.BouncyCastle.Asn1.DerBitString)">
+  SignRequest(DerBitString)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SignRequest(DerBitString signedData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signedData</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerBitString.html">DerBitString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_SignRequest_" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.SignRequest*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkcs_Pkcs10CertificationRequestDelaySigned_SignRequest_System_Byte___" data-uid="Org.BouncyCastle.Pkcs.Pkcs10CertificationRequestDelaySigned.SignRequest(System.Byte[])">
+  SignRequest(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SignRequest(byte[] signedData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signedData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

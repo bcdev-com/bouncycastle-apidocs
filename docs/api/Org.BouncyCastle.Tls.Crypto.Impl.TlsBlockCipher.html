@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TlsBlockCipher | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TlsBlockCipher | BouncyCastle Docs ">
+      
+      <meta name="description" content="A generic TLS 1.0-1.2 block cipher. This can be used for AES or 3DES for example.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher" class="text-break">
+Class TlsBlockCipher  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a>.<a class="xref" href="Org.BouncyCastle.Tls.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.html">Impl</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A generic TLS 1.0-1.2 block cipher. This can be used for AES or 3DES for example.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TlsBlockCipher : TlsCipher, TlsCipherExt</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TlsBlockCipher</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCipherExt.html">TlsCipherExt</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher__ctor_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher__ctor_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipherImpl_Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipherImpl_Org_BouncyCastle_Tls_Crypto_TlsHmac_Org_BouncyCastle_Tls_Crypto_TlsHmac_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.#ctor(Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipherImpl,Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipherImpl,Org.BouncyCastle.Tls.Crypto.TlsHmac,Org.BouncyCastle.Tls.Crypto.TlsHmac,System.Int32)">
+  TlsBlockCipher(TlsCryptoParameters, TlsBlockCipherImpl, TlsBlockCipherImpl, TlsHmac, TlsHmac, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsBlockCipher(TlsCryptoParameters cryptoParams, TlsBlockCipherImpl encryptCipher, TlsBlockCipherImpl decryptCipher, TlsHmac clientMac, TlsHmac serverMac, int cipherKeySize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cryptoParams</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+    <dt><code>encryptCipher</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipherImpl.html">TlsBlockCipherImpl</a></dt>
+    <dd></dd>
+    <dt><code>decryptCipher</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipherImpl.html">TlsBlockCipherImpl</a></dt>
+    <dd></dd>
+    <dt><code>clientMac</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></dt>
+    <dd></dd>
+    <dt><code>serverMac</code> <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></dt>
+    <dd></dd>
+    <dt><code>cipherKeySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_acceptExtraPadding" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_acceptExtraPadding">
+  m_acceptExtraPadding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_acceptExtraPadding</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_cryptoParams" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_cryptoParams">
+  m_cryptoParams
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsCryptoParameters m_cryptoParams</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_decryptCipher" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_decryptCipher">
+  m_decryptCipher
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsBlockCipherImpl m_decryptCipher</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipherImpl.html">TlsBlockCipherImpl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_decryptConnectionID" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_decryptConnectionID">
+  m_decryptConnectionID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly byte[] m_decryptConnectionID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_decryptUseInnerPlaintext" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_decryptUseInnerPlaintext">
+  m_decryptUseInnerPlaintext
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_decryptUseInnerPlaintext</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_encryptCipher" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_encryptCipher">
+  m_encryptCipher
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsBlockCipherImpl m_encryptCipher</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipherImpl.html">TlsBlockCipherImpl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_encryptConnectionID" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_encryptConnectionID">
+  m_encryptConnectionID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly byte[] m_encryptConnectionID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_encryptThenMac" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_encryptThenMac">
+  m_encryptThenMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_encryptThenMac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_encryptUseInnerPlaintext" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_encryptUseInnerPlaintext">
+  m_encryptUseInnerPlaintext
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_encryptUseInnerPlaintext</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_randomData" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_randomData">
+  m_randomData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly byte[] m_randomData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_readMac" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_readMac">
+  m_readMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsSuiteHmac m_readMac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.html">TlsSuiteHmac</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_useExplicitIV" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_useExplicitIV">
+  m_useExplicitIV
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_useExplicitIV</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_useExtraPadding" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_useExtraPadding">
+  m_useExtraPadding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_useExtraPadding</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_m_writeMac" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.m_writeMac">
+  m_writeMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsSuiteHmac m_writeMac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.html">TlsSuiteHmac</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_UsesOpaqueRecordType_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.UsesOpaqueRecordType*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_UsesOpaqueRecordType" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.UsesOpaqueRecordType">
+  UsesOpaqueRecordType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool UsesOpaqueRecordType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_CheckPaddingConstantTime_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.CheckPaddingConstantTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_CheckPaddingConstantTime_System_Byte___System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.CheckPaddingConstantTime(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)">
+  CheckPaddingConstantTime(byte[], int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CheckPaddingConstantTime(byte[] buf, int off, int len, int blockSize, int macSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>off</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>blockSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_ChooseExtraPadBlocks_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.ChooseExtraPadBlocks*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_ChooseExtraPadBlocks_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.ChooseExtraPadBlocks(System.Int32)">
+  ChooseExtraPadBlocks(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int ChooseExtraPadBlocks(int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_DecodeCiphertext_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.DecodeCiphertext*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_DecodeCiphertext_System_Int64_System_Int16_Org_BouncyCastle_Tls_ProtocolVersion_System_Byte___System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.DecodeCiphertext(System.Int64,System.Int16,Org.BouncyCastle.Tls.ProtocolVersion,System.Byte[],System.Int32,System.Int32)">
+  DecodeCiphertext(long, short, ProtocolVersion, byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decode the passed in ciphertext using the current bulk cipher.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsDecodeResult DecodeCiphertext(long seqNo, short recordType, ProtocolVersion recordVersion, byte[] ciphertext, int offset, int len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seqNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>sequence number of the message represented by ciphertext.</p>
+</dd>
+    <dt><code>recordType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>content type used in the record for this message.</p>
+</dd>
+    <dt><code>recordVersion</code> <a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd><p><a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a> used for the record.</p>
+</dd>
+    <dt><code>ciphertext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>array holding input ciphertext to the cipher.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>offset into input array the ciphertext starts at.</p>
+</dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>length of the ciphertext in the array.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDecodeResult.html">TlsDecodeResult</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDecodeResult.html">TlsDecodeResult</a> containing the result of decoding.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_EncodePlaintext_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.EncodePlaintext*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_EncodePlaintext_System_Int64_System_Int16_Org_BouncyCastle_Tls_ProtocolVersion_System_Int32_System_Byte___System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.EncodePlaintext(System.Int64,System.Int16,Org.BouncyCastle.Tls.ProtocolVersion,System.Int32,System.Byte[],System.Int32,System.Int32)">
+  EncodePlaintext(long, short, ProtocolVersion, int, byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encode the passed in plaintext using the current bulk cipher.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsEncodeResult EncodePlaintext(long seqNo, short contentType, ProtocolVersion recordVersion, int headerAllocation, byte[] plaintext, int offset, int len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seqNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>sequence number of the message represented by plaintext.</p>
+</dd>
+    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>content type of the message represented by plaintext.</p>
+</dd>
+    <dt><code>recordVersion</code> <a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd><p><a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a> used for the record.</p>
+</dd>
+    <dt><code>headerAllocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>extra bytes to allocate at start of returned byte array.</p>
+</dd>
+    <dt><code>plaintext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>array holding input plaintext to the cipher.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>offset into input array the plaintext starts at.</p>
+</dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>length of the plaintext in the array.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsEncodeResult.html">TlsEncodeResult</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsEncodeResult.html">TlsEncodeResult</a> containing the result of encoding (after 'headerAllocation' unused
+bytes).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_EncodePlaintext_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.EncodePlaintext*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_EncodePlaintext_System_Int64_System_Int16_Org_BouncyCastle_Tls_ProtocolVersion_System_Int32_System_ReadOnlySpan_System_Byte__" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.EncodePlaintext(System.Int64,System.Int16,Org.BouncyCastle.Tls.ProtocolVersion,System.Int32,System.ReadOnlySpan{System.Byte})">
+  EncodePlaintext(long, short, ProtocolVersion, int, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsEncodeResult EncodePlaintext(long seqNo, short contentType, ProtocolVersion recordVersion, int headerAllocation, ReadOnlySpan&lt;byte&gt; plaintext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seqNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+    <dt><code>recordVersion</code> <a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd></dd>
+    <dt><code>headerAllocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>plaintext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsEncodeResult.html">TlsEncodeResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetCiphertextDecodeLimit_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetCiphertextDecodeLimit*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetCiphertextDecodeLimit_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetCiphertextDecodeLimit(System.Int32)">
+  GetCiphertextDecodeLimit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the maximum input size for a ciphertext given a maximum output size for the plaintext of
+plaintextLimit bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCiphertextDecodeLimit(int plaintextLimit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plaintextLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the maximum output size for the plaintext.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the maximum input size of the ciphertext for plaintextlimit bytes of output.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetCiphertextEncodeLimit_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetCiphertextEncodeLimit*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetCiphertextEncodeLimit_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetCiphertextEncodeLimit(System.Int32,System.Int32)">
+  GetCiphertextEncodeLimit(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the maximum output size for a ciphertext given an actual input plaintext size of
+plaintextLength bytes and a maximum input plaintext size of plaintextLimit bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCiphertextEncodeLimit(int plaintextLength, int plaintextLimit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plaintextLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the actual input size for the plaintext.</p>
+</dd>
+    <dt><code>plaintextLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the maximum input size for the plaintext.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the maximum output size of the ciphertext for plaintextlimit bytes of input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetCiphertextLength_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetCiphertextLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetCiphertextLength_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetCiphertextLength(System.Int32,System.Int32,System.Int32,System.Int32)">
+  GetCiphertextLength(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetCiphertextLength(int blockSize, int macSize, int maxPadding, int plaintextLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxPadding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>plaintextLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextDecodeLimit_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextDecodeLimit*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextDecodeLimit_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextDecodeLimit(System.Int32)">
+  GetPlaintextDecodeLimit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetPlaintextDecodeLimit(int ciphertextLimit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ciphertextLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextEncodeLimit_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextEncodeLimit*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextEncodeLimit_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextEncodeLimit(System.Int32)">
+  GetPlaintextEncodeLimit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetPlaintextEncodeLimit(int ciphertextLimit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ciphertextLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextLength_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextLength_System_Int32_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextLength(System.Int32,System.Int32,System.Int32)">
+  GetPlaintextLength(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetPlaintextLength(int blockSize, int macSize, int ciphertextLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>macSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ciphertextLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextLimit_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextLimit*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_GetPlaintextLimit_System_Int32_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.GetPlaintextLimit(System.Int32)">
+  GetPlaintextLimit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the maximum size for the plaintext given ciphertextlimit bytes of ciphertext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetPlaintextLimit(int ciphertextLimit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ciphertextLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the maximum number of bytes of ciphertext.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the maximum size of the plaintext for ciphertextlimit bytes of input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_RekeyDecoder_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.RekeyDecoder*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_RekeyDecoder" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.RekeyDecoder">
+  RekeyDecoder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RekeyDecoder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_RekeyEncoder_" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.RekeyEncoder*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_Crypto_Impl_TlsBlockCipher_RekeyEncoder" data-uid="Org.BouncyCastle.Tls.Crypto.Impl.TlsBlockCipher.RekeyEncoder">
+  RekeyEncoder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RekeyEncoder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

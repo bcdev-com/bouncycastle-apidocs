@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SecurityParameters | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SecurityParameters | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.SecurityParameters">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_SecurityParameters" data-uid="Org.BouncyCastle.Tls.SecurityParameters" class="text-break">
+Class SecurityParameters  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SecurityParameters</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SecurityParameters</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ApplicationProtocol_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ApplicationProtocol*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ApplicationProtocol" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ApplicationProtocol">
+  ApplicationProtocol
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProtocolName ApplicationProtocol { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.ProtocolName.html">ProtocolName</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_BaseKeyClient_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.BaseKeyClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_BaseKeyClient" data-uid="Org.BouncyCastle.Tls.SecurityParameters.BaseKeyClient">
+  BaseKeyClient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret BaseKeyClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_BaseKeyServer_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.BaseKeyServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_BaseKeyServer" data-uid="Org.BouncyCastle.Tls.SecurityParameters.BaseKeyServer">
+  BaseKeyServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret BaseKeyServer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_CipherSuite_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.CipherSuite*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_CipherSuite" data-uid="Org.BouncyCastle.Tls.SecurityParameters.CipherSuite">
+  CipherSuite
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CipherSuite { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientCertTypes_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientCertTypes*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientCertTypes" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientCertTypes">
+  ClientCertTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short[] ClientCertTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientCertificateType_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientCertificateType*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientCertificateType" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientCertificateType">
+  ClientCertificateType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ClientCertificateType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientRandom_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientRandom*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientRandom" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientRandom">
+  ClientRandom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ClientRandom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientServerNames_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientServerNames*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientServerNames" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientServerNames">
+  ClientServerNames
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;ServerName&gt; ClientServerNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.ServerName.html">ServerName</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientSigAlgs_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientSigAlgs*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientSigAlgs" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientSigAlgs">
+  ClientSigAlgs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;SignatureAndHashAlgorithm&gt; ClientSigAlgs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientSigAlgsCert_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientSigAlgsCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientSigAlgsCert" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientSigAlgsCert">
+  ClientSigAlgsCert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;SignatureAndHashAlgorithm&gt; ClientSigAlgsCert { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ClientSupportedGroups_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientSupportedGroups*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ClientSupportedGroups" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ClientSupportedGroups">
+  ClientSupportedGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] ClientSupportedGroups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ConnectionIDLocal_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ConnectionIDLocal*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ConnectionIDLocal" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ConnectionIDLocal">
+  ConnectionIDLocal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ConnectionIDLocal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ConnectionIDPeer_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ConnectionIDPeer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ConnectionIDPeer" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ConnectionIDPeer">
+  ConnectionIDPeer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ConnectionIDPeer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_EarlyExporterMasterSecret_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.EarlyExporterMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_EarlyExporterMasterSecret" data-uid="Org.BouncyCastle.Tls.SecurityParameters.EarlyExporterMasterSecret">
+  EarlyExporterMasterSecret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret EarlyExporterMasterSecret { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_EarlySecret_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.EarlySecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_EarlySecret" data-uid="Org.BouncyCastle.Tls.SecurityParameters.EarlySecret">
+  EarlySecret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret EarlySecret { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_Entity_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.Entity*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_Entity" data-uid="Org.BouncyCastle.Tls.SecurityParameters.Entity">
+  Entity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Entity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ExporterMasterSecret_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ExporterMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ExporterMasterSecret" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ExporterMasterSecret">
+  ExporterMasterSecret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret ExporterMasterSecret { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_HandshakeSecret_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.HandshakeSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_HandshakeSecret" data-uid="Org.BouncyCastle.Tls.SecurityParameters.HandshakeSecret">
+  HandshakeSecret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret HandshakeSecret { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsApplicationProtocolSet_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsApplicationProtocolSet*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsApplicationProtocolSet" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsApplicationProtocolSet">
+  IsApplicationProtocolSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsApplicationProtocolSet { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsEncryptThenMac_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsEncryptThenMac*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsEncryptThenMac" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsEncryptThenMac">
+  IsEncryptThenMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEncryptThenMac { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsExtendedMasterSecret_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsExtendedMasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsExtendedMasterSecret" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsExtendedMasterSecret">
+  IsExtendedMasterSecret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExtendedMasterSecret { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsExtendedPadding_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsExtendedPadding*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsExtendedPadding" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsExtendedPadding">
+  IsExtendedPadding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExtendedPadding { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsResumedSession_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsResumedSession*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsResumedSession" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsResumedSession">
+  IsResumedSession
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsResumedSession { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsSecureRenegotiation_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsSecureRenegotiation*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsSecureRenegotiation" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsSecureRenegotiation">
+  IsSecureRenegotiation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSecureRenegotiation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_IsTruncatedHmac_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsTruncatedHmac*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_IsTruncatedHmac" data-uid="Org.BouncyCastle.Tls.SecurityParameters.IsTruncatedHmac">
+  IsTruncatedHmac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTruncatedHmac { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_KeyExchangeAlgorithm_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.KeyExchangeAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_KeyExchangeAlgorithm" data-uid="Org.BouncyCastle.Tls.SecurityParameters.KeyExchangeAlgorithm">
+  KeyExchangeAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int KeyExchangeAlgorithm { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_LocalCertificate_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.LocalCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_LocalCertificate" data-uid="Org.BouncyCastle.Tls.SecurityParameters.LocalCertificate">
+  LocalCertificate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate LocalCertificate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Certificate.html">Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_LocalVerifyData_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.LocalVerifyData*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_LocalVerifyData" data-uid="Org.BouncyCastle.Tls.SecurityParameters.LocalVerifyData">
+  LocalVerifyData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] LocalVerifyData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_MasterSecret_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.MasterSecret*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_MasterSecret" data-uid="Org.BouncyCastle.Tls.SecurityParameters.MasterSecret">
+  MasterSecret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret MasterSecret { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_MaxFragmentLength_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.MaxFragmentLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_MaxFragmentLength" data-uid="Org.BouncyCastle.Tls.SecurityParameters.MaxFragmentLength">
+  MaxFragmentLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short MaxFragmentLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_NegotiatedVersion_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.NegotiatedVersion*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_NegotiatedVersion" data-uid="Org.BouncyCastle.Tls.SecurityParameters.NegotiatedVersion">
+  NegotiatedVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProtocolVersion NegotiatedVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_PeerCertificate_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PeerCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_PeerCertificate" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PeerCertificate">
+  PeerCertificate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate PeerCertificate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Certificate.html">Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_PeerVerifyData_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PeerVerifyData*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_PeerVerifyData" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PeerVerifyData">
+  PeerVerifyData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] PeerVerifyData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_PrfAlgorithm_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PrfAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_PrfAlgorithm" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PrfAlgorithm">
+  PrfAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrfAlgorithm { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_PrfCryptoHashAlgorithm_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PrfCryptoHashAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_PrfCryptoHashAlgorithm" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PrfCryptoHashAlgorithm">
+  PrfCryptoHashAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrfCryptoHashAlgorithm { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_PrfHashLength_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PrfHashLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_PrfHashLength" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PrfHashLength">
+  PrfHashLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrfHashLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_PskIdentity_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PskIdentity*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_PskIdentity" data-uid="Org.BouncyCastle.Tls.SecurityParameters.PskIdentity">
+  PskIdentity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] PskIdentity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ServerCertificateType_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerCertificateType*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ServerCertificateType" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerCertificateType">
+  ServerCertificateType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ServerCertificateType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ServerRandom_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerRandom*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ServerRandom" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerRandom">
+  ServerRandom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ServerRandom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ServerSigAlgs_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerSigAlgs*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ServerSigAlgs" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerSigAlgs">
+  ServerSigAlgs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;SignatureAndHashAlgorithm&gt; ServerSigAlgs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ServerSigAlgsCert_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerSigAlgsCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ServerSigAlgsCert" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerSigAlgsCert">
+  ServerSigAlgsCert
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;SignatureAndHashAlgorithm&gt; ServerSigAlgsCert { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_ServerSupportedGroups_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerSupportedGroups*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_ServerSupportedGroups" data-uid="Org.BouncyCastle.Tls.SecurityParameters.ServerSupportedGroups">
+  ServerSupportedGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] ServerSupportedGroups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_SessionHash_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.SessionHash*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_SessionHash" data-uid="Org.BouncyCastle.Tls.SecurityParameters.SessionHash">
+  SessionHash
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SessionHash { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_SessionID_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.SessionID*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_SessionID" data-uid="Org.BouncyCastle.Tls.SecurityParameters.SessionID">
+  SessionID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SessionID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_SrpIdentity_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.SrpIdentity*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_SrpIdentity" data-uid="Org.BouncyCastle.Tls.SecurityParameters.SrpIdentity">
+  SrpIdentity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SrpIdentity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_StatusRequestVersion_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.StatusRequestVersion*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_StatusRequestVersion" data-uid="Org.BouncyCastle.Tls.SecurityParameters.StatusRequestVersion">
+  StatusRequestVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StatusRequestVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_TlsServerEndPoint_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TlsServerEndPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_TlsServerEndPoint" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TlsServerEndPoint">
+  TlsServerEndPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] TlsServerEndPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_TlsUnique_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TlsUnique*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_TlsUnique" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TlsUnique">
+  TlsUnique
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] TlsUnique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_TrafficSecretClient_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TrafficSecretClient*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_TrafficSecretClient" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TrafficSecretClient">
+  TrafficSecretClient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret TrafficSecretClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_TrafficSecretServer_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TrafficSecretServer*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_TrafficSecretServer" data-uid="Org.BouncyCastle.Tls.SecurityParameters.TrafficSecretServer">
+  TrafficSecretServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSecret TrafficSecretServer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_SecurityParameters_VerifyDataLength_" data-uid="Org.BouncyCastle.Tls.SecurityParameters.VerifyDataLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_SecurityParameters_VerifyDataLength" data-uid="Org.BouncyCastle.Tls.SecurityParameters.VerifyDataLength">
+  VerifyDataLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VerifyDataLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

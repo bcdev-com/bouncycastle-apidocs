@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DLSequence | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DLSequence | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.DLSequence">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_DLSequence" data-uid="Org.BouncyCastle.Asn1.DLSequence" class="text-break">
+Class DLSequence  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DLSequence : DerSequence, IAsn1Convertible, IReadOnlyCollection&lt;Asn1Encodable&gt;, IEnumerable&lt;Asn1Encodable&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html">Asn1Sequence</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.DerSequence.html">DerSequence</a></div>
+      <div><span class="xref">DLSequence</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.BerSequence.html">BerSequence</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_GetInstance_System_Object_">Asn1Sequence.GetInstance(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_">Asn1Sequence.GetInstance(Asn1TaggedObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_GetOptional_Org_BouncyCastle_Asn1_Asn1Encodable_">Asn1Sequence.GetOptional(Asn1Encodable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_GetTagged_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_">Asn1Sequence.GetTagged(Asn1TaggedObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_GetEnumerator">Asn1Sequence.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_Parser">Asn1Sequence.Parser</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_Item_System_Int32_">Asn1Sequence.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_Count">Asn1Sequence.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_MapElements__1_System_Func_Org_BouncyCastle_Asn1_Asn1Encodable___0__">Asn1Sequence.MapElements&lt;T&gt;(Func&lt;Asn1Encodable, T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_ToArray">Asn1Sequence.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_Asn1GetHashCode">Asn1Sequence.Asn1GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_Asn1Equals_Org_BouncyCastle_Asn1_Asn1Object_">Asn1Sequence.Asn1Equals(Asn1Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html#Org_BouncyCastle_Asn1_Asn1Sequence_ToString">Asn1Sequence.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_EncodeTo_System_IO_Stream_">Asn1Object.EncodeTo(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_EncodeTo_System_IO_Stream_System_String_">Asn1Object.EncodeTo(Stream, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_Equals_Org_BouncyCastle_Asn1_Asn1Object_">Asn1Object.Equals(Asn1Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_FromByteArray_System_Byte___">Asn1Object.FromByteArray(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_FromStream_System_IO_Stream_">Asn1Object.FromStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_ToAsn1Object">Asn1Object.ToAsn1Object()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Ber">Asn1Encodable.Ber</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Der">Asn1Encodable.Der</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_DL">Asn1Encodable.DL</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded">Asn1Encodable.GetEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_System_String_">Asn1Encodable.GetEncoded(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded">Asn1Encodable.GetDerEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode">Asn1Encodable.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Equals_System_Object_">Asn1Encodable.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence__ctor_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence__ctor" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor">
+  DLSequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DLSequence()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence__ctor_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence__ctor_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor(Org.BouncyCastle.Asn1.Asn1Encodable)">
+  DLSequence(Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DLSequence(Asn1Encodable element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence__ctor_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence__ctor_Org_BouncyCastle_Asn1_Asn1Encodable_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor(Org.BouncyCastle.Asn1.Asn1Encodable,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  DLSequence(Asn1Encodable, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DLSequence(Asn1Encodable element1, Asn1Encodable element2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element1</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+    <dt><code>element2</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence__ctor_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence__ctor_Org_BouncyCastle_Asn1_Asn1EncodableVector_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor(Org.BouncyCastle.Asn1.Asn1EncodableVector)">
+  DLSequence(Asn1EncodableVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DLSequence(Asn1EncodableVector elementVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementVector</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1EncodableVector.html">Asn1EncodableVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence__ctor_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence__ctor_Org_BouncyCastle_Asn1_Asn1Encodable___" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor(Org.BouncyCastle.Asn1.Asn1Encodable[])">
+  DLSequence(params Asn1Encodable[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DLSequence(params Asn1Encodable[] elements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence__ctor_" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence__ctor_System_Collections_Generic_IReadOnlyCollection_Org_BouncyCastle_Asn1_Asn1Encodable__" data-uid="Org.BouncyCastle.Asn1.DLSequence.#ctor(System.Collections.Generic.IReadOnlyCollection{Org.BouncyCastle.Asn1.Asn1Encodable})">
+  DLSequence(IReadOnlyCollection&lt;Asn1Encodable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DLSequence(IReadOnlyCollection&lt;Asn1Encodable&gt; elements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_Empty" data-uid="Org.BouncyCastle.Asn1.DLSequence.Empty">
+  Empty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DLSequence Empty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_Concatenate_" data-uid="Org.BouncyCastle.Asn1.DLSequence.Concatenate*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_Concatenate_Org_BouncyCastle_Asn1_Asn1Sequence___" data-uid="Org.BouncyCastle.Asn1.DLSequence.Concatenate(Org.BouncyCastle.Asn1.Asn1Sequence[])">
+  Concatenate(params Asn1Sequence[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence Concatenate(params Asn1Sequence[] sequences)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequences</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html">Asn1Sequence</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromCollection_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromCollection*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromCollection_System_Collections_Generic_IReadOnlyCollection_Org_BouncyCastle_Asn1_Asn1Encodable__" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromCollection(System.Collections.Generic.IReadOnlyCollection{Org.BouncyCastle.Asn1.Asn1Encodable})">
+  FromCollection(IReadOnlyCollection&lt;Asn1Encodable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromCollection(IReadOnlyCollection&lt;Asn1Encodable&gt; elements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromElement_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElement*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromElement_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElement(Org.BouncyCastle.Asn1.Asn1Encodable)">
+  FromElement(Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromElement(Asn1Encodable element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromElements_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElements*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromElements_Org_BouncyCastle_Asn1_Asn1Encodable_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElements(Org.BouncyCastle.Asn1.Asn1Encodable,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  FromElements(Asn1Encodable, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromElements(Asn1Encodable element1, Asn1Encodable element2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element1</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+    <dt><code>element2</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromElements_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElements*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromElements_Org_BouncyCastle_Asn1_Asn1Encodable___" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElements(Org.BouncyCastle.Asn1.Asn1Encodable[])">
+  FromElements(Asn1Encodable[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromElements(Asn1Encodable[] elements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromElementsOptional_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElementsOptional*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromElementsOptional_Org_BouncyCastle_Asn1_Asn1Encodable___" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromElementsOptional(Org.BouncyCastle.Asn1.Asn1Encodable[])">
+  FromElementsOptional(Asn1Encodable[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromElementsOptional(Asn1Encodable[] elements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromSequence_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromSequence*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromSequence_Org_BouncyCastle_Asn1_Asn1Sequence_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromSequence(Org.BouncyCastle.Asn1.Asn1Sequence)">
+  FromSequence(Asn1Sequence)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromSequence(Asn1Sequence sequence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html">Asn1Sequence</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_FromVector_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromVector*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_FromVector_Org_BouncyCastle_Asn1_Asn1EncodableVector_" data-uid="Org.BouncyCastle.Asn1.DLSequence.FromVector(Org.BouncyCastle.Asn1.Asn1EncodableVector)">
+  FromVector(Asn1EncodableVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence FromVector(Asn1EncodableVector elementVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementVector</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1EncodableVector.html">Asn1EncodableVector</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_Map_" data-uid="Org.BouncyCastle.Asn1.DLSequence.Map*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_Map_Org_BouncyCastle_Asn1_Asn1Sequence_System_Func_Org_BouncyCastle_Asn1_Asn1Encodable_Org_BouncyCastle_Asn1_Asn1Encodable__" data-uid="Org.BouncyCastle.Asn1.DLSequence.Map(Org.BouncyCastle.Asn1.Asn1Sequence,System.Func{Org.BouncyCastle.Asn1.Asn1Encodable,Org.BouncyCastle.Asn1.Asn1Encodable})">
+  Map(Asn1Sequence, Func&lt;Asn1Encodable, Asn1Encodable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence Map(Asn1Sequence sequence, Func&lt;Asn1Encodable, Asn1Encodable&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Sequence.html">Asn1Sequence</a></dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>, <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_Map_" data-uid="Org.BouncyCastle.Asn1.DLSequence.Map*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_Map__1_System_Collections_Generic_IReadOnlyCollection___0__System_Func___0_Org_BouncyCastle_Asn1_Asn1Encodable__" data-uid="Org.BouncyCastle.Asn1.DLSequence.Map``1(System.Collections.Generic.IReadOnlyCollection{``0},System.Func{``0,Org.BouncyCastle.Asn1.Asn1Encodable})">
+  Map&lt;T&gt;(IReadOnlyCollection&lt;T&gt;, Func&lt;T, Asn1Encodable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence Map&lt;T&gt;(IReadOnlyCollection&lt;T&gt; c, Func&lt;T, Asn1Encodable&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DLSequence_Map_" data-uid="Org.BouncyCastle.Asn1.DLSequence.Map*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DLSequence_Map__1___0___System_Func___0_Org_BouncyCastle_Asn1_Asn1Encodable__" data-uid="Org.BouncyCastle.Asn1.DLSequence.Map``1(``0[],System.Func{``0,Org.BouncyCastle.Asn1.Asn1Encodable})">
+  Map&lt;T&gt;(T[], Func&lt;T, Asn1Encodable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DLSequence Map&lt;T&gt;(T[] ts, Func&lt;T, Asn1Encodable&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ts</code> T[]</dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DLSequence.html">DLSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

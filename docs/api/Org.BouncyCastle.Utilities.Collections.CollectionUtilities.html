@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CollectionUtilities | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CollectionUtilities | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities">
+
+
+
+  <h1 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities" class="text-break">
+Class CollectionUtilities  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Utilities.html">Utilities</a>.<a class="xref" href="Org.BouncyCastle.Utilities.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CollectionUtilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CollectionUtilities</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_CollectMatches_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.CollectMatches*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_CollectMatches__1_System_Collections_Generic_ICollection___0__Org_BouncyCastle_Utilities_Collections_ISelector___0__System_Collections_Generic_IEnumerable_Org_BouncyCastle_Utilities_Collections_IStore___0___" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.CollectMatches``1(System.Collections.Generic.ICollection{``0},Org.BouncyCastle.Utilities.Collections.ISelector{``0},System.Collections.Generic.IEnumerable{Org.BouncyCastle.Utilities.Collections.IStore{``0}})">
+  CollectMatches&lt;T&gt;(ICollection&lt;T&gt;, ISelector&lt;T&gt;, IEnumerable&lt;IStore&lt;T&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CollectMatches&lt;T&gt;(ICollection&lt;T&gt; matches, ISelector&lt;T&gt; selector, IEnumerable&lt;IStore&lt;T&gt;&gt; stores)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>selector</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>stores</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_CreateStore_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.CreateStore*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_CreateStore__1_System_Collections_Generic_IEnumerable___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.CreateStore``1(System.Collections.Generic.IEnumerable{``0})">
+  CreateStore&lt;T&gt;(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStore&lt;T&gt; CreateStore&lt;T&gt;(IEnumerable&lt;T&gt; contents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_GetFirstOrNull_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.GetFirstOrNull*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_GetFirstOrNull__1_System_Collections_Generic_IEnumerable___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.GetFirstOrNull``1(System.Collections.Generic.IEnumerable{``0})">
+  GetFirstOrNull&lt;T&gt;(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetFirstOrNull&lt;T&gt;(IEnumerable&lt;T&gt; e) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_GetValueOrKey_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.GetValueOrKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_GetValueOrKey__1_System_Collections_Generic_IDictionary___0___0____0_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.GetValueOrKey``1(System.Collections.Generic.IDictionary{``0,``0},``0)">
+  GetValueOrKey&lt;T&gt;(IDictionary&lt;T, T&gt;, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetValueOrKey&lt;T&gt;(IDictionary&lt;T, T&gt; d, T k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;T, T&gt;</dt>
+    <dd></dd>
+    <dt><code>k</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_GetValueOrNull_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.GetValueOrNull*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_GetValueOrNull__2_System_Collections_Generic_IDictionary___0___1____0_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+  GetValueOrNull&lt;K, V&gt;(IDictionary&lt;K, V&gt;, K)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static V GetValueOrNull&lt;K, V&gt;(IDictionary&lt;K, V&gt; d, K k) where V : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd></dd>
+    <dt><code>k</code> <span class="xref">K</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">V</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>K</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_IsNullOrEmpty_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.IsNullOrEmpty*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_IsNullOrEmpty__1_System_Collections_Generic_ICollection___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})">
+  IsNullOrEmpty&lt;T&gt;(ICollection&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullOrEmpty&lt;T&gt;(ICollection&lt;T&gt; c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Map_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Map*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Map__2_System_Collections_Generic_IReadOnlyCollection___0__System_Func___0___1__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Map``2(System.Collections.Generic.IReadOnlyCollection{``0},System.Func{``0,``1})">
+  Map&lt;T, TResult&gt;(IReadOnlyCollection&lt;T&gt;, Func&lt;T, TResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult[] Map&lt;T, TResult&gt;(IReadOnlyCollection&lt;T&gt; c, Func&lt;T, TResult&gt; f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TResult[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Map_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Map*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Map__2___0___System_Func___0___1__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Map``2(``0[],System.Func{``0,``1})">
+  Map&lt;T, TResult&gt;(T[], Func&lt;T, TResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult[] Map&lt;T, TResult&gt;(T[] ts, Func&lt;T, TResult&gt; f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ts</code> T[]</dt>
+    <dd></dd>
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TResult[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Proxy_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Proxy*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Proxy__1_System_Collections_Generic_IEnumerable___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Proxy``1(System.Collections.Generic.IEnumerable{``0})">
+  Proxy&lt;T&gt;(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Proxy&lt;T&gt;(IEnumerable&lt;T&gt; e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly__1_System_Collections_Generic_ICollection___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly``1(System.Collections.Generic.ICollection{``0})">
+  ReadOnly&lt;T&gt;(ICollection&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;T&gt; ReadOnly&lt;T&gt;(ICollection&lt;T&gt; c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly__1_System_Collections_Generic_IList___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly``1(System.Collections.Generic.IList{``0})">
+  ReadOnly&lt;T&gt;(IList&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;T&gt; ReadOnly&lt;T&gt;(IList&lt;T&gt; l)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly__1_System_Collections_Generic_ISet___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly``1(System.Collections.Generic.ISet{``0})">
+  ReadOnly&lt;T&gt;(ISet&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISet&lt;T&gt; ReadOnly&lt;T&gt;(ISet&lt;T&gt; s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ReadOnly__2_System_Collections_Generic_IDictionary___0___1__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ReadOnly``2(System.Collections.Generic.IDictionary{``0,``1})">
+  ReadOnly&lt;K, V&gt;(IDictionary&lt;K, V&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDictionary&lt;K, V&gt; ReadOnly&lt;K, V&gt;(IDictionary&lt;K, V&gt; d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>K</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Remove_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Remove*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Remove__2_System_Collections_Generic_IDictionary___0___1____0___1__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Remove``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1@)">
+  Remove&lt;K, V&gt;(IDictionary&lt;K, V&gt;, K, out V)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Remove&lt;K, V&gt;(IDictionary&lt;K, V&gt; d, K k, out V v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd></dd>
+    <dt><code>k</code> <span class="xref">K</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <span class="xref">V</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>K</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_RequireNext_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.RequireNext*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_RequireNext__1_System_Collections_Generic_IEnumerator___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.RequireNext``1(System.Collections.Generic.IEnumerator{``0})">
+  RequireNext&lt;T&gt;(IEnumerator&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T RequireNext&lt;T&gt;(IEnumerator&lt;T&gt; e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Select_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Select*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_Select__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.Select``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+  Select&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TResult&gt; Select&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt; source, Func&lt;TSource, TResult&gt; selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TSource&gt;</dt>
+    <dd></dd>
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ToArray_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ToArray*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ToArray__1_System_Collections_Generic_IReadOnlyCollection___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ToArray``1(System.Collections.Generic.IReadOnlyCollection{``0})">
+  ToArray&lt;T&gt;(IReadOnlyCollection&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ToArray&lt;T&gt;(IReadOnlyCollection&lt;T&gt; c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ToString_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ToString*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_ToString__1_System_Collections_Generic_IEnumerable___0__" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.ToString``1(System.Collections.Generic.IEnumerable{``0})">
+  ToString&lt;T&gt;(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToString&lt;T&gt;(IEnumerable&lt;T&gt; c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_TryAdd_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.TryAdd*"></a>
+
+  <h3 id="Org_BouncyCastle_Utilities_Collections_CollectionUtilities_TryAdd__2_System_Collections_Generic_IDictionary___0___1____0___1_" data-uid="Org.BouncyCastle.Utilities.Collections.CollectionUtilities.TryAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+  TryAdd&lt;K, V&gt;(IDictionary&lt;K, V&gt;, K, V)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAdd&lt;K, V&gt;(IDictionary&lt;K, V&gt; d, K k, V v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd></dd>
+    <dt><code>k</code> <span class="xref">K</span></dt>
+    <dd></dd>
+    <dt><code>v</code> <span class="xref">V</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>K</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

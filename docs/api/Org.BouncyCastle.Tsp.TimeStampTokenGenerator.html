@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TimeStampTokenGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TimeStampTokenGenerator | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator" class="text-break">
+Class TimeStampTokenGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tsp.html">Tsp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimeStampTokenGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TimeStampTokenGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator__ctor_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator__ctor_Org_BouncyCastle_Cms_SignerInfoGenerator_Org_BouncyCastle_Crypto_IDigestFactory_Org_BouncyCastle_Asn1_DerObjectIdentifier_System_Boolean_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.#ctor(Org.BouncyCastle.Cms.SignerInfoGenerator,Org.BouncyCastle.Crypto.IDigestFactory,Org.BouncyCastle.Asn1.DerObjectIdentifier,System.Boolean)">
+  TimeStampTokenGenerator(SignerInfoGenerator, IDigestFactory, DerObjectIdentifier, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeStampTokenGenerator(SignerInfoGenerator signerInfoGen, IDigestFactory digestCalculator, DerObjectIdentifier tsaPolicy, bool isIssuerSerialIncluded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signerInfoGen</code> <a class="xref" href="Org.BouncyCastle.Cms.SignerInfoGenerator.html">SignerInfoGenerator</a></dt>
+    <dd></dd>
+    <dt><code>digestCalculator</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigestFactory.html">IDigestFactory</a></dt>
+    <dd></dd>
+    <dt><code>tsaPolicy</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+    <dt><code>isIssuerSerialIncluded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator__ctor_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator__ctor_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_System_String_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.#ctor(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,System.String)">
+  TimeStampTokenGenerator(AsymmetricKeyParameter, X509Certificate, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeStampTokenGenerator(AsymmetricKeyParameter key, X509Certificate cert, string digestOID, string tsaPolicyOID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>digestOID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tsaPolicyOID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator__ctor_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator__ctor_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_System_String_Org_BouncyCastle_Asn1_Cms_AttributeTable_Org_BouncyCastle_Asn1_Cms_AttributeTable_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.#ctor(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,System.String,Org.BouncyCastle.Asn1.Cms.AttributeTable,Org.BouncyCastle.Asn1.Cms.AttributeTable)">
+  TimeStampTokenGenerator(AsymmetricKeyParameter, X509Certificate, string, string, AttributeTable, AttributeTable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeStampTokenGenerator(AsymmetricKeyParameter key, X509Certificate cert, string digestOID, string tsaPolicyOID, AttributeTable signedAttr, AttributeTable unsignedAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>digestOID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tsaPolicyOID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_Resolution_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.Resolution*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_Resolution" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.Resolution">
+  Resolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resolution Resolution { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tsp.Resolution.html">Resolution</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_AddOtherRevocationInfos_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.AddOtherRevocationInfos*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_AddOtherRevocationInfos_Org_BouncyCastle_Asn1_DerObjectIdentifier_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_Asn1_Asn1Encodable__" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.AddOtherRevocationInfos(Org.BouncyCastle.Asn1.DerObjectIdentifier,Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.Asn1.Asn1Encodable})">
+  AddOtherRevocationInfos(DerObjectIdentifier, IStore&lt;Asn1Encodable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOtherRevocationInfos(DerObjectIdentifier otherRevInfoFormat, IStore&lt;Asn1Encodable&gt; otherRevInfoStore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherRevInfoFormat</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+    <dt><code>otherRevInfoStore</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_Generate_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_Generate_Org_BouncyCastle_Tsp_TimeStampRequest_Org_BouncyCastle_Math_BigInteger_System_DateTime_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.Generate(Org.BouncyCastle.Tsp.TimeStampRequest,Org.BouncyCastle.Math.BigInteger,System.DateTime)">
+  Generate(TimeStampRequest, BigInteger, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeStampToken Generate(TimeStampRequest request, BigInteger serialNumber, DateTime genTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Org.BouncyCastle.Tsp.TimeStampRequest.html">TimeStampRequest</a></dt>
+    <dd></dd>
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>genTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tsp.TimeStampToken.html">TimeStampToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_Generate_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_Generate_Org_BouncyCastle_Tsp_TimeStampRequest_Org_BouncyCastle_Math_BigInteger_System_DateTime_Org_BouncyCastle_Asn1_X509_X509Extensions_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.Generate(Org.BouncyCastle.Tsp.TimeStampRequest,Org.BouncyCastle.Math.BigInteger,System.DateTime,Org.BouncyCastle.Asn1.X509.X509Extensions)">
+  Generate(TimeStampRequest, BigInteger, DateTime, X509Extensions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeStampToken Generate(TimeStampRequest request, BigInteger serialNumber, DateTime genTime, X509Extensions additionalExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Org.BouncyCastle.Tsp.TimeStampRequest.html">TimeStampRequest</a></dt>
+    <dd></dd>
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>genTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>additionalExtensions</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tsp.TimeStampToken.html">TimeStampToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAccuracyMicros_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAccuracyMicros*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAccuracyMicros_System_Int32_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAccuracyMicros(System.Int32)">
+  SetAccuracyMicros(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccuracyMicros(int accuracyMicros)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accuracyMicros</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAccuracyMillis_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAccuracyMillis*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAccuracyMillis_System_Int32_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAccuracyMillis(System.Int32)">
+  SetAccuracyMillis(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccuracyMillis(int accuracyMillis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accuracyMillis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAccuracySeconds_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAccuracySeconds*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAccuracySeconds_System_Int32_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAccuracySeconds(System.Int32)">
+  SetAccuracySeconds(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccuracySeconds(int accuracySeconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accuracySeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAttributeCertificates_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAttributeCertificates*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetAttributeCertificates_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509V2AttributeCertificate__" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetAttributeCertificates(Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509V2AttributeCertificate})">
+  SetAttributeCertificates(IStore&lt;X509V2AttributeCertificate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAttributeCertificates(IStore&lt;X509V2AttributeCertificate&gt; attributeCertificates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeCertificates</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetCertificates_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetCertificates*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetCertificates_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Certificate__" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetCertificates(Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509Certificate})">
+  SetCertificates(IStore&lt;X509Certificate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCertificates(IStore&lt;X509Certificate&gt; certificates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certificates</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetCrls_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetCrls*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetCrls_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Crl__" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetCrls(Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509Crl})">
+  SetCrls(IStore&lt;X509Crl&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCrls(IStore&lt;X509Crl&gt; crls)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crls</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Crl.html">X509Crl</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetOrdering_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetOrdering*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetOrdering_System_Boolean_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetOrdering(System.Boolean)">
+  SetOrdering(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrdering(bool ordering)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ordering</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetTsa_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetTsa*"></a>
+
+  <h3 id="Org_BouncyCastle_Tsp_TimeStampTokenGenerator_SetTsa_Org_BouncyCastle_Asn1_X509_GeneralName_" data-uid="Org.BouncyCastle.Tsp.TimeStampTokenGenerator.SetTsa(Org.BouncyCastle.Asn1.X509.GeneralName)">
+  SetTsa(GeneralName)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTsa(GeneralName tsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tsa</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.GeneralName.html">GeneralName</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

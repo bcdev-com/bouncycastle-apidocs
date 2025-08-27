@@ -1,0 +1,3361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NistObjectIdentifiers | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NistObjectIdentifiers | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers" class="text-break">
+Class NistObjectIdentifiers  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a>.<a class="xref" href="Org.BouncyCastle.Asn1.Nist.html">Nist</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class NistObjectIdentifiers</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NistObjectIdentifiers</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_Aes" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.Aes">
+  Aes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier Aes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_DsaWithSha224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.DsaWithSha224">
+  DsaWithSha224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DsaWithSha224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_DsaWithSha256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.DsaWithSha256">
+  DsaWithSha256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DsaWithSha256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_DsaWithSha384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.DsaWithSha384">
+  DsaWithSha384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DsaWithSha384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_DsaWithSha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.DsaWithSha512">
+  DsaWithSha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier DsaWithSha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_HashAlgs" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.HashAlgs">
+  HashAlgs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier HashAlgs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Cbc" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Cbc">
+  IdAes128Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Ccm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Ccm">
+  IdAes128Ccm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.7</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Ccm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Cfb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Cfb">
+  IdAes128Cfb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Cfb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Ecb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Ecb">
+  IdAes128Ecb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Ecb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128GMac" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128GMac">
+  IdAes128GMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.9</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128GMac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Gcm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Gcm">
+  IdAes128Gcm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.6</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Gcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Ofb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Ofb">
+  IdAes128Ofb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Ofb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128Wrap" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128Wrap">
+  IdAes128Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.5</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes128WrapPad" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes128WrapPad">
+  IdAes128WrapPad
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes128WrapPad</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Cbc" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Cbc">
+  IdAes192Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Ccm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Ccm">
+  IdAes192Ccm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.27</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Ccm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Cfb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Cfb">
+  IdAes192Cfb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.24</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Cfb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Ecb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Ecb">
+  IdAes192Ecb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.21</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Ecb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192GMac" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192GMac">
+  IdAes192GMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.29</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192GMac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Gcm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Gcm">
+  IdAes192Gcm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Gcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Ofb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Ofb">
+  IdAes192Ofb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.23</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Ofb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192Wrap" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192Wrap">
+  IdAes192Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.25</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes192WrapPad" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes192WrapPad">
+  IdAes192WrapPad
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.28</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes192WrapPad</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Cbc" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Cbc">
+  IdAes256Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.42</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Ccm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Ccm">
+  IdAes256Ccm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.47</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Ccm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Cfb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Cfb">
+  IdAes256Cfb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.44</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Cfb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Ecb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Ecb">
+  IdAes256Ecb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.41</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Ecb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256GMac" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256GMac">
+  IdAes256GMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.49</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256GMac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Gcm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Gcm">
+  IdAes256Gcm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.46</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Gcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Ofb" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Ofb">
+  IdAes256Ofb
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.43</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Ofb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256Wrap" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256Wrap">
+  IdAes256Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.45</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdAes256WrapPad" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdAes256WrapPad">
+  IdAes256WrapPad
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.1.48</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdAes256WrapPad</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdDsaWithSha2" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdDsaWithSha2">
+  IdDsaWithSha2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;SigAlgs&#39; instead&quot;)]
+public static readonly DerObjectIdentifier IdDsaWithSha2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdDsaWithSha3_224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdDsaWithSha3_224">
+  IdDsaWithSha3_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.5</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdDsaWithSha3_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdDsaWithSha3_256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdDsaWithSha3_256">
+  IdDsaWithSha3_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.6</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdDsaWithSha3_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdDsaWithSha3_384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdDsaWithSha3_384">
+  IdDsaWithSha3_384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.7</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdDsaWithSha3_384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdDsaWithSha3_512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdDsaWithSha3_512">
+  IdDsaWithSha3_512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdDsaWithSha3_512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdEcdsaWithSha3_224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdEcdsaWithSha3_224">
+  IdEcdsaWithSha3_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.9</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdEcdsaWithSha3_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdEcdsaWithSha3_256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdEcdsaWithSha3_256">
+  IdEcdsaWithSha3_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.10</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdEcdsaWithSha3_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdEcdsaWithSha3_384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdEcdsaWithSha3_384">
+  IdEcdsaWithSha3_384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.11</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdEcdsaWithSha3_384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdEcdsaWithSha3_512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdEcdsaWithSha3_512">
+  IdEcdsaWithSha3_512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.12</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdEcdsaWithSha3_512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdHMacWithSha3_224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdHMacWithSha3_224">
+  IdHMacWithSha3_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.13</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHMacWithSha3_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdHMacWithSha3_256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdHMacWithSha3_256">
+  IdHMacWithSha3_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.14</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHMacWithSha3_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdHMacWithSha3_384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdHMacWithSha3_384">
+  IdHMacWithSha3_384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.15</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHMacWithSha3_384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdHMacWithSha3_512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdHMacWithSha3_512">
+  IdHMacWithSha3_512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdHMacWithSha3_512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdKmac128" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdKmac128">
+  IdKmac128
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.21</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdKmac128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdKmac256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdKmac256">
+  IdKmac256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdKmac256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdKmacWithShake128" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdKmacWithShake128">
+  IdKmacWithShake128
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.19</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdKmacWithShake128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdKmacWithShake256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdKmacWithShake256">
+  IdKmacWithShake256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.20</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdKmacWithShake256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdRsassaPkcs1V15WithSha3_224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdRsassaPkcs1V15WithSha3_224">
+  IdRsassaPkcs1V15WithSha3_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.13</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsassaPkcs1V15WithSha3_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdRsassaPkcs1V15WithSha3_256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdRsassaPkcs1V15WithSha3_256">
+  IdRsassaPkcs1V15WithSha3_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.14</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsassaPkcs1V15WithSha3_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdRsassaPkcs1V15WithSha3_384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdRsassaPkcs1V15WithSha3_384">
+  IdRsassaPkcs1V15WithSha3_384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.15</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsassaPkcs1V15WithSha3_384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdRsassaPkcs1V15WithSha3_512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdRsassaPkcs1V15WithSha3_512">
+  IdRsassaPkcs1V15WithSha3_512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3.16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdRsassaPkcs1V15WithSha3_512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha224">
+  IdSha224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha256">
+  IdSha256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha384">
+  IdSha384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha3_224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha3_224">
+  IdSha3_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.7</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha3_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha3_256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha3_256">
+  IdSha3_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha3_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha3_384" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha3_384">
+  IdSha3_384
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.9</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha3_384</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha3_512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha3_512">
+  IdSha3_512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.10</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha3_512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha512">
+  IdSha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha512_224" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha512_224">
+  IdSha512_224
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.5</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha512_224</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdSha512_256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdSha512_256">
+  IdSha512_256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.6</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdSha512_256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdShake128" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdShake128">
+  IdShake128
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.11</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdShake128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdShake128Len" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdShake128Len">
+  IdShake128Len
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.17</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdShake128Len</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdShake256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdShake256">
+  IdShake256
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.12</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdShake256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_IdShake256Len" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.IdShake256Len">
+  IdShake256Len
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.2.18</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier IdShake256Len</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_NistAlgorithm" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.NistAlgorithm">
+  NistAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4 -- algorithms</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier NistAlgorithm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_SigAlgs" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.SigAlgs">
+  SigAlgs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2.16.840.1.101.3.4.3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier SigAlgs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_alg_ml_kem_1024" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_alg_ml_kem_1024">
+  id_alg_ml_kem_1024
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_alg_ml_kem_1024</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_alg_ml_kem_512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_alg_ml_kem_512">
+  id_alg_ml_kem_512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_alg_ml_kem_512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_alg_ml_kem_768" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_alg_ml_kem_768">
+  id_alg_ml_kem_768
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_alg_ml_kem_768</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_ml_dsa_44_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_ml_dsa_44_with_sha512">
+  id_hash_ml_dsa_44_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_ml_dsa_44_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_ml_dsa_65_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_ml_dsa_65_with_sha512">
+  id_hash_ml_dsa_65_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_ml_dsa_65_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_ml_dsa_87_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_ml_dsa_87_with_sha512">
+  id_hash_ml_dsa_87_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_ml_dsa_87_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_sha2_128f_with_sha256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_sha2_128f_with_sha256">
+  id_hash_slh_dsa_sha2_128f_with_sha256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_sha2_128f_with_sha256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_sha2_128s_with_sha256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_sha2_128s_with_sha256">
+  id_hash_slh_dsa_sha2_128s_with_sha256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_sha2_128s_with_sha256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_sha2_192f_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_sha2_192f_with_sha512">
+  id_hash_slh_dsa_sha2_192f_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_sha2_192f_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_sha2_192s_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_sha2_192s_with_sha512">
+  id_hash_slh_dsa_sha2_192s_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_sha2_192s_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_sha2_256f_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_sha2_256f_with_sha512">
+  id_hash_slh_dsa_sha2_256f_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_sha2_256f_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_sha2_256s_with_sha512" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_sha2_256s_with_sha512">
+  id_hash_slh_dsa_sha2_256s_with_sha512
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_sha2_256s_with_sha512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_shake_128f_with_shake128" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_shake_128f_with_shake128">
+  id_hash_slh_dsa_shake_128f_with_shake128
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_shake_128f_with_shake128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_shake_128s_with_shake128" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_shake_128s_with_shake128">
+  id_hash_slh_dsa_shake_128s_with_shake128
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_shake_128s_with_shake128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_shake_192f_with_shake256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_shake_192f_with_shake256">
+  id_hash_slh_dsa_shake_192f_with_shake256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_shake_192f_with_shake256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_shake_192s_with_shake256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_shake_192s_with_shake256">
+  id_hash_slh_dsa_shake_192s_with_shake256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_shake_192s_with_shake256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_shake_256f_with_shake256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_shake_256f_with_shake256">
+  id_hash_slh_dsa_shake_256f_with_shake256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_shake_256f_with_shake256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_hash_slh_dsa_shake_256s_with_shake256" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_hash_slh_dsa_shake_256s_with_shake256">
+  id_hash_slh_dsa_shake_256s_with_shake256
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_hash_slh_dsa_shake_256s_with_shake256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_ml_dsa_44" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_ml_dsa_44">
+  id_ml_dsa_44
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_ml_dsa_44</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_ml_dsa_65" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_ml_dsa_65">
+  id_ml_dsa_65
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_ml_dsa_65</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_ml_dsa_87" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_ml_dsa_87">
+  id_ml_dsa_87
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_ml_dsa_87</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_sha2_128f" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_sha2_128f">
+  id_slh_dsa_sha2_128f
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_sha2_128f</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_sha2_128s" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_sha2_128s">
+  id_slh_dsa_sha2_128s
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_sha2_128s</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_sha2_192f" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_sha2_192f">
+  id_slh_dsa_sha2_192f
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_sha2_192f</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_sha2_192s" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_sha2_192s">
+  id_slh_dsa_sha2_192s
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_sha2_192s</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_sha2_256f" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_sha2_256f">
+  id_slh_dsa_sha2_256f
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_sha2_256f</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_sha2_256s" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_sha2_256s">
+  id_slh_dsa_sha2_256s
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_sha2_256s</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_shake_128f" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_shake_128f">
+  id_slh_dsa_shake_128f
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_shake_128f</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_shake_128s" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_shake_128s">
+  id_slh_dsa_shake_128s
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_shake_128s</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_shake_192f" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_shake_192f">
+  id_slh_dsa_shake_192f
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_shake_192f</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_shake_192s" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_shake_192s">
+  id_slh_dsa_shake_192s
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_shake_192s</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_shake_256f" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_shake_256f">
+  id_slh_dsa_shake_256f
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_shake_256f</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_id_slh_dsa_shake_256s" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.id_slh_dsa_shake_256s">
+  id_slh_dsa_shake_256s
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier id_slh_dsa_shake_256s</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Nist_NistObjectIdentifiers_kems" data-uid="Org.BouncyCastle.Asn1.Nist.NistObjectIdentifiers.kems">
+  kems
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DerObjectIdentifier kems</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

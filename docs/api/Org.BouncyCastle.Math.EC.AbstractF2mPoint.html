@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AbstractF2mPoint | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AbstractF2mPoint | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint">
+
+
+
+  <h1 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint" class="text-break">
+Class AbstractF2mPoint  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Math.html">Math</a>.<a class="xref" href="Org.BouncyCastle.Math.EC.html">EC</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractF2mPoint : ECPointBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Math.EC.ECPointBase.html">ECPointBase</a></div>
+      <div><span class="xref">AbstractF2mPoint</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Math.EC.F2mPoint.html">F2mPoint</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPointBase.html#Org_BouncyCastle_Math_EC_ECPointBase_GetEncoded_System_Boolean_">ECPointBase.GetEncoded(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPointBase.html#Org_BouncyCastle_Math_EC_ECPointBase_GetEncodedLength_System_Boolean_">ECPointBase.GetEncodedLength(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPointBase.html#Org_BouncyCastle_Math_EC_ECPointBase_EncodeTo_System_Boolean_System_Byte___System_Int32_">ECPointBase.EncodeTo(bool, byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPointBase.html#Org_BouncyCastle_Math_EC_ECPointBase_EncodeTo_System_Boolean_System_Span_System_Byte__">ECPointBase.EncodeTo(bool, Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPointBase.html#Org_BouncyCastle_Math_EC_ECPointBase_Multiply_Org_BouncyCastle_Math_BigInteger_">ECPointBase.Multiply(BigInteger)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_EMPTY_ZS">ECPoint.EMPTY_ZS</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_GetInitialZCoords_Org_BouncyCastle_Math_EC_ECCurve_">ECPoint.GetInitialZCoords(ECCurve)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_m_curve">ECPoint.m_curve</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_m_x">ECPoint.m_x</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_m_y">ECPoint.m_y</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_m_zs">ECPoint.m_zs</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_m_preCompTable">ECPoint.m_preCompTable</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_GetDetachedPoint">ECPoint.GetDetachedPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Curve">ECPoint.Curve</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Detach">ECPoint.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_CurveCoordinateSystem">ECPoint.CurveCoordinateSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_AffineXCoord">ECPoint.AffineXCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_AffineYCoord">ECPoint.AffineYCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_XCoord">ECPoint.XCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_YCoord">ECPoint.YCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_GetZCoord_System_Int32_">ECPoint.GetZCoord(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_GetZCoords">ECPoint.GetZCoords()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_RawXCoord">ECPoint.RawXCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_RawYCoord">ECPoint.RawYCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_RawZCoords">ECPoint.RawZCoords</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_CheckNormalized">ECPoint.CheckNormalized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_IsNormalized">ECPoint.IsNormalized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Normalize">ECPoint.Normalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_CreateScaledPoint_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement_">ECPoint.CreateScaledPoint(ECFieldElement, ECFieldElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_IsInfinity">ECPoint.IsInfinity</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_IsValid">ECPoint.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Equals_System_Object_">ECPoint.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Equals_Org_BouncyCastle_Math_EC_ECPoint_">ECPoint.Equals(ECPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_GetHashCode">ECPoint.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_ToString">ECPoint.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_GetEncoded">ECPoint.GetEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_CompressionYTilde">ECPoint.CompressionYTilde</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Add_Org_BouncyCastle_Math_EC_ECPoint_">ECPoint.Add(ECPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Negate">ECPoint.Negate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_TimesPow2_System_Int32_">ECPoint.TimesPow2(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_Twice">ECPoint.Twice()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_TwicePlus_Org_BouncyCastle_Math_EC_ECPoint_">ECPoint.TwicePlus(ECPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html#Org_BouncyCastle_Math_EC_ECPoint_ThreeTimes">ECPoint.ThreeTimes()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint__ctor_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint__ctor_Org_BouncyCastle_Math_EC_ECCurve_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.#ctor(Org.BouncyCastle.Math.EC.ECCurve,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)">
+  AbstractF2mPoint(ECCurve, ECFieldElement, ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractF2mPoint(ECCurve curve, ECFieldElement x, ECFieldElement y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint__ctor_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint__ctor_Org_BouncyCastle_Math_EC_ECCurve_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement___" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.#ctor(Org.BouncyCastle.Math.EC.ECCurve,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement[])">
+  AbstractF2mPoint(ECCurve, ECFieldElement, ECFieldElement, ECFieldElement[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractF2mPoint(ECCurve curve, ECFieldElement x, ECFieldElement y, ECFieldElement[] zs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+    <dt><code>zs</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_SatisfiesCurveEquation_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.SatisfiesCurveEquation*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_SatisfiesCurveEquation" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.SatisfiesCurveEquation">
+  SatisfiesCurveEquation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool SatisfiesCurveEquation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_SatisfiesOrder_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.SatisfiesOrder*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_SatisfiesOrder" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.SatisfiesOrder">
+  SatisfiesOrder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool SatisfiesOrder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleX_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleX*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleX_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleX(Org.BouncyCastle.Math.EC.ECFieldElement)">
+  ScaleX(ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ECPoint ScaleX(ECFieldElement scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleXNegateY_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleXNegateY*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleXNegateY_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleXNegateY(Org.BouncyCastle.Math.EC.ECFieldElement)">
+  ScaleXNegateY(ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ECPoint ScaleXNegateY(ECFieldElement scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleY_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleY*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleY_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleY(Org.BouncyCastle.Math.EC.ECFieldElement)">
+  ScaleY(ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ECPoint ScaleY(ECFieldElement scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleYNegateX_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleYNegateX*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_ScaleYNegateX_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.ScaleYNegateX(Org.BouncyCastle.Math.EC.ECFieldElement)">
+  ScaleYNegateX(ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ECPoint ScaleYNegateX(ECFieldElement scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_Subtract_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.Subtract*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_Subtract_Org_BouncyCastle_Math_EC_ECPoint_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.Subtract(Org.BouncyCastle.Math.EC.ECPoint)">
+  Subtract(ECPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ECPoint Subtract(ECPoint b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_Tau_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.Tau*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_Tau" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.Tau">
+  Tau()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AbstractF2mPoint Tau()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.AbstractF2mPoint.html">AbstractF2mPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_TauPow_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.TauPow*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_AbstractF2mPoint_TauPow_System_Int32_" data-uid="Org.BouncyCastle.Math.EC.AbstractF2mPoint.TauPow(System.Int32)">
+  TauPow(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AbstractF2mPoint TauPow(int pow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.AbstractF2mPoint.html">AbstractF2mPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

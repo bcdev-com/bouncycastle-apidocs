@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DotNetUtilities | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DotNetUtilities | BouncyCastle Docs ">
+      
+      <meta name="description" content="A class containing methods to interface the BouncyCastle world to the .NET Crypto world.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Security.DotNetUtilities">
+
+
+
+  <h1 id="Org_BouncyCastle_Security_DotNetUtilities" data-uid="Org.BouncyCastle.Security.DotNetUtilities" class="text-break">
+Class DotNetUtilities  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Security.html">Security</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A class containing methods to interface the BouncyCastle world to the .NET Crypto world.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DotNetUtilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DotNetUtilities</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_FromX509Certificate_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.FromX509Certificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_FromX509Certificate_System_Security_Cryptography_X509Certificates_X509Certificate_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.FromX509Certificate(System.Security.Cryptography.X509Certificates.X509Certificate)">
+  FromX509Certificate(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static X509Certificate FromX509Certificate(X509Certificate x509Cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x509Cert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaKeyPair_System_Security_Cryptography_DSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaKeyPair(System.Security.Cryptography.DSA)">
+  GetDsaKeyPair(DSA)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetDsaKeyPair(DSA dsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dsa</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.dsa">DSA</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaKeyPair_System_Security_Cryptography_DSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaKeyPair(System.Security.Cryptography.DSAParameters)">
+  GetDsaKeyPair(DSAParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetDsaKeyPair(DSAParameters dp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.dsaparameters">DSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaPublicKey_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaPublicKey_System_Security_Cryptography_DSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaPublicKey(System.Security.Cryptography.DSA)">
+  GetDsaPublicKey(DSA)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DsaPublicKeyParameters GetDsaPublicKey(DSA dsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dsa</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.dsa">DSA</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.DsaPublicKeyParameters.html">DsaPublicKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaPublicKey_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetDsaPublicKey_System_Security_Cryptography_DSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetDsaPublicKey(System.Security.Cryptography.DSAParameters)">
+  GetDsaPublicKey(DSAParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DsaPublicKeyParameters GetDsaPublicKey(DSAParameters dp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.dsaparameters">DSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.DsaPublicKeyParameters.html">DsaPublicKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetECDsaKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECDsaKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetECDsaKeyPair_System_Security_Cryptography_ECDsa_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECDsaKeyPair(System.Security.Cryptography.ECDsa)">
+  GetECDsaKeyPair(ECDsa)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetECDsaKeyPair(ECDsa ecDsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ecDsa</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.ecdsa">ECDsa</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetECDsaPublicKey_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECDsaPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetECDsaPublicKey_System_Security_Cryptography_ECDsa_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECDsaPublicKey(System.Security.Cryptography.ECDsa)">
+  GetECDsaPublicKey(ECDsa)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ECPublicKeyParameters GetECDsaPublicKey(ECDsa ecDsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ecDsa</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.ecdsa">ECDsa</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters.html">ECPublicKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetECKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetECKeyPair_System_String_System_Security_Cryptography_ECParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECKeyPair(System.String,System.Security.Cryptography.ECParameters)">
+  GetECKeyPair(string, ECParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetECKeyPair(string algorithm, ECParameters ec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>algorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.ecparameters">ECParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetECPublicKey_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetECPublicKey_System_String_System_Security_Cryptography_ECParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetECPublicKey(System.String,System.Security.Cryptography.ECParameters)">
+  GetECPublicKey(string, ECParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ECPublicKeyParameters GetECPublicKey(string algorithm, ECParameters ec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>algorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.ecparameters">ECParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters.html">ECPublicKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetKeyPair_System_Security_Cryptography_AsymmetricAlgorithm_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetKeyPair(System.Security.Cryptography.AsymmetricAlgorithm)">
+  GetKeyPair(AsymmetricAlgorithm)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetKeyPair(AsymmetricAlgorithm privateKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.asymmetricalgorithm">AsymmetricAlgorithm</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaKeyPair_System_Security_Cryptography_RSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaKeyPair(System.Security.Cryptography.RSA)">
+  GetRsaKeyPair(RSA)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetRsaKeyPair(RSA rsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rsa</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaKeyPair_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaKeyPair*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaKeyPair_System_Security_Cryptography_RSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaKeyPair(System.Security.Cryptography.RSAParameters)">
+  GetRsaKeyPair(RSAParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsymmetricCipherKeyPair GetRsaKeyPair(RSAParameters rp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsaparameters">RSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair.html">AsymmetricCipherKeyPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaPublicKey_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaPublicKey_System_Security_Cryptography_RSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaPublicKey(System.Security.Cryptography.RSA)">
+  GetRsaPublicKey(RSA)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RsaKeyParameters GetRsaPublicKey(RSA rsa)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rsa</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters.html">RsaKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaPublicKey_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaPublicKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_GetRsaPublicKey_System_Security_Cryptography_RSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.GetRsaPublicKey(System.Security.Cryptography.RSAParameters)">
+  GetRsaPublicKey(RSAParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RsaKeyParameters GetRsaPublicKey(RSAParameters rp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsaparameters">RSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters.html">RsaKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_Org_BouncyCastle_Asn1_Pkcs_RsaPrivateKeyStructure_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA(Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure)">
+  ToRSA(RsaPrivateKeyStructure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSA ToRSA(RsaPrivateKeyStructure privKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privKey</code> <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure.html">RsaPrivateKeyStructure</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_Org_BouncyCastle_Asn1_Pkcs_RsaPrivateKeyStructure_System_Security_Cryptography_CspParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA(Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure,System.Security.Cryptography.CspParameters)">
+  ToRSA(RsaPrivateKeyStructure, CspParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSA ToRSA(RsaPrivateKeyStructure privKey, CspParameters csp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privKey</code> <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure.html">RsaPrivateKeyStructure</a></dt>
+    <dd></dd>
+    <dt><code>csp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.cspparameters">CspParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_Org_BouncyCastle_Crypto_Parameters_RsaKeyParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA(Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters)">
+  ToRSA(RsaKeyParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSA ToRSA(RsaKeyParameters rsaKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rsaKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters.html">RsaKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_Org_BouncyCastle_Crypto_Parameters_RsaKeyParameters_System_Security_Cryptography_CspParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA(Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters,System.Security.Cryptography.CspParameters)">
+  ToRSA(RsaKeyParameters, CspParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSA ToRSA(RsaKeyParameters rsaKey, CspParameters csp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rsaKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters.html">RsaKeyParameters</a></dt>
+    <dd></dd>
+    <dt><code>csp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.cspparameters">CspParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_Org_BouncyCastle_Crypto_Parameters_RsaPrivateCrtKeyParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA(Org.BouncyCastle.Crypto.Parameters.RsaPrivateCrtKeyParameters)">
+  ToRSA(RsaPrivateCrtKeyParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSA ToRSA(RsaPrivateCrtKeyParameters privKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaPrivateCrtKeyParameters.html">RsaPrivateCrtKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSA_Org_BouncyCastle_Crypto_Parameters_RsaPrivateCrtKeyParameters_System_Security_Cryptography_CspParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSA(Org.BouncyCastle.Crypto.Parameters.RsaPrivateCrtKeyParameters,System.Security.Cryptography.CspParameters)">
+  ToRSA(RsaPrivateCrtKeyParameters, CspParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSA ToRSA(RsaPrivateCrtKeyParameters privKey, CspParameters csp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaPrivateCrtKeyParameters.html">RsaPrivateCrtKeyParameters</a></dt>
+    <dd></dd>
+    <dt><code>csp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.cspparameters">CspParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsa">RSA</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSAParameters*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSAParameters_Org_BouncyCastle_Asn1_Pkcs_RsaPrivateKeyStructure_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSAParameters(Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure)">
+  ToRSAParameters(RsaPrivateKeyStructure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSAParameters ToRSAParameters(RsaPrivateKeyStructure privKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privKey</code> <a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure.html">RsaPrivateKeyStructure</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsaparameters">RSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSAParameters*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSAParameters_Org_BouncyCastle_Crypto_Parameters_RsaKeyParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSAParameters(Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters)">
+  ToRSAParameters(RsaKeyParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSAParameters ToRSAParameters(RsaKeyParameters rsaKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rsaKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaKeyParameters.html">RsaKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsaparameters">RSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToRSAParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSAParameters*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToRSAParameters_Org_BouncyCastle_Crypto_Parameters_RsaPrivateCrtKeyParameters_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToRSAParameters(Org.BouncyCastle.Crypto.Parameters.RsaPrivateCrtKeyParameters)">
+  ToRSAParameters(RsaPrivateCrtKeyParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSAParameters ToRSAParameters(RsaPrivateCrtKeyParameters privKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.RsaPrivateCrtKeyParameters.html">RsaPrivateCrtKeyParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsaparameters">RSAParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToX509Certificate_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToX509Certificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToX509Certificate_Org_BouncyCastle_Asn1_X509_X509CertificateStructure_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToX509Certificate(Org.BouncyCastle.Asn1.X509.X509CertificateStructure)">
+  ToX509Certificate(X509CertificateStructure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an System.Security.Cryptography.X509Certificate from an X509CertificateStructure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static X509Certificate ToX509Certificate(X509CertificateStructure x509Struct)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x509Struct</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.X509CertificateStructure.html">X509CertificateStructure</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate">X509Certificate</a></dt>
+    <dd><p>A System.Security.Cryptography.X509Certificate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Security_DotNetUtilities_ToX509Certificate_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToX509Certificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Security_DotNetUtilities_ToX509Certificate_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.Security.DotNetUtilities.ToX509Certificate(Org.BouncyCastle.X509.X509Certificate)">
+  ToX509Certificate(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an System.Security.Cryptography.X509Certificate from an X509Certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static X509Certificate ToX509Certificate(X509Certificate x509Cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x509Cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate">X509Certificate</a></dt>
+    <dd><p>A System.Security.Cryptography.X509Certificate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

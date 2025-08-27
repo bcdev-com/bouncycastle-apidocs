@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Org.BouncyCastle.Tls | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Org.BouncyCastle.Tls | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls">
+
+  <h1 id="Org_BouncyCastle_Tls" data-uid="Org.BouncyCastle.Tls" class="text-break">Namespace Org.BouncyCastle.Tls</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="namespaces">
+Namespaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.html">Org.BouncyCastle.Tls.Crypto</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsClient.html">AbstractTlsClient</a></dt>
+      <dd><p>Base class for a TLS client.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html">AbstractTlsKeyExchange</a></dt>
+      <dd><p>Base class for supporting a TLS key exchange implementation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsKeyExchangeFactory.html">AbstractTlsKeyExchangeFactory</a></dt>
+      <dd><p>Base class for supporting a TLS key exchange factory implementation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsPeer.html">AbstractTlsPeer</a></dt>
+      <dd><p>Base class for a TLS client or server.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AbstractTlsServer.html">AbstractTlsServer</a></dt>
+      <dd><p>Base class for a TLS server.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AlertDescription.html">AlertDescription</a></dt>
+      <dd><p>RFC 5246 7.2.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.AlertLevel.html">AlertLevel</a></dt>
+      <dd><p>RFC 5246 7.2</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.BasicTlsPskExternal.html">BasicTlsPskExternal</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.BasicTlsPskIdentity.html">BasicTlsPskIdentity</a></dt>
+      <dd><p>A basic PSK Identity holder.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.BasicTlsSrpIdentity.html">BasicTlsSrpIdentity</a></dt>
+      <dd><p>A basic SRP Identity holder.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ByteQueue.html">ByteQueue</a></dt>
+      <dd><p>A queue for bytes. This file could be more optimized.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ByteQueueInputStream.html">ByteQueueInputStream</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ByteQueueOutputStream.html">ByteQueueOutputStream</a></dt>
+      <dd><p>OutputStream based on a ByteQueue implementation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CachedInformationType.html">CachedInformationType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertChainType.html">CertChainType</a></dt>
+      <dd><p>Implementation of the RFC 3546 3.3. CertChainType.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.Certificate.html">Certificate</a></dt>
+      <dd><p>Parsing and encoding of a <i>Certificate</i> struct from RFC 4346.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.Certificate.ParseOptions.html">Certificate.ParseOptions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateCompressionAlgorithm.html">CertificateCompressionAlgorithm</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateEntry.html">CertificateEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateRequest.html">CertificateRequest</a></dt>
+      <dd><p>Parsing and encoding of a <i>CertificateRequest</i> struct from RFC 4346.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateStatus.html">CertificateStatus</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateStatusRequest.html">CertificateStatusRequest</a></dt>
+      <dd><p>Implementation of the RFC 3546 3.6. CertificateStatusRequest.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateStatusRequestItemV2.html">CertificateStatusRequestItemV2</a></dt>
+      <dd><p>Implementation of the RFC 6961 2.2. CertificateStatusRequestItemV2.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateStatusType.html">CertificateStatusType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateType.html">CertificateType</a></dt>
+      <dd><p>RFC 6091</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateUrl.html">CertificateUrl</a></dt>
+      <dd><p>RFC 3546 3.3</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateVerify.html">CertificateVerify</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ChangeCipherSpec.html">ChangeCipherSpec</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ChannelBinding.html">ChannelBinding</a></dt>
+      <dd><p>RFC 5056</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CipherSuite.html">CipherSuite</a></dt>
+      <dd><p>RFC 2246 A.5</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CipherType.html">CipherType</a></dt>
+      <dd><p>RFC 2246</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ClientAuthenticationType.html">ClientAuthenticationType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ClientCertificateType.html">ClientCertificateType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ClientHello.html">ClientHello</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CombinedHash.html">CombinedHash</a></dt>
+      <dd><p>A combined hash, which implements md5(m) || sha1(m).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.CompressionMethod.html">CompressionMethod</a></dt>
+      <dd><p>RFC 2246 6.1</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ConnectionEnd.html">ConnectionEnd</a></dt>
+      <dd><p>RFC 2246</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ContentType.html">ContentType</a></dt>
+      <dd><p>RFC 2246 6.2.1</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsClient.html">DefaultTlsClient</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsCredentialedSigner.html">DefaultTlsCredentialedSigner</a></dt>
+      <dd><p>Container class for generating signatures that carries the signature type, parameters, public key
+certificate and public key's associated signer object.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsDHGroupVerifier.html">DefaultTlsDHGroupVerifier</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsHeartbeat.html">DefaultTlsHeartbeat</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsKeyExchangeFactory.html">DefaultTlsKeyExchangeFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsServer.html">DefaultTlsServer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DefaultTlsSrpConfigVerifier.html">DefaultTlsSrpConfigVerifier</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DigitallySigned.html">DigitallySigned</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.html">DtlsClientProtocol</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsProtocol.html">DtlsProtocol</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsRequest.html">DtlsRequest</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsServerProtocol.html">DtlsServerProtocol</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsServerProtocol.ServerHandshakeState.html">DtlsServerProtocol.ServerHandshakeState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsTransport.html">DtlsTransport</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsVerifier.html">DtlsVerifier</a></dt>
+      <dd><p>Implements cookie generation/verification for a DTLS server as described in RFC 4347,
+4.2.1. Denial of Service Countermeasures.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ECCurveType.html">ECCurveType</a></dt>
+      <dd><p>RFC 4492 5.4</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ECPointFormat.html">ECPointFormat</a></dt>
+      <dd><p>RFC 4492 5.1.2</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.EncryptionAlgorithm.html">EncryptionAlgorithm</a></dt>
+      <dd><p>RFC 2246</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ExporterLabel.html">ExporterLabel</a></dt>
+      <dd><p>RFC 5705</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ExtensionType.html">ExtensionType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HandshakeMessageInput.html">HandshakeMessageInput</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HandshakeType.html">HandshakeType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HashAlgorithm.html">HashAlgorithm</a></dt>
+      <dd><p>RFC 5246 7.4.1.4.1</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HeartbeatExtension.html">HeartbeatExtension</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HeartbeatMessage.html">HeartbeatMessage</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HeartbeatMessageType.html">HeartbeatMessageType</a></dt>
+      <dd><p>RFC 6520 3.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.HeartbeatMode.html">HeartbeatMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.IdentifierType.html">IdentifierType</a></dt>
+      <dd><p>RFC 6066</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.KeyExchangeAlgorithm.html">KeyExchangeAlgorithm</a></dt>
+      <dd><p>RFC 2246</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.KeyShareEntry.html">KeyShareEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.KeyUpdateRequest.html">KeyUpdateRequest</a></dt>
+      <dd><p>RFC 8446 4.6.3</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.MacAlgorithm.html">MacAlgorithm</a></dt>
+      <dd><p>RFC 2246</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.MaxFragmentLength.html">MaxFragmentLength</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.NameType.html">NameType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.NamedGroup.html">NamedGroup</a></dt>
+      <dd><p>RFC 7919</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.NamedGroupRole.html">NamedGroupRole</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.NewSessionTicket.html">NewSessionTicket</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.OcspStatusRequest.html">OcspStatusRequest</a></dt>
+      <dd><p>RFC 3546 3.6</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.OfferedPsks.html">OfferedPsks</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.PrfAlgorithm.html">PrfAlgorithm</a></dt>
+      <dd><p>RFC 5246</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ProtocolName.html">ProtocolName</a></dt>
+      <dd><p>RFC 7301 Represents a protocol name for use with ALPN.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.PskIdentity.html">PskIdentity</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.PskKeyExchangeMode.html">PskKeyExchangeMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.PskTlsClient.html">PskTlsClient</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.PskTlsServer.html">PskTlsServer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.RecordFormat.html">RecordFormat</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.RecordPreview.html">RecordPreview</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SecurityParameters.html">SecurityParameters</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ServerHello.html">ServerHello</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ServerName.html">ServerName</a></dt>
+      <dd><p>RFC 6066 3. Server Name Indication</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ServerNameList.html">ServerNameList</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ServerOnlyTlsAuthentication.html">ServerOnlyTlsAuthentication</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.ServerSrpParams.html">ServerSrpParams</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SessionParameters.html">SessionParameters</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SessionParameters.Builder.html">SessionParameters.Builder</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SignatureAlgorithm.html">SignatureAlgorithm</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a></dt>
+      <dd><p>RFC 5246 7.4.1.4.1</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SignatureScheme.html">SignatureScheme</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SimulatedTlsSrpIdentityManager.html">SimulatedTlsSrpIdentityManager</a></dt>
+      <dd><p>An implementation of <a class="xref" href="Org.BouncyCastle.Tls.TlsSrpIdentityManager.html">TlsSrpIdentityManager</a> that simulates the existence of &quot;unknown&quot;
+identities to obscure the fact that there is no verifier for them.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SrpTlsClient.html">SrpTlsClient</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SrpTlsServer.html">SrpTlsServer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SrtpProtectionProfile.html">SrtpProtectionProfile</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SupplementalDataEntry.html">SupplementalDataEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.SupplementalDataType.html">SupplementalDataType</a></dt>
+      <dd><p>RFC 4680</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsClientProtocol.html">TlsClientProtocol</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsDHKeyExchange.html">TlsDHKeyExchange</a></dt>
+      <dd><p>(D)TLS DH key exchange.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsDHUtilities.html">TlsDHUtilities</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsDHanonKeyExchange.html">TlsDHanonKeyExchange</a></dt>
+      <dd><p>(D)TLS DH_anon key exchange.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsDheKeyExchange.html">TlsDheKeyExchange</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsECDHKeyExchange.html">TlsECDHKeyExchange</a></dt>
+      <dd><p>(D)TLS ECDH key exchange (see RFC 4492).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsECDHanonKeyExchange.html">TlsECDHanonKeyExchange</a></dt>
+      <dd><p>(D)TLS ECDH_anon key exchange (see RFC 4492).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsECDheKeyExchange.html">TlsECDheKeyExchange</a></dt>
+      <dd><p>(D)TLS ECDHE key exchange (see RFC 4492).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsEccUtilities.html">TlsEccUtilities</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsException.html">TlsException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsExtensionsUtilities.html">TlsExtensionsUtilities</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsFatalAlert.html">TlsFatalAlert</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsFatalAlertReceived.html">TlsFatalAlertReceived</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsNoCloseNotifyException.html">TlsNoCloseNotifyException</a></dt>
+      <dd><p>This exception will be thrown (only) when the connection is closed by the peer without sending a
+<a class="xref" href="Org.BouncyCastle.Tls.AlertDescription.html#Org_BouncyCastle_Tls_AlertDescription_close_notify">close_notify</a> warning alert.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsObjectIdentifiers.html">TlsObjectIdentifiers</a></dt>
+      <dd><p>Object Identifiers associated with TLS extensions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsProtocol.html">TlsProtocol</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPskKeyExchange.html">TlsPskKeyExchange</a></dt>
+      <dd><p>(D)TLS PSK key exchange (RFC 4279).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsRsaKeyExchange.html">TlsRsaKeyExchange</a></dt>
+      <dd><p>(D)TLS RSA key exchange.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsServerProtocol.html">TlsServerProtocol</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpKeyExchange.html">TlsSrpKeyExchange</a></dt>
+      <dd><p>(D)TLS SRP key exchange (RFC 5054).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpLoginParameters.html">TlsSrpLoginParameters</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpUtilities.html">TlsSrpUtilities</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrtpUtilities.html">TlsSrtpUtilities</a></dt>
+      <dd><p>RFC 5764 DTLS Extension to Establish Keys for SRTP.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsTimeoutException.html">TlsTimeoutException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsUtilities.html">TlsUtilities</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TrustedAuthority.html">TrustedAuthority</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.UrlAndHash.html">UrlAndHash</a></dt>
+      <dd><p>RFC 6066 5.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.UseSrtpData.html">UseSrtpData</a></dt>
+      <dd><p>RFC 5764 4.1.1</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.UserMappingType.html">UserMappingType</a></dt>
+      <dd><p>RFC 4681</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DatagramReceiver.html">DatagramReceiver</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DatagramSender.html">DatagramSender</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DatagramTransport.html">DatagramTransport</a></dt>
+      <dd><p>Base interface for an object sending and receiving DTLS data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsAuthentication.html">TlsAuthentication</a></dt>
+      <dd><p>Base interface to provide TLS authentication credentials.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsClient.html">TlsClient</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsClientContext.html">TlsClientContext</a></dt>
+      <dd><p>Marker interface to distinguish a TLS client context.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCloseable.html">TlsCloseable</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a></dt>
+      <dd><p>Base interface for a TLS context implementation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedAgreement.html">TlsCredentialedAgreement</a></dt>
+      <dd><p>Support interface for generating a secret based on the credentials sent by a TLS peer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedDecryptor.html">TlsCredentialedDecryptor</a></dt>
+      <dd><p>Base interface for a class that decrypts TLS secrets.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedSigner.html">TlsCredentialedSigner</a></dt>
+      <dd><p>Support interface for generating a signature based on our private credentials.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></dt>
+      <dd><p>Base interface for interfaces/classes carrying TLS credentials.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsDHGroupVerifier.html">TlsDHGroupVerifier</a></dt>
+      <dd><p>Interface for verifying explicit Diffie-Hellman group parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsHandshakeHash.html">TlsHandshakeHash</a></dt>
+      <dd><p>Base interface for an object that can calculate a handshake hash.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsHeartbeat.html">TlsHeartbeat</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></dt>
+      <dd><p>A generic interface for key exchange implementations in (D)TLS.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsKeyExchangeFactory.html">TlsKeyExchangeFactory</a></dt>
+      <dd><p>Interface for a key exchange factory offering a variety of specific algorithms.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html">TlsPeer</a></dt>
+      <dd><p>Base interface for a (D)TLS endpoint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPsk.html">TlsPsk</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPskExternal.html">TlsPskExternal</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPskIdentity.html">TlsPskIdentity</a></dt>
+      <dd><p>Processor interface for a PSK identity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></dt>
+      <dd><p>Base interface for an object that can process a PSK identity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsServer.html">TlsServer</a></dt>
+      <dd><p>Interface describing a TLS server endpoint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsServerCertificate.html">TlsServerCertificate</a></dt>
+      <dd><p>Server certificate carrier interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsServerContext.html">TlsServerContext</a></dt>
+      <dd><p>Marker interface to distinguish a TLS server context.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a></dt>
+      <dd><p>Base interface for a carrier object for a TLS session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpConfigVerifier.html">TlsSrpConfigVerifier</a></dt>
+      <dd><p>Interface for verifying SRP config needs to conform to.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpIdentity.html">TlsSrpIdentity</a></dt>
+      <dd><p>Processor interface for an SRP identity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpIdentityManager.html">TlsSrpIdentityManager</a></dt>
+      <dd><p>Base interface for an object that can return login parameters from an SRP identity.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsRecordFlags.html">DtlsRecordFlags</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Org.BouncyCastle.Tls.DtlsRecordCallback.html">DtlsRecordCallback</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

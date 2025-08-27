@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Sha1Digest | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Sha1Digest | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest" class="text-break">
+Class Sha1Digest  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Digests.html">Digests</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Sha1Digest : GeneralDigest, IDigest, IMemoable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html">GeneralDigest</a></div>
+      <div><span class="xref">Sha1Digest</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Utilities.IMemoable.html">IMemoable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html#Org_BouncyCastle_Crypto_Digests_GeneralDigest_CopyIn_Org_BouncyCastle_Crypto_Digests_GeneralDigest_">GeneralDigest.CopyIn(GeneralDigest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html#Org_BouncyCastle_Crypto_Digests_GeneralDigest_Update_System_Byte_">GeneralDigest.Update(byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html#Org_BouncyCastle_Crypto_Digests_GeneralDigest_BlockUpdate_System_Byte___System_Int32_System_Int32_">GeneralDigest.BlockUpdate(byte[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html#Org_BouncyCastle_Crypto_Digests_GeneralDigest_BlockUpdate_System_ReadOnlySpan_System_Byte__">GeneralDigest.BlockUpdate(ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html#Org_BouncyCastle_Crypto_Digests_GeneralDigest_Finish">GeneralDigest.Finish()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Digests.GeneralDigest.html#Org_BouncyCastle_Crypto_Digests_GeneralDigest_GetByteLength">GeneralDigest.GetByteLength()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest__ctor_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest__ctor" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.#ctor">
+  Sha1Digest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sha1Digest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest__ctor_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest__ctor_Org_BouncyCastle_Crypto_Digests_Sha1Digest_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.#ctor(Org.BouncyCastle.Crypto.Digests.Sha1Digest)">
+  Sha1Digest(Sha1Digest)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sha1Digest(Sha1Digest t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Org.BouncyCastle.Crypto.Digests.Sha1Digest.html">Sha1Digest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_AlgorithmName_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.AlgorithmName*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_AlgorithmName" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.AlgorithmName">
+  AlgorithmName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The algorithm name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AlgorithmName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Copy_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.Copy*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Copy" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.Copy">
+  Copy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Produce a copy of this object with its configuration and in its current state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IMemoable Copy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Utilities.IMemoable.html">IMemoable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Copy_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned object may be used simply to store the state, or may be used as a similar object
+starting from the copied state.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_DoFinal_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_DoFinal_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.DoFinal(System.Byte[],System.Int32)">
+  DoFinal(byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Close the digest, producing the final digest value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int DoFinal(byte[] output, int outOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The byte array the digest is to be copied into.</p>
+</dd>
+    <dt><code>outOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The offset into the byte array the digest is to start at.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes written.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_DoFinal_System_Byte___System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This call leaves the digest reset.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_DoFinal_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_DoFinal_System_Span_System_Byte__" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.DoFinal(System.Span{System.Byte})">
+  DoFinal(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Close the digest, producing the final digest value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int DoFinal(Span&lt;byte&gt; output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The span the digest is to be copied into.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes written.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_DoFinal_System_Span_System_Byte___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This call leaves the digest reset.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_GetDigestSize_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.GetDigestSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_GetDigestSize" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.GetDigestSize">
+  GetDigestSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the size, in bytes, of the digest produced by this message digest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetDigestSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The size, in bytes, of the digest produced by this message digest.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Reset_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.Reset*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Reset" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Reset_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.Reset*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Reset_Org_BouncyCastle_Utilities_IMemoable_" data-uid="Org.BouncyCastle.Crypto.Digests.Sha1Digest.Reset(Org.BouncyCastle.Utilities.IMemoable)">
+  Reset(IMemoable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restore a copied object state into this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset(IMemoable other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Org.BouncyCastle.Utilities.IMemoable.html">IMemoable</a></dt>
+    <dd><p>an object originally {@link #copy() copied} from an object of the same type as this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Digests_Sha1Digest_Reset_Org_BouncyCastle_Utilities_IMemoable__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Implementations of this method <em>should</em> try to avoid or minimise memory allocation to perform the reset.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>if the provided object is not of the correct type.</p>
+</dd>
+    <dt><a class="xref" href="Org.BouncyCastle.Utilities.MemoableResetException.html">MemoableResetException</a></dt>
+    <dd><p>if the <b>other</b> parameter is in some other way invalid.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

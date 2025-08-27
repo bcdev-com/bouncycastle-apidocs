@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class JPakePrimeOrderGroup | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JPakePrimeOrderGroup | BouncyCastle Docs ">
+      
+      <meta name="description" content="A pre-computed prime order group for use during a J-PAKE exchange. Typically a Schnorr group is used.  In general, J-PAKE can use any prime order group that is suitable for public key cryptography, including elliptic curve cryptography. See JPakePrimeOrderGroups for convenient standard groups. NIST publishes many groups that can be used for the desired level of security.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup" class="text-break">
+Class JPakePrimeOrderGroup  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Agreement.html">Agreement</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Agreement.JPake.html">JPake</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A pre-computed prime order group for use during a J-PAKE exchange.</p>
+<p>Typically a Schnorr group is used.  In general, J-PAKE can use any prime order group
+that is suitable for public key cryptography, including elliptic curve cryptography.</p>
+<p>See JPakePrimeOrderGroups for convenient standard groups.</p>
+<p>NIST <a href="http://csrc.nist.gov/groups/ST/toolkit/documents/Examples/DSA2_All.pdf">publishes</a>
+many groups that can be used for the desired level of security.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JPakePrimeOrderGroup</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">JPakePrimeOrderGroup</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup__ctor_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup__ctor_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.#ctor(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)">
+  JPakePrimeOrderGroup(BigInteger, BigInteger, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a new JPakePrimeOrderGroup.</p>
+<p>In general, you should use one of the pre-approved groups from
+JPakePrimeOrderGroups, rather than manually constructing one.</p>
+<p>The following basic checks are performed:</p>
+<p>p-1 must be evenly divisible by q
+g must be in [2, p-1]
+g^q mod p must equal 1
+p must be prime (within reasonably certainty)
+q must be prime (within reasonably certainty)</p>
+<p>The prime checks are performed using BigInteger#isProbablePrime(int),
+and are therefore subject to the same probability guarantees.</p>
+<p>These checks prevent trivial mistakes.
+However, due to the small uncertainties if p and q are not prime,
+advanced attacks are not prevented.
+Use it at your own risk.</p>
+<p>Throws NullReferenceException if any argument is null. Throws
+InvalidOperationException is any of the above validations fail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JPakePrimeOrderGroup(BigInteger p, BigInteger q, BigInteger g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>q</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>g</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup__ctor_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup__ctor_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_System_Boolean_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.#ctor(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,System.Boolean)">
+  JPakePrimeOrderGroup(BigInteger, BigInteger, BigInteger, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor used by the pre-approved groups in JPakePrimeOrderGroups.
+These pre-approved groups can avoid the expensive checks.
+User-specified groups should not use this constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JPakePrimeOrderGroup(BigInteger p, BigInteger q, BigInteger g, bool skipChecks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>q</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>g</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>skipChecks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_G_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.G*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_G" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.G">
+  G
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger G { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_P_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.P*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_P" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.P">
+  P
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger P { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_Q_" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.Q*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_Q" data-uid="Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.Q">
+  Q
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger Q { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

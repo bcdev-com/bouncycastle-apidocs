@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Asn1TaggedObject | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Asn1TaggedObject | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_Asn1TaggedObject" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject" class="text-break">
+Class Asn1TaggedObject  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Asn1TaggedObject : Asn1Object, Asn1TaggedObjectParser, IAsn1Convertible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></div>
+      <div><span class="xref">Asn1TaggedObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html">Asn1TaggedObjectParser</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.DerTaggedObject.html">DerTaggedObject</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_EncodeTo_System_IO_Stream_">Asn1Object.EncodeTo(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_EncodeTo_System_IO_Stream_System_String_">Asn1Object.EncodeTo(Stream, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_Equals_Org_BouncyCastle_Asn1_Asn1Object_">Asn1Object.Equals(Asn1Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_FromByteArray_System_Byte___">Asn1Object.FromByteArray(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_FromStream_System_IO_Stream_">Asn1Object.FromStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_ToAsn1Object">Asn1Object.ToAsn1Object()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Ber">Asn1Encodable.Ber</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Der">Asn1Encodable.Der</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_DL">Asn1Encodable.DL</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded">Asn1Encodable.GetEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_System_String_">Asn1Encodable.GetEncoded(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded">Asn1Encodable.GetDerEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode">Asn1Encodable.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Equals_System_Object_">Asn1Encodable.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject__ctor_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject__ctor_System_Boolean_System_Int32_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.#ctor(System.Boolean,System.Int32,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  Asn1TaggedObject(bool, int, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Asn1TaggedObject(bool isExplicit, int tagNo, Asn1Encodable obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject__ctor_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject__ctor_System_Boolean_System_Int32_System_Int32_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.#ctor(System.Boolean,System.Int32,System.Int32,Org.BouncyCastle.Asn1.Asn1Encodable)">
+  Asn1TaggedObject(bool, int, int, Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Asn1TaggedObject(bool isExplicit, int tagClass, int tagNo, Asn1Encodable obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_TagClass_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.TagClass*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_TagClass" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.TagClass">
+  TagClass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TagClass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_TagNo_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.TagNo*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_TagNo" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.TagNo">
+  TagNo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TagNo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_Asn1Equals_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.Asn1Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_Asn1Equals_Org_BouncyCastle_Asn1_Asn1Object_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)">
+  Asn1Equals(Asn1Object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool Asn1Equals(Asn1Object asn1Object)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asn1Object</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_Asn1GetHashCode_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.Asn1GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_Asn1GetHashCode" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.Asn1GetHashCode">
+  Asn1GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int Asn1GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseObject_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetBaseObject*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseObject" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetBaseObject">
+  GetBaseObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Needed for open types, until we have better type-guided parsing support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1Encodable GetBaseObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseObject_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use sparingly for other purposes, and prefer <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseTagged">GetExplicitBaseTagged()</a>,
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_GetImplicitBaseTagged_System_Int32_System_Int32_">GetImplicitBaseTagged(int, int)</a> or <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseUniversal_System_Boolean_System_Int32_">GetBaseUniversal(bool, int)</a> where possible.
+Before using, check for matching tag <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_TagClass">class</a> and <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_TagNo">number</a>.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseUniversal_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetBaseUniversal*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseUniversal_System_Boolean_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetBaseUniversal(System.Boolean,System.Int32)">
+  GetBaseUniversal(bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1Object GetBaseUniversal(bool declaredExplicit, int tagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseObject_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetExplicitBaseObject*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseObject" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetExplicitBaseObject">
+  GetExplicitBaseObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Needed for open types, until we have better type-guided parsing support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1Encodable GetExplicitBaseObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseObject_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use sparingly for other purposes, and prefer <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseTagged">GetExplicitBaseTagged()</a> or
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_GetBaseUniversal_System_Boolean_System_Int32_">GetBaseUniversal(bool, int)</a> where possible. Before using, check for matching tag
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_TagClass">class</a> and <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html#Org_BouncyCastle_Asn1_Asn1TaggedObject_TagNo">number</a>.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseTagged_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetExplicitBaseTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetExplicitBaseTagged" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetExplicitBaseTagged">
+  GetExplicitBaseTagged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1TaggedObject GetExplicitBaseTagged()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetImplicitBaseTagged_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetImplicitBaseTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetImplicitBaseTagged_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetImplicitBaseTagged(System.Int32,System.Int32)">
+  GetImplicitBaseTagged(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1TaggedObject GetImplicitBaseTagged(int baseTagClass, int baseTagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseTagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>baseTagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)">
+  GetInstance(Asn1TaggedObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetInstance(Asn1TaggedObject taggedObject, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Int32_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Int32,System.Boolean)">
+  GetInstance(Asn1TaggedObject, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetInstance(Asn1TaggedObject taggedObject, int tagClass, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Int32_System_Int32_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Int32,System.Int32,System.Boolean)">
+  GetInstance(Asn1TaggedObject, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetInstance(Asn1TaggedObject taggedObject, int tagClass, int tagNo, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_System_Object_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance(System.Object)">
+  GetInstance(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetInstance(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_System_Object_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance(System.Object,System.Int32)">
+  GetInstance(object, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetInstance(object obj, int tagClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetInstance_System_Object_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetInstance(System.Object,System.Int32,System.Int32)">
+  GetInstance(object, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetInstance(object obj, int tagClass, int tagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetObject_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetObject*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetObject" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetObject">
+  GetObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whatever was following the tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Will be removed&quot;)]
+public Asn1Object GetObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetObject_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Tagged objects are generally context dependent. If you're trying to extract a tagged object you should be
+going via the appropriate GetInstance method.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetOptional_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetOptional*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetOptional_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetOptional(Org.BouncyCastle.Asn1.Asn1Encodable)">
+  GetOptional(Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetOptional(Asn1Encodable element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetTagged_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_GetTagged_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.GetTagged(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)">
+  GetTagged(Asn1TaggedObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Asn1TaggedObject GetTagged(Asn1TaggedObject taggedObject, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasContextTag_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasContextTag*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasContextTag" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasContextTag">
+  HasContextTag()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasContextTag()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasContextTag_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasContextTag*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasContextTag_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasContextTag(System.Int32)">
+  HasContextTag(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasContextTag(int tagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasTag_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasTag*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasTag_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasTag(System.Int32,System.Int32)">
+  HasTag(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTag(int tagClass, int tagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasTagClass_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasTagClass*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_HasTagClass_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.HasTagClass(System.Int32)">
+  HasTagClass(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTagClass(int tagClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_IsExplicit_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.IsExplicit*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_IsExplicit" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.IsExplicit">
+  IsExplicit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExplicit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseBaseUniversal_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseBaseUniversal*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseBaseUniversal_System_Boolean_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseBaseUniversal(System.Boolean,System.Int32)">
+  ParseBaseUniversal(bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsn1Convertible ParseBaseUniversal(bool declaredExplicit, int baseTagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>baseTagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseExplicitBaseObject_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseExplicitBaseObject*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseExplicitBaseObject" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseExplicitBaseObject">
+  ParseExplicitBaseObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Needed for open types, until we have better type-guided parsing support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsn1Convertible ParseExplicitBaseObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseExplicitBaseObject_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use sparingly for other purposes, and prefer <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html#Org_BouncyCastle_Asn1_Asn1TaggedObjectParser_ParseExplicitBaseTagged">ParseExplicitBaseTagged()</a> or
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html#Org_BouncyCastle_Asn1_Asn1TaggedObjectParser_ParseBaseUniversal_System_Boolean_System_Int32_">ParseBaseUniversal(bool, int)</a> where possible. Before using, check for matching tag
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html#Org_BouncyCastle_Asn1_Asn1TaggedObjectParser_TagClass">class</a> and <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html#Org_BouncyCastle_Asn1_Asn1TaggedObjectParser_TagNo">number</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseExplicitBaseTagged_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseExplicitBaseTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseExplicitBaseTagged" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseExplicitBaseTagged">
+  ParseExplicitBaseTagged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1TaggedObjectParser ParseExplicitBaseTagged()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html">Asn1TaggedObjectParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseImplicitBaseTagged_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseImplicitBaseTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ParseImplicitBaseTagged_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ParseImplicitBaseTagged(System.Int32,System.Int32)">
+  ParseImplicitBaseTagged(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1TaggedObjectParser ParseImplicitBaseTagged(int baseTagClass, int baseTagNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseTagClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>baseTagNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObjectParser.html">Asn1TaggedObjectParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ToString_" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ToString*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1TaggedObject_ToString" data-uid="Org.BouncyCastle.Asn1.Asn1TaggedObject.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

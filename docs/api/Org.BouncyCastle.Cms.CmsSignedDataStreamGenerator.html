@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CmsSignedDataStreamGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CmsSignedDataStreamGenerator | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator" class="text-break">
+Class CmsSignedDataStreamGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Cms.html">Cms</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CmsSignedDataStreamGenerator : CmsSignedGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html">CmsSignedGenerator</a></div>
+      <div><span class="xref">CmsSignedDataStreamGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_Data">CmsSignedGenerator.Data</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha1">CmsSignedGenerator.DigestSha1</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha224">CmsSignedGenerator.DigestSha224</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha256">CmsSignedGenerator.DigestSha256</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha384">CmsSignedGenerator.DigestSha384</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha512">CmsSignedGenerator.DigestSha512</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha512_224">CmsSignedGenerator.DigestSha512_224</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha512_256">CmsSignedGenerator.DigestSha512_256</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha3_224">CmsSignedGenerator.DigestSha3_224</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha3_256">CmsSignedGenerator.DigestSha3_256</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha3_384">CmsSignedGenerator.DigestSha3_384</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSha3_512">CmsSignedGenerator.DigestSha3_512</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestShake128">CmsSignedGenerator.DigestShake128</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestShake256">CmsSignedGenerator.DigestShake256</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestMD5">CmsSignedGenerator.DigestMD5</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestGost3411">CmsSignedGenerator.DigestGost3411</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestRipeMD128">CmsSignedGenerator.DigestRipeMD128</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestRipeMD160">CmsSignedGenerator.DigestRipeMD160</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestRipeMD256">CmsSignedGenerator.DigestRipeMD256</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestSM3">CmsSignedGenerator.DigestSM3</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionRsa">CmsSignedGenerator.EncryptionRsa</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionDsa">CmsSignedGenerator.EncryptionDsa</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionECDsa">CmsSignedGenerator.EncryptionECDsa</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionRsaPss">CmsSignedGenerator.EncryptionRsaPss</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionGost3410">CmsSignedGenerator.EncryptionGost3410</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionECGost3410">CmsSignedGenerator.EncryptionECGost3410</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionECGost3410_2012_256">CmsSignedGenerator.EncryptionECGost3410_2012_256</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_EncryptionECGost3410_2012_512">CmsSignedGenerator.EncryptionECGost3410_2012_512</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_m_random">CmsSignedGenerator.m_random</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_GetBaseParameters_Org_BouncyCastle_Asn1_DerObjectIdentifier_Org_BouncyCastle_Asn1_X509_AlgorithmIdentifier_System_Byte___">CmsSignedGenerator.GetBaseParameters(DerObjectIdentifier, AlgorithmIdentifier, byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_GetAttributeSet_Org_BouncyCastle_Asn1_Cms_AttributeTable_">CmsSignedGenerator.GetAttributeSet(AttributeTable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddAttributeCertificate_Org_BouncyCastle_X509_X509V2AttributeCertificate_">CmsSignedGenerator.AddAttributeCertificate(X509V2AttributeCertificate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddAttributeCertificates_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509V2AttributeCertificate__">CmsSignedGenerator.AddAttributeCertificates(IStore&lt;X509V2AttributeCertificate&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddCertificate_Org_BouncyCastle_X509_X509Certificate_">CmsSignedGenerator.AddCertificate(X509Certificate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddCertificates_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Certificate__">CmsSignedGenerator.AddCertificates(IStore&lt;X509Certificate&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddCrl_Org_BouncyCastle_X509_X509Crl_">CmsSignedGenerator.AddCrl(X509Crl)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddCrls_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Crl__">CmsSignedGenerator.AddCrls(IStore&lt;X509Crl&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddOtherRevocationInfo_Org_BouncyCastle_Asn1_Cms_OtherRevocationInfoFormat_">CmsSignedGenerator.AddOtherRevocationInfo(OtherRevocationInfoFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddOtherRevocationInfo_Org_BouncyCastle_Asn1_DerObjectIdentifier_Org_BouncyCastle_Asn1_Asn1Encodable_">CmsSignedGenerator.AddOtherRevocationInfo(DerObjectIdentifier, Asn1Encodable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddOtherRevocationInfos_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_Asn1_Cms_OtherRevocationInfoFormat__">CmsSignedGenerator.AddOtherRevocationInfos(IStore&lt;OtherRevocationInfoFormat&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddOtherRevocationInfos_Org_BouncyCastle_Asn1_DerObjectIdentifier_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_Asn1_Asn1Encodable__">CmsSignedGenerator.AddOtherRevocationInfos(DerObjectIdentifier, IStore&lt;Asn1Encodable&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_AddSigners_Org_BouncyCastle_Cms_SignerInformationStore_">CmsSignedGenerator.AddSigners(SignerInformationStore)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_DigestAlgorithmFinder">CmsSignedGenerator.DigestAlgorithmFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_GetGeneratedDigests">CmsSignedGenerator.GetGeneratedDigests()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_UseDerForCerts">CmsSignedGenerator.UseDerForCerts</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Cms.CmsSignedGenerator.html#Org_BouncyCastle_Cms_CmsSignedGenerator_UseDerForCrls">CmsSignedGenerator.UseDerForCrls</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator__ctor_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator__ctor" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.#ctor">
+  CmsSignedDataStreamGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmsSignedDataStreamGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator__ctor_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator__ctor_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.#ctor(Org.BouncyCastle.Security.SecureRandom)">
+  CmsSignedDataStreamGenerator(SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor allowing specific source of randomness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmsSignedDataStreamGenerator(SecureRandom random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>random</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd><p>Instance of <code>SecureRandom</code> to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddDigests_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddDigests*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddDigests_System_Collections_Generic_IEnumerable_System_String__" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddDigests(System.Collections.Generic.IEnumerable{System.String})">
+  AddDigests(IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDigests(IEnumerable&lt;string&gt; digestOids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>digestOids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddDigests_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddDigests*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddDigests_System_String___" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddDigests(System.String[])">
+  AddDigests(params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDigests(params string[] digestOids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>digestOids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String)">
+  AddSigner(AsymmetricKeyParameter, X509Certificate, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, X509Certificate cert, string digestOid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_Org_BouncyCastle_Asn1_Cms_AttributeTable_Org_BouncyCastle_Asn1_Cms_AttributeTable_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,Org.BouncyCastle.Asn1.Cms.AttributeTable,Org.BouncyCastle.Asn1.Cms.AttributeTable)">
+  AddSigner(AsymmetricKeyParameter, X509Certificate, string, AttributeTable, AttributeTable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, X509Certificate cert, string digestOid, AttributeTable signedAttr, AttributeTable unsignedAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,Org.BouncyCastle.Cms.CmsAttributeTableGenerator,Org.BouncyCastle.Cms.CmsAttributeTableGenerator)">
+  AddSigner(AsymmetricKeyParameter, X509Certificate, string, CmsAttributeTableGenerator, CmsAttributeTableGenerator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, X509Certificate cert, string digestOid, CmsAttributeTableGenerator signedAttrGenerator, CmsAttributeTableGenerator unsignedAttrGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_System_String_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,System.String)">
+  AddSigner(AsymmetricKeyParameter, X509Certificate, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, X509Certificate cert, string encryptionOid, string digestOid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_System_String_Org_BouncyCastle_Asn1_Cms_AttributeTable_Org_BouncyCastle_Asn1_Cms_AttributeTable_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,System.String,Org.BouncyCastle.Asn1.Cms.AttributeTable,Org.BouncyCastle.Asn1.Cms.AttributeTable)">
+  AddSigner(AsymmetricKeyParameter, X509Certificate, string, string, AttributeTable, AttributeTable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, X509Certificate cert, string encryptionOid, string digestOid, AttributeTable signedAttr, AttributeTable unsignedAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_System_String_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String,System.String,Org.BouncyCastle.Cms.CmsAttributeTableGenerator,Org.BouncyCastle.Cms.CmsAttributeTableGenerator)">
+  AddSigner(AsymmetricKeyParameter, X509Certificate, string, string, CmsAttributeTableGenerator, CmsAttributeTableGenerator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, X509Certificate cert, string encryptionOid, string digestOid, CmsAttributeTableGenerator signedAttrGenerator, CmsAttributeTableGenerator unsignedAttrGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___System_String_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[],System.String)">
+  AddSigner(AsymmetricKeyParameter, byte[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, byte[] subjectKeyID, string digestOid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subjectKeyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___System_String_Org_BouncyCastle_Asn1_Cms_AttributeTable_Org_BouncyCastle_Asn1_Cms_AttributeTable_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[],System.String,Org.BouncyCastle.Asn1.Cms.AttributeTable,Org.BouncyCastle.Asn1.Cms.AttributeTable)">
+  AddSigner(AsymmetricKeyParameter, byte[], string, AttributeTable, AttributeTable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, byte[] subjectKeyID, string digestOid, AttributeTable signedAttr, AttributeTable unsignedAttr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subjectKeyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttr</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.AttributeTable.html">AttributeTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___System_String_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[],System.String,Org.BouncyCastle.Cms.CmsAttributeTableGenerator,Org.BouncyCastle.Cms.CmsAttributeTableGenerator)">
+  AddSigner(AsymmetricKeyParameter, byte[], string, CmsAttributeTableGenerator, CmsAttributeTableGenerator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, byte[] subjectKeyID, string digestOid, CmsAttributeTableGenerator signedAttrGenerator, CmsAttributeTableGenerator unsignedAttrGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subjectKeyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___System_String_System_String_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[],System.String,System.String)">
+  AddSigner(AsymmetricKeyParameter, byte[], string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, byte[] subjectKeyID, string encryptionOid, string digestOid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subjectKeyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_AddSigner_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___System_String_System_String_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_Org_BouncyCastle_Cms_CmsAttributeTableGenerator_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.AddSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[],System.String,System.String,Org.BouncyCastle.Cms.CmsAttributeTableGenerator,Org.BouncyCastle.Cms.CmsAttributeTableGenerator)">
+  AddSigner(AsymmetricKeyParameter, byte[], string, string, CmsAttributeTableGenerator, CmsAttributeTableGenerator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSigner(AsymmetricKeyParameter privateKey, byte[] subjectKeyID, string encryptionOid, string digestOid, CmsAttributeTableGenerator signedAttrGenerator, CmsAttributeTableGenerator unsignedAttrGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>privateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subjectKeyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>digestOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+    <dt><code>unsignedAttrGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_System_IO_Stream_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open(System.IO.Stream)">
+  Open(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream Open(Stream outStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_System_IO_Stream_System_Boolean_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open(System.IO.Stream,System.Boolean)">
+  Open(Stream, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream Open(Stream outStream, bool encapsulate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>encapsulate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_System_IO_Stream_System_Boolean_System_IO_Stream_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open(System.IO.Stream,System.Boolean,System.IO.Stream)">
+  Open(Stream, bool, Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream Open(Stream outStream, bool encapsulate, Stream dataOutputStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>encapsulate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>dataOutputStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_System_IO_Stream_System_String_System_Boolean_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open(System.IO.Stream,System.String,System.Boolean)">
+  Open(Stream, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream Open(Stream outStream, string signedContentType, bool encapsulate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>signedContentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>encapsulate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_Open_System_IO_Stream_System_String_System_Boolean_System_IO_Stream_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.Open(System.IO.Stream,System.String,System.Boolean,System.IO.Stream)">
+  Open(Stream, string, bool, Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream Open(Stream outStream, string signedContentType, bool encapsulate, Stream dataOutputStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>signedContentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>encapsulate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>dataOutputStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_SetBufferSize_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.SetBufferSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsSignedDataStreamGenerator_SetBufferSize_System_Int32_" data-uid="Org.BouncyCastle.Cms.CmsSignedDataStreamGenerator.SetBufferSize(System.Int32)">
+  SetBufferSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBufferSize(int bufferSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

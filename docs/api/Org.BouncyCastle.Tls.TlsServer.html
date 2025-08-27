@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface TlsServer | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface TlsServer | BouncyCastle Docs ">
+      
+      <meta name="description" content="Interface describing a TLS server endpoint.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Tls.TlsServer">
+
+
+
+  <h1 id="Org_BouncyCastle_Tls_TlsServer" data-uid="Org.BouncyCastle.Tls.TlsServer" class="text-break">
+Interface TlsServer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Tls.html">Tls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Interface describing a TLS server endpoint.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface TlsServer : TlsPeer</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_Crypto">TlsPeer.Crypto</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_NotifyCloseHandle_Org_BouncyCastle_Tls_TlsCloseable_">TlsPeer.NotifyCloseHandle(TlsCloseable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_Cancel">TlsPeer.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetProtocolVersions">TlsPeer.GetProtocolVersions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetCipherSuites">TlsPeer.GetCipherSuites()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeBeginning">TlsPeer.NotifyHandshakeBeginning()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetHandshakeTimeoutMillis">TlsPeer.GetHandshakeTimeoutMillis()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_AllowLegacyResumption">TlsPeer.AllowLegacyResumption()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetMaxCertificateChainLength">TlsPeer.GetMaxCertificateChainLength()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetMaxHandshakeMessageSize">TlsPeer.GetMaxHandshakeMessageSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetPskKeyExchangeModes">TlsPeer.GetPskKeyExchangeModes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_RequiresCloseNotify">TlsPeer.RequiresCloseNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_RequiresExtendedMasterSecret">TlsPeer.RequiresExtendedMasterSecret()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedMasterSecret">TlsPeer.ShouldUseExtendedMasterSecret()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_ShouldUseExtendedPadding">TlsPeer.ShouldUseExtendedPadding()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_ShouldUseGmtUnixTime">TlsPeer.ShouldUseGmtUnixTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_NotifySecureRenegotiation_System_Boolean_">TlsPeer.NotifySecureRenegotiation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetKeyExchangeFactory">TlsPeer.GetKeyExchangeFactory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_NotifyAlertRaised_System_Int16_System_Int16_System_String_System_Exception_">TlsPeer.NotifyAlertRaised(short, short, string, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_NotifyAlertReceived_System_Int16_System_Int16_">TlsPeer.NotifyAlertReceived(short, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeComplete">TlsPeer.NotifyHandshakeComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetHeartbeat">TlsPeer.GetHeartbeat()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_GetHeartbeatPolicy">TlsPeer.GetHeartbeatPolicy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Tls.TlsPeer.html#Org_BouncyCastle_Tls_TlsPeer_IgnoreCorruptDtlsRecords">TlsPeer.IgnoreCorruptDtlsRecords</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetCertificateRequest_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetCertificateRequest*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetCertificateRequest" data-uid="Org.BouncyCastle.Tls.TlsServer.GetCertificateRequest">
+  GetCertificateRequest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CertificateRequest GetCertificateRequest()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateRequest.html">CertificateRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetCertificateStatus_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetCertificateStatus*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetCertificateStatus" data-uid="Org.BouncyCastle.Tls.TlsServer.GetCertificateStatus">
+  GetCertificateStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CertificateStatus GetCertificateStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.CertificateStatus.html">CertificateStatus</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Tls.CertificateStatus.html">CertificateStatus</a> to be sent to the client (or null for none).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsServer_GetCertificateStatus_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method will be called (only) if the server included an extension of type &quot;status_request&quot; with empty
+&quot;extension_data&quot; in the extended server hello. See <i>RFC 3546 3.6. Certificate Status Request</i>. If a
+non-null <a class="xref" href="Org.BouncyCastle.Tls.CertificateStatus.html">CertificateStatus</a> is returned, it is sent to the client as a handshake message of
+type &quot;certificate_status&quot;.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetCredentials_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetCredentials*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetCredentials" data-uid="Org.BouncyCastle.Tls.TlsServer.GetCredentials">
+  GetCredentials()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return server credentials to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsCredentials GetCredentials()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></dt>
+    <dd><p>a <a class="xref" href="Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a> object or null for anonymous key exchanges.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsServer_GetCredentials_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned value may be null, or else it MUST implement <em>exactly one</em> of
+<a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedAgreement.html">TlsCredentialedAgreement</a>, <a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedDecryptor.html">TlsCredentialedDecryptor</a>, or
+<a class="xref" href="Org.BouncyCastle.Tls.TlsCredentialedSigner.html">TlsCredentialedSigner</a>, depending on the key exchange that was negotiated.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetDHConfig_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetDHConfig*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetDHConfig" data-uid="Org.BouncyCastle.Tls.TlsServer.GetDHConfig">
+  GetDHConfig()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsDHConfig GetDHConfig()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsDHConfig.html">TlsDHConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetECDHConfig_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetECDHConfig*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetECDHConfig" data-uid="Org.BouncyCastle.Tls.TlsServer.GetECDHConfig">
+  GetECDHConfig()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsECConfig GetECDHConfig()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.Crypto.TlsECConfig.html">TlsECConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetExternalPsk_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetExternalPsk*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetExternalPsk_System_Collections_Generic_IList_Org_BouncyCastle_Tls_PskIdentity__" data-uid="Org.BouncyCastle.Tls.TlsServer.GetExternalPsk(System.Collections.Generic.IList{Org.BouncyCastle.Tls.PskIdentity})">
+  GetExternalPsk(IList&lt;PskIdentity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the <a class="xref" href="Org.BouncyCastle.Tls.TlsPskExternal.html">external PSK</a> to select from the ClientHello.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsPskExternal GetExternalPsk(IList&lt;PskIdentity&gt; identities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.PskIdentity.html">PskIdentity</a>&gt;</dt>
+    <dd><p>an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of <a class="xref" href="Org.BouncyCastle.Tls.PskIdentity.html">PskIdentity</a> instances.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPskExternal.html">TlsPskExternal</a></dt>
+    <dd><p>The <a class="xref" href="Org.BouncyCastle.Tls.TlsPskExternal.html">TlsPskExternal</a> corresponding to the selected identity, or null to not select
+any.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsServer_GetExternalPsk_System_Collections_Generic_IList_Org_BouncyCastle_Tls_PskIdentity___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>WARNING: EXPERIMENTAL FEATURE, UNSTABLE API
+Note that this will only be called when TLS 1.3 or higher is amongst the offered protocol versions, and one
+or more PSKs are actually offered.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetNewSessionID_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetNewSessionID*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetNewSessionID" data-uid="Org.BouncyCastle.Tls.TlsServer.GetNewSessionID">
+  GetNewSessionID()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] GetNewSessionID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetNewSessionTicket_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetNewSessionTicket*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetNewSessionTicket" data-uid="Org.BouncyCastle.Tls.TlsServer.GetNewSessionTicket">
+  GetNewSessionTicket()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>RFC 5077 3.3. NewSessionTicket Handshake Message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NewSessionTicket GetNewSessionTicket()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.NewSessionTicket.html">NewSessionTicket</a></dt>
+    <dd><p>The ticket.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsServer_GetNewSessionTicket_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method will be called (only) if a NewSessionTicket extension was sent by the server. See <i>RFC 5077
+4. Recommended Ticket Construction</i> for recommended format and protection.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetPskIdentityManager_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetPskIdentityManager*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetPskIdentityManager" data-uid="Org.BouncyCastle.Tls.TlsServer.GetPskIdentityManager">
+  GetPskIdentityManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsPskIdentityManager GetPskIdentityManager()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetSelectedCipherSuite_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSelectedCipherSuite*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetSelectedCipherSuite" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSelectedCipherSuite">
+  GetSelectedCipherSuite()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetSelectedCipherSuite()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetServerExtensions_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerExtensions*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetServerExtensions" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerExtensions">
+  GetServerExtensions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDictionary&lt;int, byte[]&gt; GetServerExtensions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>(Int32 -&gt; byte[])</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetServerExtensionsForConnection_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerExtensionsForConnection*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetServerExtensionsForConnection_System_Collections_Generic_IDictionary_System_Int32_System_Byte____" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerExtensionsForConnection(System.Collections.Generic.IDictionary{System.Int32,System.Byte[]})">
+  GetServerExtensionsForConnection(IDictionary&lt;int, byte[]&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetServerExtensionsForConnection(IDictionary&lt;int, byte[]&gt; serverExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverExtensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>(Int32 -&gt; byte[])</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetServerSupplementalData_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerSupplementalData*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetServerSupplementalData" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerSupplementalData">
+  GetServerSupplementalData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;SupplementalDataEntry&gt; GetServerSupplementalData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SupplementalDataEntry.html">SupplementalDataEntry</a>&gt;</dt>
+    <dd><p>(SupplementalDataEntry)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetServerVersion_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerVersion*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetServerVersion" data-uid="Org.BouncyCastle.Tls.TlsServer.GetServerVersion">
+  GetServerVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion GetServerVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetSessionToResume_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSessionToResume*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetSessionToResume_System_Byte___" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSessionToResume(System.Byte[])">
+  GetSessionToResume(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the specified session, if available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSession GetSessionToResume(byte[] sessionID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sessionID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>the ID of the session to resume.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a></dt>
+    <dd><p>A <a class="xref" href="Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a> with the specified session ID, or null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsServer_GetSessionToResume_System_Byte____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that the peer's certificate chain for the session (if any) may need to be periodically revalidated.</p>
+</div>
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="Org.BouncyCastle.Tls.SessionParameters.html#Org_BouncyCastle_Tls_SessionParameters_PeerCertificate">PeerCertificate</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetSrpLoginParameters_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSrpLoginParameters*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetSrpLoginParameters" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSrpLoginParameters">
+  GetSrpLoginParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSrpLoginParameters GetSrpLoginParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Tls.TlsSrpLoginParameters.html">TlsSrpLoginParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_GetSupportedGroups_" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSupportedGroups*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_GetSupportedGroups" data-uid="Org.BouncyCastle.Tls.TlsServer.GetSupportedGroups">
+  GetSupportedGroups()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] GetSupportedGroups()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_Init_" data-uid="Org.BouncyCastle.Tls.TlsServer.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_Init_Org_BouncyCastle_Tls_TlsServerContext_" data-uid="Org.BouncyCastle.Tls.TlsServer.Init(Org.BouncyCastle.Tls.TlsServerContext)">
+  Init(TlsServerContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Init(TlsServerContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsServerContext.html">TlsServerContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_NotifyClientCertificate_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyClientCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_NotifyClientCertificate_Org_BouncyCastle_Tls_Certificate_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyClientCertificate(Org.BouncyCastle.Tls.Certificate)">
+  NotifyClientCertificate(Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the protocol handler to report the client certificate, only if
+<a class="xref" href="Org.BouncyCastle.Tls.TlsServer.html#Org_BouncyCastle_Tls_TlsServer_GetCertificateRequest">GetCertificateRequest()</a> returned non-null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyClientCertificate(Certificate clientCertificate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientCertificate</code> <a class="xref" href="Org.BouncyCastle.Tls.Certificate.html">Certificate</a></dt>
+    <dd><p>the effective client certificate (may be an empty chain).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Tls_TlsServer_NotifyClientCertificate_Org_BouncyCastle_Tls_Certificate__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note: this method is responsible for certificate verification and validation.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_NotifyClientVersion_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyClientVersion*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_NotifyClientVersion_Org_BouncyCastle_Tls_ProtocolVersion_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyClientVersion(Org.BouncyCastle.Tls.ProtocolVersion)">
+  NotifyClientVersion(ProtocolVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyClientVersion(ProtocolVersion clientVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientVersion</code> <a class="xref" href="Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_NotifyFallback_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyFallback*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_NotifyFallback_System_Boolean_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyFallback(System.Boolean)">
+  NotifyFallback(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyFallback(bool isFallback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isFallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_NotifyOfferedCipherSuites_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyOfferedCipherSuites*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_NotifyOfferedCipherSuites_System_Int32___" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifyOfferedCipherSuites(System.Int32[])">
+  NotifyOfferedCipherSuites(int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyOfferedCipherSuites(int[] offeredCipherSuites)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offeredCipherSuites</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_NotifySession_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifySession*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_NotifySession_Org_BouncyCastle_Tls_TlsSession_" data-uid="Org.BouncyCastle.Tls.TlsServer.NotifySession(Org.BouncyCastle.Tls.TlsSession)">
+  NotifySession(TlsSession)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifySession(TlsSession session)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>session</code> <a class="xref" href="Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_ProcessClientExtensions_" data-uid="Org.BouncyCastle.Tls.TlsServer.ProcessClientExtensions*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_ProcessClientExtensions_System_Collections_Generic_IDictionary_System_Int32_System_Byte____" data-uid="Org.BouncyCastle.Tls.TlsServer.ProcessClientExtensions(System.Collections.Generic.IDictionary{System.Int32,System.Byte[]})">
+  ProcessClientExtensions(IDictionary&lt;int, byte[]&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ProcessClientExtensions(IDictionary&lt;int, byte[]&gt; clientExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientExtensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>(Int32 -&gt; byte[])</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Tls_TlsServer_ProcessClientSupplementalData_" data-uid="Org.BouncyCastle.Tls.TlsServer.ProcessClientSupplementalData*"></a>
+
+  <h3 id="Org_BouncyCastle_Tls_TlsServer_ProcessClientSupplementalData_System_Collections_Generic_IList_Org_BouncyCastle_Tls_SupplementalDataEntry__" data-uid="Org.BouncyCastle.Tls.TlsServer.ProcessClientSupplementalData(System.Collections.Generic.IList{Org.BouncyCastle.Tls.SupplementalDataEntry})">
+  ProcessClientSupplementalData(IList&lt;SupplementalDataEntry&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ProcessClientSupplementalData(IList&lt;SupplementalDataEntry&gt; clientSupplementalData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientSupplementalData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Tls.SupplementalDataEntry.html">SupplementalDataEntry</a>&gt;</dt>
+    <dd><p>(SupplementalDataEntry)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

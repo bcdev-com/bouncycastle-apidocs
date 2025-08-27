@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PgpSignatureSubpacketGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PgpSignatureSubpacketGenerator | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator" class="text-break">
+Class PgpSignatureSubpacketGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Bcpg.html">Bcpg</a>.<a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.html">OpenPgp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PgpSignatureSubpacketGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PgpSignatureSubpacketGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Generator for signature subpackets.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator__ctor_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator__ctor" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.#ctor">
+  PgpSignatureSubpacketGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base constructor, creates an empty generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PgpSignatureSubpacketGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator__ctor_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator__ctor_Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.#ctor(Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector)">
+  PgpSignatureSubpacketGenerator(PgpSignatureSubpacketVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor for pre-initialising the generator from an existing one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PgpSignatureSubpacketGenerator(PgpSignatureSubpacketVector sigSubV)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sigSubV</code> <a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.html">PgpSignatureSubpacketVector</a></dt>
+    <dd><p>sigSubV an initial set of subpackets.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddCustomSubpacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddCustomSubpacket*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddCustomSubpacket_Org_BouncyCastle_Bcpg_SignatureSubpacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddCustomSubpacket(Org.BouncyCastle.Bcpg.SignatureSubpacket)">
+  AddCustomSubpacket(SignatureSubpacket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCustomSubpacket(SignatureSubpacket subpacket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subpacket</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddEmbeddedSignature_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddEmbeddedSignature*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddEmbeddedSignature_System_Boolean_Org_BouncyCastle_Bcpg_OpenPgp_PgpSignature_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddEmbeddedSignature(System.Boolean,Org.BouncyCastle.Bcpg.OpenPgp.PgpSignature)">
+  AddEmbeddedSignature(bool, PgpSignature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEmbeddedSignature(bool isCritical, PgpSignature pgpSignature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>pgpSignature</code> <a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignature.html">PgpSignature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddIntendedRecipientFingerprint_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddIntendedRecipientFingerprint*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddIntendedRecipientFingerprint_System_Boolean_Org_BouncyCastle_Bcpg_OpenPgp_PgpPublicKey_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddIntendedRecipientFingerprint(System.Boolean,Org.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey)">
+  AddIntendedRecipientFingerprint(bool, PgpPublicKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddIntendedRecipientFingerprint(bool isCritical, PgpPublicKey publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey.html">PgpPublicKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddNotationData_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddNotationData*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddNotationData_System_Boolean_System_Boolean_System_String_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddNotationData(System.Boolean,System.Boolean,System.String,System.String)">
+  AddNotationData(bool, bool, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNotationData(bool isCritical, bool isHumanReadable, string notationName, string notationValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isHumanReadable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>notationName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>notationValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddPolicyUrl_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddPolicyUrl*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddPolicyUrl_System_Boolean_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddPolicyUrl(System.Boolean,System.String)">
+  AddPolicyUrl(bool, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPolicyUrl(bool isCritical, string policyUrl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>policyUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddRevocationKey_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddRevocationKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddRevocationKey_System_Boolean_Org_BouncyCastle_Bcpg_PublicKeyAlgorithmTag_System_Byte___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddRevocationKey(System.Boolean,Org.BouncyCastle.Bcpg.PublicKeyAlgorithmTag,System.Byte[])">
+  AddRevocationKey(bool, PublicKeyAlgorithmTag, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRevocationKey(bool isCritical, PublicKeyAlgorithmTag keyAlgorithm, byte[] fingerprint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>keyAlgorithm</code> <a class="xref" href="Org.BouncyCastle.Bcpg.PublicKeyAlgorithmTag.html">PublicKeyAlgorithmTag</a></dt>
+    <dd></dd>
+    <dt><code>fingerprint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddSignerUserId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddSignerUserId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_AddSignerUserId_System_Boolean_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.AddSignerUserId(System.Boolean,System.String)">
+  AddSignerUserId(bool, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSignerUserId(bool isCritical, string userId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_Generate_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.Generate*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_Generate" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.Generate">
+  Generate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PgpSignatureSubpacketVector Generate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.html">PgpSignatureSubpacketVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_GetSubpackets_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.GetSubpackets*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_GetSubpackets_Org_BouncyCastle_Bcpg_SignatureSubpacketTag_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.GetSubpackets(Org.BouncyCastle.Bcpg.SignatureSubpacketTag)">
+  GetSubpackets(SignatureSubpacketTag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignatureSubpacket[] GetSubpackets(SignatureSubpacketTag type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacketTag.html">SignatureSubpacketTag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_HasSubpacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.HasSubpacket*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_HasSubpacket_Org_BouncyCastle_Bcpg_SignatureSubpacketTag_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.HasSubpacket(Org.BouncyCastle.Bcpg.SignatureSubpacketTag)">
+  HasSubpacket(SignatureSubpacketTag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSubpacket(SignatureSubpacketTag type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacketTag.html">SignatureSubpacketTag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_RemovePacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.RemovePacket*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_RemovePacket_Org_BouncyCastle_Bcpg_SignatureSubpacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.RemovePacket(Org.BouncyCastle.Bcpg.SignatureSubpacket)">
+  RemovePacket(SignatureSubpacket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemovePacket(SignatureSubpacket packet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packet</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetEmbeddedSignature_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetEmbeddedSignature*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetEmbeddedSignature_System_Boolean_Org_BouncyCastle_Bcpg_OpenPgp_PgpSignature_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetEmbeddedSignature(System.Boolean,Org.BouncyCastle.Bcpg.OpenPgp.PgpSignature)">
+  SetEmbeddedSignature(bool, PgpSignature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;AddEmbeddedSignature&#39; instead&quot;)]
+public void SetEmbeddedSignature(bool isCritical, PgpSignature pgpSignature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>pgpSignature</code> <a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignature.html">PgpSignature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetExportable_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetExportable*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetExportable_System_Boolean_System_Boolean_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetExportable(System.Boolean,System.Boolean)">
+  SetExportable(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExportable(bool isCritical, bool isExportable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isExportable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetFeature_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetFeature*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetFeature_System_Boolean_System_Byte_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetFeature(System.Boolean,System.Byte)">
+  SetFeature(bool, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFeature(bool isCritical, byte feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>feature</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetIssuerFingerprint_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetIssuerFingerprint*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetIssuerFingerprint_System_Boolean_Org_BouncyCastle_Bcpg_OpenPgp_PgpPublicKey_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetIssuerFingerprint(System.Boolean,Org.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey)">
+  SetIssuerFingerprint(bool, PgpPublicKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIssuerFingerprint(bool isCritical, PgpPublicKey publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey.html">PgpPublicKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetIssuerFingerprint_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetIssuerFingerprint*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetIssuerFingerprint_System_Boolean_Org_BouncyCastle_Bcpg_OpenPgp_PgpSecretKey_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetIssuerFingerprint(System.Boolean,Org.BouncyCastle.Bcpg.OpenPgp.PgpSecretKey)">
+  SetIssuerFingerprint(bool, PgpSecretKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIssuerFingerprint(bool isCritical, PgpSecretKey secretKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>secretKey</code> <a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSecretKey.html">PgpSecretKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetIssuerKeyID_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetIssuerKeyID*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetIssuerKeyID_System_Boolean_System_Int64_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetIssuerKeyID(System.Boolean,System.Int64)">
+  SetIssuerKeyID(bool, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets issuer key sub packet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIssuerKeyID(bool isCritical, long keyID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>keyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetKeyExpirationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetKeyExpirationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetKeyExpirationTime_System_Boolean_System_Int64_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetKeyExpirationTime(System.Boolean,System.Int64)">
+  SetKeyExpirationTime(bool, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the number of seconds a key is valid for after the time of its creation.
+A value of zero means the key never expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyExpirationTime(bool isCritical, long seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True, if should be treated as critical, false otherwise.</p>
+</dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The number of seconds the key is valid, or zero if no expiry.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetKeyFlags_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetKeyFlags*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetKeyFlags_System_Boolean_System_Int32_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetKeyFlags(System.Boolean,System.Int32)">
+  SetKeyFlags(bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyFlags(bool isCritical, int flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetNotationData_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetNotationData*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetNotationData_System_Boolean_System_Boolean_System_String_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetNotationData(System.Boolean,System.Boolean,System.String,System.String)">
+  SetNotationData(bool, bool, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;AddNotationData&#39; instead&quot;)]
+public void SetNotationData(bool isCritical, bool isHumanReadable, string notationName, string notationValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isHumanReadable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>notationName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>notationValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredAeadAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredAeadAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredAeadAlgorithms_System_Boolean_System_Int32___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredAeadAlgorithms(System.Boolean,System.Int32[])">
+  SetPreferredAeadAlgorithms(bool, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredAeadAlgorithms(bool isCritical, int[] algorithms)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>algorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredCompressionAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredCompressionAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredCompressionAlgorithms_System_Boolean_System_Int32___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredCompressionAlgorithms(System.Boolean,System.Int32[])">
+  SetPreferredCompressionAlgorithms(bool, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredCompressionAlgorithms(bool isCritical, int[] algorithms)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>algorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredHashAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredHashAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredHashAlgorithms_System_Boolean_System_Int32___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredHashAlgorithms(System.Boolean,System.Int32[])">
+  SetPreferredHashAlgorithms(bool, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredHashAlgorithms(bool isCritical, int[] algorithms)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>algorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredSymmetricAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredSymmetricAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPreferredSymmetricAlgorithms_System_Boolean_System_Int32___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPreferredSymmetricAlgorithms(System.Boolean,System.Int32[])">
+  SetPreferredSymmetricAlgorithms(bool, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredSymmetricAlgorithms(bool isCritical, int[] algorithms)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>algorithms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPrimaryUserId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPrimaryUserId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetPrimaryUserId_System_Boolean_System_Boolean_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetPrimaryUserId(System.Boolean,System.Boolean)">
+  SetPrimaryUserId(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPrimaryUserId(bool isCritical, bool isPrimaryUserId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isPrimaryUserId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetRevocable_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetRevocable*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetRevocable_System_Boolean_System_Boolean_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetRevocable(System.Boolean,System.Boolean)">
+  SetRevocable(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRevocable(bool isCritical, bool isRevocable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isRevocable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetRevocationKey_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetRevocationKey*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetRevocationKey_System_Boolean_Org_BouncyCastle_Bcpg_PublicKeyAlgorithmTag_System_Byte___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetRevocationKey(System.Boolean,Org.BouncyCastle.Bcpg.PublicKeyAlgorithmTag,System.Byte[])">
+  SetRevocationKey(bool, PublicKeyAlgorithmTag, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;AddRevocationKey&#39; instead&quot;)]
+public void SetRevocationKey(bool isCritical, PublicKeyAlgorithmTag keyAlgorithm, byte[] fingerprint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>keyAlgorithm</code> <a class="xref" href="Org.BouncyCastle.Bcpg.PublicKeyAlgorithmTag.html">PublicKeyAlgorithmTag</a></dt>
+    <dd></dd>
+    <dt><code>fingerprint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetRevocationReason_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetRevocationReason*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetRevocationReason_System_Boolean_Org_BouncyCastle_Bcpg_RevocationReasonTag_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetRevocationReason(System.Boolean,Org.BouncyCastle.Bcpg.RevocationReasonTag,System.String)">
+  SetRevocationReason(bool, RevocationReasonTag, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets revocation reason sub packet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRevocationReason(bool isCritical, RevocationReasonTag reason, string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>reason</code> <a class="xref" href="Org.BouncyCastle.Bcpg.RevocationReasonTag.html">RevocationReasonTag</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignatureCreationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignatureCreationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignatureCreationTime_System_Boolean_System_DateTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignatureCreationTime(System.Boolean,System.DateTime)">
+  SetSignatureCreationTime(bool, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the creation time for the signature.</p>
+<p>
+Note: this overrides the generation of a creation time when the signature
+is generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSignatureCreationTime(bool isCritical, DateTime date)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>date</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignatureExpirationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignatureExpirationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignatureExpirationTime_System_Boolean_System_Int64_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignatureExpirationTime(System.Boolean,System.Int64)">
+  SetSignatureExpirationTime(bool, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the number of seconds a signature is valid for after the time of its creation.
+A value of zero means the signature never expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSignatureExpirationTime(bool isCritical, long seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True, if should be treated as critical, false otherwise.</p>
+</dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The number of seconds the signature is valid, or zero if no expiry.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignatureTarget_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignatureTarget*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignatureTarget_System_Boolean_System_Int32_System_Int32_System_Byte___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignatureTarget(System.Boolean,System.Int32,System.Int32,System.Byte[])">
+  SetSignatureTarget(bool, int, int, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSignatureTarget(bool isCritical, int publicKeyAlgorithm, int hashAlgorithm, byte[] hashData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>publicKeyAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hashAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hashData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignerUserId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignerUserId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignerUserId_System_Boolean_System_Byte___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignerUserId(System.Boolean,System.Byte[])">
+  SetSignerUserId(bool, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSignerUserId(bool isCritical, byte[] rawUserId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rawUserId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignerUserId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignerUserId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetSignerUserId_System_Boolean_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetSignerUserId(System.Boolean,System.String)">
+  SetSignerUserId(bool, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;AddSignerUserId&#39; instead&quot;)]
+public void SetSignerUserId(bool isCritical, string userId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetTrust_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetTrust*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketGenerator_SetTrust_System_Boolean_System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketGenerator.SetTrust(System.Boolean,System.Int32,System.Int32)">
+  SetTrust(bool, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a TrustSignature packet to the signature. The values for depth and trust are largely
+installation dependent but there are some guidelines in RFC 4880 - 5.2.3.13.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTrust(bool isCritical, int depth, int trustAmount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCritical</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the packet is critical.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>depth level.</p>
+</dd>
+    <dt><code>trustAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>trust amount.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

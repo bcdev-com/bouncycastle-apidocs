@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CmsEnvelopedGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CmsEnvelopedGenerator | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator" class="text-break">
+Class CmsEnvelopedGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Cms.html">Cms</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CmsEnvelopedGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CmsEnvelopedGenerator</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Cms.CmsAuthenticatedGenerator.html">CmsAuthenticatedGenerator</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Cms.CmsEnvelopedDataGenerator.html">CmsEnvelopedDataGenerator</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Cms.CmsEnvelopedDataStreamGenerator.html">CmsEnvelopedDataStreamGenerator</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator__ctor_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator__ctor" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.#ctor">
+  CmsEnvelopedGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CmsEnvelopedGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator__ctor_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator__ctor_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.#ctor(Org.BouncyCastle.Security.SecureRandom)">
+  CmsEnvelopedGenerator(SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor allowing specific source of randomness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CmsEnvelopedGenerator(SecureRandom random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>random</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd><p>Instance of <code>SecureRandom</code> to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes128Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes128Cbc">
+  Aes128Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes128Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes128Ccm" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes128Ccm">
+  Aes128Ccm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes128Ccm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes128Gcm" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes128Gcm">
+  Aes128Gcm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes128Gcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes128Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes128Wrap">
+  Aes128Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes128Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes192Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes192Cbc">
+  Aes192Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes192Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes192Ccm" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes192Ccm">
+  Aes192Ccm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes192Ccm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes192Gcm" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes192Gcm">
+  Aes192Gcm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes192Gcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes192Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes192Wrap">
+  Aes192Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes192Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes256Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes256Cbc">
+  Aes256Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes256Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes256Ccm" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes256Ccm">
+  Aes256Ccm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes256Ccm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes256Gcm" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes256Gcm">
+  Aes256Gcm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes256Gcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Aes256Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Aes256Wrap">
+  Aes256Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Aes256Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Camellia128Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Camellia128Cbc">
+  Camellia128Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Camellia128Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Camellia128Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Camellia128Wrap">
+  Camellia128Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Camellia128Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Camellia192Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Camellia192Cbc">
+  Camellia192Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Camellia192Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Camellia192Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Camellia192Wrap">
+  Camellia192Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Camellia192Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Camellia256Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Camellia256Cbc">
+  Camellia256Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Camellia256Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Camellia256Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Camellia256Wrap">
+  Camellia256Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Camellia256Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Cast5Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Cast5Cbc">
+  Cast5Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Cast5Cbc = &quot;1.2.840.113533.7.66.10&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_DesCbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.DesCbc">
+  DesCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string DesCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_DesEde3Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.DesEde3Cbc">
+  DesEde3Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string DesEde3Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_DesEde3Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.DesEde3Wrap">
+  DesEde3Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string DesEde3Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECCDHSha1Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECCDHSha1Kdf">
+  ECCDHSha1Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECCDHSha1Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECCDHSha224Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECCDHSha224Kdf">
+  ECCDHSha224Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECCDHSha224Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECCDHSha256Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECCDHSha256Kdf">
+  ECCDHSha256Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECCDHSha256Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECCDHSha384Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECCDHSha384Kdf">
+  ECCDHSha384Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECCDHSha384Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECCDHSha512Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECCDHSha512Kdf">
+  ECCDHSha512Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECCDHSha512Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECDHSha1Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECDHSha1Kdf">
+  ECDHSha1Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECDHSha1Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECDHSha224Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECDHSha224Kdf">
+  ECDHSha224Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECDHSha224Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECDHSha256Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECDHSha256Kdf">
+  ECDHSha256Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECDHSha256Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECDHSha384Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECDHSha384Kdf">
+  ECDHSha384Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECDHSha384Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECDHSha512Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECDHSha512Kdf">
+  ECDHSha512Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECDHSha512Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECMqvSha1Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECMqvSha1Kdf">
+  ECMqvSha1Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECMqvSha1Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECMqvSha224Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECMqvSha224Kdf">
+  ECMqvSha224Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECMqvSha224Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECMqvSha256Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECMqvSha256Kdf">
+  ECMqvSha256Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECMqvSha256Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECMqvSha384Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECMqvSha384Kdf">
+  ECMqvSha384Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECMqvSha384Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_ECMqvSha512Kdf" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.ECMqvSha512Kdf">
+  ECMqvSha512Kdf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ECMqvSha512Kdf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Gost28147CryptoProWrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Gost28147CryptoProWrap">
+  Gost28147CryptoProWrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Gost28147CryptoProWrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_Gost28147Wrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.Gost28147Wrap">
+  Gost28147Wrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string Gost28147Wrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_IdeaCbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.IdeaCbc">
+  IdeaCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IdeaCbc = &quot;1.3.6.1.4.1.188.7.1.1.2&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_RC2Cbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.RC2Cbc">
+  RC2Cbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string RC2Cbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_SeedCbc" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.SeedCbc">
+  SeedCbc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string SeedCbc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_SeedWrap" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.SeedWrap">
+  SeedWrap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string SeedWrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_UnprotectedAttributeGenerator_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.UnprotectedAttributeGenerator*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_UnprotectedAttributeGenerator" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.UnprotectedAttributeGenerator">
+  UnprotectedAttributeGenerator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CmsAttributeTableGenerator UnprotectedAttributeGenerator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Cms.CmsAttributeTableGenerator.html">CmsAttributeTableGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKekRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKekRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKekRecipient_System_String_Org_BouncyCastle_Crypto_Parameters_KeyParameter_Org_BouncyCastle_Asn1_Cms_KekIdentifier_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKekRecipient(System.String,Org.BouncyCastle.Crypto.Parameters.KeyParameter,Org.BouncyCastle.Asn1.Cms.KekIdentifier)">
+  AddKekRecipient(string, KeyParameter, KekIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKekRecipient(string keyAlgorithm, KeyParameter key, KekIdentifier kekIdentifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.KeyParameter.html">KeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>kekIdentifier</code> <a class="xref" href="Org.BouncyCastle.Asn1.Cms.KekIdentifier.html">KekIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKekRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKekRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKekRecipient_System_String_Org_BouncyCastle_Crypto_Parameters_KeyParameter_System_Byte___" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKekRecipient(System.String,Org.BouncyCastle.Crypto.Parameters.KeyParameter,System.Byte[])">
+  AddKekRecipient(string, KeyParameter, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKekRecipient(string keyAlgorithm, KeyParameter key, byte[] keyIdentifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.KeyParameter.html">KeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>keyIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyAgreementRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyAgreementRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyAgreementRecipient_System_String_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_X509_X509Certificate_System_String_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyAgreementRecipient(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.X509.X509Certificate,System.String)">
+  AddKeyAgreementRecipient(string, AsymmetricKeyParameter, AsymmetricKeyParameter, X509Certificate, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyAgreementRecipient(string agreementAlgorithm, AsymmetricKeyParameter senderPrivateKey, AsymmetricKeyParameter senderPublicKey, X509Certificate recipientCert, string cekWrapAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agreementAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>senderPrivateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>senderPublicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>recipientCert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+    <dt><code>cekWrapAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyAgreementRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyAgreementRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyAgreementRecipient_System_String_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_String_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyAgreementRecipient(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.String)">
+  AddKeyAgreementRecipient(string, AsymmetricKeyParameter, AsymmetricKeyParameter, byte[], AsymmetricKeyParameter, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyAgreementRecipient(string agreementAlgorithm, AsymmetricKeyParameter senderPrivateKey, AsymmetricKeyParameter senderPublicKey, byte[] recipientKeyID, AsymmetricKeyParameter recipientPublicKey, string cekWrapAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agreementAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>senderPrivateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>senderPublicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>recipientKeyID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>recipientPublicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>cekWrapAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyAgreementRecipients_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyAgreementRecipients*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyAgreementRecipients_System_String_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Collections_Generic_IEnumerable_Org_BouncyCastle_X509_X509Certificate__System_String_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyAgreementRecipients(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Collections.Generic.IEnumerable{Org.BouncyCastle.X509.X509Certificate},System.String)">
+  AddKeyAgreementRecipients(string, AsymmetricKeyParameter, AsymmetricKeyParameter, IEnumerable&lt;X509Certificate&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyAgreementRecipients(string agreementAlgorithm, AsymmetricKeyParameter senderPrivateKey, AsymmetricKeyParameter senderPublicKey, IEnumerable&lt;X509Certificate&gt; recipientCerts, string cekWrapAlgorithm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agreementAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>senderPrivateKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>senderPublicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>recipientCerts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>cekWrapAlgorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])">
+  AddKeyTransRecipient(AsymmetricKeyParameter, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyTransRecipient(AsymmetricKeyParameter pubKey, byte[] subKeyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pubKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subKeyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient(Org.BouncyCastle.X509.X509Certificate)">
+  AddKeyTransRecipient(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyTransRecipient(X509Certificate cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_System_String_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_System_Byte___" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])">
+  AddKeyTransRecipient(string, AsymmetricKeyParameter, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyTransRecipient(string algorithm, AsymmetricKeyParameter pubKey, byte[] subKeyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>algorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pubKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>subKeyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddKeyTransRecipient_System_String_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddKeyTransRecipient(System.String,Org.BouncyCastle.X509.X509Certificate)">
+  AddKeyTransRecipient(string, X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKeyTransRecipient(string algorithm, X509Certificate cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>algorithm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddPasswordRecipient_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddPasswordRecipient*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddPasswordRecipient_Org_BouncyCastle_Cms_CmsPbeKey_System_String_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddPasswordRecipient(Org.BouncyCastle.Cms.CmsPbeKey,System.String)">
+  AddPasswordRecipient(CmsPbeKey, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPasswordRecipient(CmsPbeKey pbeKey, string kekAlgorithmOid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pbeKey</code> <a class="xref" href="Org.BouncyCastle.Cms.CmsPbeKey.html">CmsPbeKey</a></dt>
+    <dd></dd>
+    <dt><code>kekAlgorithmOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddRecipientInfoGenerator_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddRecipientInfoGenerator*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_AddRecipientInfoGenerator_Org_BouncyCastle_Cms_RecipientInfoGenerator_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.AddRecipientInfoGenerator(Org.BouncyCastle.Cms.RecipientInfoGenerator)">
+  AddRecipientInfoGenerator(RecipientInfoGenerator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a generator to produce the recipient info required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRecipientInfoGenerator(RecipientInfoGenerator recipientInfoGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recipientInfoGenerator</code> <a class="xref" href="Org.BouncyCastle.Cms.RecipientInfoGenerator.html">RecipientInfoGenerator</a></dt>
+    <dd><p>a generator of a recipient info object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_GenerateAsn1Parameters_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.GenerateAsn1Parameters*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_GenerateAsn1Parameters_System_String_System_Byte___" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.GenerateAsn1Parameters(System.String,System.Byte[])">
+  GenerateAsn1Parameters(string, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Asn1Encodable GenerateAsn1Parameters(string encryptionOid, byte[] encKeyBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>encKeyBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_GetAlgorithmIdentifier_" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.GetAlgorithmIdentifier*"></a>
+
+  <h3 id="Org_BouncyCastle_Cms_CmsEnvelopedGenerator_GetAlgorithmIdentifier_System_String_Org_BouncyCastle_Crypto_Parameters_KeyParameter_Org_BouncyCastle_Asn1_Asn1Encodable_Org_BouncyCastle_Crypto_ICipherParameters__" data-uid="Org.BouncyCastle.Cms.CmsEnvelopedGenerator.GetAlgorithmIdentifier(System.String,Org.BouncyCastle.Crypto.Parameters.KeyParameter,Org.BouncyCastle.Asn1.Asn1Encodable,Org.BouncyCastle.Crypto.ICipherParameters@)">
+  GetAlgorithmIdentifier(string, KeyParameter, Asn1Encodable, out ICipherParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AlgorithmIdentifier GetAlgorithmIdentifier(string encryptionOid, KeyParameter encKey, Asn1Encodable asn1Params, out ICipherParameters cipherParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encryptionOid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>encKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.KeyParameter.html">KeyParameter</a></dt>
+    <dd></dd>
+    <dt><code>asn1Params</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+    <dt><code>cipherParameters</code> <a class="xref" href="Org.BouncyCastle.Crypto.ICipherParameters.html">ICipherParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier.html">AlgorithmIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

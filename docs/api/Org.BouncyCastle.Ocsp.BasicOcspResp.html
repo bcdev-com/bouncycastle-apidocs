@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BasicOcspResp | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BasicOcspResp | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp">
+
+
+
+  <h1 id="Org_BouncyCastle_Ocsp_BasicOcspResp" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp" class="text-break">
+Class BasicOcspResp  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Ocsp.html">Ocsp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BasicOcspResp : X509ExtensionBase, IX509Extension</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html">X509ExtensionBase</a></div>
+      <div><span class="xref">BasicOcspResp</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.X509.IX509Extension.html">IX509Extension</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionOids_System_Boolean_">X509ExtensionBase.GetExtensionOids(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetNonCriticalExtensionOids">X509ExtensionBase.GetNonCriticalExtensionOids()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetCriticalExtensionOids">X509ExtensionBase.GetCriticalExtensionOids()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_">X509ExtensionBase.GetExtension(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionParsedValue_Org_BouncyCastle_Asn1_DerObjectIdentifier_">X509ExtensionBase.GetExtensionParsedValue(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionValue_Org_BouncyCastle_Asn1_DerObjectIdentifier_">X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_Ocsp_BasicOcspResp_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><pre><code class="lang-csharp">BasicOcspResponse ::= SEQUENCE {
+	tbsResponseData		ResponseData,
+	signatureAlgorithm	AlgorithmIdentifier,
+	signature			BIT STRING,
+	certs				[0] EXPLICIT SEQUENCE OF Certificate OPTIONAL
+}</code></pre>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp__ctor_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp__ctor_Org_BouncyCastle_Asn1_Ocsp_BasicOcspResponse_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.#ctor(Org.BouncyCastle.Asn1.Ocsp.BasicOcspResponse)">
+  BasicOcspResp(BasicOcspResponse)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicOcspResp(BasicOcspResponse resp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resp</code> <a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.BasicOcspResponse.html">BasicOcspResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_ProducedAt_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.ProducedAt*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_ProducedAt" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.ProducedAt">
+  ProducedAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime ProducedAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_ResponderId_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.ResponderId*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_ResponderId" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.ResponderId">
+  ResponderId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RespID ResponderId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.RespID.html">RespID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_ResponseExtensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.ResponseExtensions*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_ResponseExtensions" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.ResponseExtensions">
+  ResponseExtensions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Extensions ResponseExtensions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_Responses_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Responses*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_Responses" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Responses">
+  Responses
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SingleResp[] Responses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.SingleResp.html">SingleResp</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_SignatureAlgName_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.SignatureAlgName*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_SignatureAlgName" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.SignatureAlgName">
+  SignatureAlgName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SignatureAlgName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_SignatureAlgOid_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.SignatureAlgOid*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_SignatureAlgOid" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.SignatureAlgOid">
+  SignatureAlgOid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SignatureAlgOid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_Version_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Version*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_Version" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Version">
+  Version
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_Equals_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_Equals_System_Object_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetCertificates_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetCertificates*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetCertificates" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetCertificates">
+  GetCertificates()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStore&lt;X509Certificate&gt; GetCertificates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</dt>
+    <dd><p>The certificates, if any, associated with the response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.OcspException.html">OcspException</a></dt>
+    <dd><p>In the event of an encoding error.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetCerts_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetCerts*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetCerts" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetCerts">
+  GetCerts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Certificate[] GetCerts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetEncoded_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetEncoded*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetEncoded" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetEncoded">
+  GetEncoded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetEncoded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The ASN.1 encoded representation of this object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetHashCode_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetHashCode" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetSignature_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetSignature*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetSignature" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetSignature">
+  GetSignature()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetSignature()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetTbsResponseData_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetTbsResponseData*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetTbsResponseData" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetTbsResponseData">
+  GetTbsResponseData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetTbsResponseData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The DER encoding of the tbsResponseData field.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Ocsp.OcspException.html">OcspException</a></dt>
+    <dd><p>In the event of an encoding error.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetX509Extensions_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetX509Extensions*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_GetX509Extensions" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.GetX509Extensions">
+  GetX509Extensions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override X509Extensions GetX509Extensions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Ocsp_BasicOcspResp_Verify_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Verify*"></a>
+
+  <h3 id="Org_BouncyCastle_Ocsp_BasicOcspResp_Verify_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.Ocsp.BasicOcspResp.Verify(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  Verify(AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verify the signature against the tbsResponseData object we contain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Verify(AsymmetricKeyParameter publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

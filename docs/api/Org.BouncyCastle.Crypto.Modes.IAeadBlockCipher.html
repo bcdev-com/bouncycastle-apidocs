@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAeadBlockCipher | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAeadBlockCipher | BouncyCastle Docs ">
+      
+      <meta name="description" content="An IAeadCipher based on an IBlockCipher.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher" data-uid="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher" class="text-break">
+Interface IAeadBlockCipher  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Modes.html">Modes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An IAeadCipher based on an IBlockCipher.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAeadBlockCipher : IAeadCipher</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_AlgorithmName">IAeadCipher.AlgorithmName</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_Init_System_Boolean_Org_BouncyCastle_Crypto_ICipherParameters_">IAeadCipher.Init(bool, ICipherParameters)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessAadByte_System_Byte_">IAeadCipher.ProcessAadByte(byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessAadBytes_System_Byte___System_Int32_System_Int32_">IAeadCipher.ProcessAadBytes(byte[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessAadBytes_System_ReadOnlySpan_System_Byte__">IAeadCipher.ProcessAadBytes(ReadOnlySpan&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessByte_System_Byte_System_Byte___System_Int32_">IAeadCipher.ProcessByte(byte, byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessByte_System_Byte_System_Span_System_Byte__">IAeadCipher.ProcessByte(byte, Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessBytes_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_">IAeadCipher.ProcessBytes(byte[], int, int, byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_ProcessBytes_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__">IAeadCipher.ProcessBytes(ReadOnlySpan&lt;byte&gt;, Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_DoFinal_System_Byte___System_Int32_">IAeadCipher.DoFinal(byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_DoFinal_System_Span_System_Byte__">IAeadCipher.DoFinal(Span&lt;byte&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_GetMac">IAeadCipher.GetMac()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_GetUpdateOutputSize_System_Int32_">IAeadCipher.GetUpdateOutputSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_GetOutputSize_System_Int32_">IAeadCipher.GetOutputSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadCipher.html#Org_BouncyCastle_Crypto_Modes_IAeadCipher_Reset">IAeadCipher.Reset()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_UnderlyingCipher_" data-uid="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher.UnderlyingCipher*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_UnderlyingCipher" data-uid="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher.UnderlyingCipher">
+  UnderlyingCipher
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The block cipher underlying this algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBlockCipher UnderlyingCipher { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.IBlockCipher.html">IBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_GetBlockSize_" data-uid="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher.GetBlockSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_GetBlockSize" data-uid="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher.GetBlockSize">
+  GetBlockSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetBlockSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The block size for this cipher, in bytes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

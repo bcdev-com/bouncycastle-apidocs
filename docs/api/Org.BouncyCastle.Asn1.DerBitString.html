@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DerBitString | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DerBitString | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.DerBitString">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_DerBitString" data-uid="Org.BouncyCastle.Asn1.DerBitString" class="text-break">
+Class DerBitString  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DerBitString : DerStringBase, IAsn1String, Asn1BitStringParser, IAsn1Convertible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.DerStringBase.html">DerStringBase</a></div>
+      <div><span class="xref">DerBitString</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1String.html">IAsn1String</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1BitStringParser.html">Asn1BitStringParser</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiFailureInfo.html">PkiFailureInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.DLBitString.html">DLBitString</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Misc.NetscapeCertType.html">NetscapeCertType</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.KeyUsage.html">KeyUsage</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.ReasonFlags.html">ReasonFlags</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.DerStringBase.html#Org_BouncyCastle_Asn1_DerStringBase_ToString">DerStringBase.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_EncodeTo_System_IO_Stream_">Asn1Object.EncodeTo(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_EncodeTo_System_IO_Stream_System_String_">Asn1Object.EncodeTo(Stream, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_Equals_Org_BouncyCastle_Asn1_Asn1Object_">Asn1Object.Equals(Asn1Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_FromByteArray_System_Byte___">Asn1Object.FromByteArray(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_FromStream_System_IO_Stream_">Asn1Object.FromStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html#Org_BouncyCastle_Asn1_Asn1Object_ToAsn1Object">Asn1Object.ToAsn1Object()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Ber">Asn1Encodable.Ber</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Der">Asn1Encodable.Der</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_DL">Asn1Encodable.DL</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded">Asn1Encodable.GetEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_System_String_">Asn1Encodable.GetEncoded(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded">Asn1Encodable.GetDerEncoded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode">Asn1Encodable.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html#Org_BouncyCastle_Asn1_Asn1Encodable_Equals_System_Object_">Asn1Encodable.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(Org.BouncyCastle.Asn1.Asn1Encodable)">
+  DerBitString(Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(Asn1Encodable obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_Org_BouncyCastle_Asn1_IAsn1Convertible_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(Org.BouncyCastle.Asn1.IAsn1Convertible)">
+  DerBitString(IAsn1Convertible)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(IAsn1Convertible obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_System_Byte_System_Int32_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(System.Byte,System.Int32)">
+  DerBitString(byte, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(byte data, int padBits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>padBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_System_Byte___" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(System.Byte[])">
+  DerBitString(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(byte[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(System.Byte[],System.Int32)">
+  DerBitString(byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(byte[] data, int padBits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>padBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_System_Int32_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(System.Int32)">
+  DerBitString(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(int namedBits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>namedBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_System_ReadOnlySpan_System_Byte__" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(System.ReadOnlySpan{System.Byte})">
+  DerBitString(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(ReadOnlySpan&lt;byte&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString__ctor_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString__ctor_System_ReadOnlySpan_System_Byte__System_Int32_" data-uid="Org.BouncyCastle.Asn1.DerBitString.#ctor(System.ReadOnlySpan{System.Byte},System.Int32)">
+  DerBitString(ReadOnlySpan&lt;byte&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerBitString(ReadOnlySpan&lt;byte&gt; data, int padBits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>padBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_IntValue_" data-uid="Org.BouncyCastle.Asn1.DerBitString.IntValue*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_IntValue" data-uid="Org.BouncyCastle.Asn1.DerBitString.IntValue">
+  IntValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int IntValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_PadBits_" data-uid="Org.BouncyCastle.Asn1.DerBitString.PadBits*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_PadBits" data-uid="Org.BouncyCastle.Asn1.DerBitString.PadBits">
+  PadBits
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the number of pad bits, if any, in the final byte, if any, read from
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1BitStringParser.html#Org_BouncyCastle_Asn1_Asn1BitStringParser_GetBitStream">GetBitStream()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int PadBits { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of pad bits. In the range zero to seven.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Asn1_DerBitString_PadBits_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This number is in the range zero to seven. That number of the least significant bits of the final byte, if
+any, are not part of the contents and should be ignored. NOTE: Must be called AFTER the stream has been
+fully processed. (Does not need to be called if <a class="xref" href="Org.BouncyCastle.Asn1.Asn1BitStringParser.html#Org_BouncyCastle_Asn1_Asn1BitStringParser_GetOctetStream">GetOctetStream()</a> was used instead of
+<a class="xref" href="Org.BouncyCastle.Asn1.Asn1BitStringParser.html#Org_BouncyCastle_Asn1_Asn1BitStringParser_GetBitStream">GetBitStream()</a>.</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_Parser_" data-uid="Org.BouncyCastle.Asn1.DerBitString.Parser*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_Parser" data-uid="Org.BouncyCastle.Asn1.DerBitString.Parser">
+  Parser
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asn1BitStringParser Parser { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1BitStringParser.html">Asn1BitStringParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_Asn1Equals_" data-uid="Org.BouncyCastle.Asn1.DerBitString.Asn1Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_Asn1Equals_Org_BouncyCastle_Asn1_Asn1Object_" data-uid="Org.BouncyCastle.Asn1.DerBitString.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)">
+  Asn1Equals(Asn1Object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool Asn1Equals(Asn1Object asn1Object)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asn1Object</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_Asn1GetHashCode_" data-uid="Org.BouncyCastle.Asn1.DerBitString.Asn1GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_Asn1GetHashCode" data-uid="Org.BouncyCastle.Asn1.DerBitString.Asn1GetHashCode">
+  Asn1GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int Asn1GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_FromContentsOptional_" data-uid="Org.BouncyCastle.Asn1.DerBitString.FromContentsOptional*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_FromContentsOptional_System_Byte___" data-uid="Org.BouncyCastle.Asn1.DerBitString.FromContentsOptional(System.Byte[])">
+  FromContentsOptional(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DerBitString FromContentsOptional(byte[] contents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerBitString.html">DerBitString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetBitStream_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetBitStream*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetBitStream" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetBitStream">
+  GetBitStream()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> representing the contents of the BIT STRING. The final byte, if any,
+may include pad bits. See <a class="xref" href="Org.BouncyCastle.Asn1.Asn1BitStringParser.html#Org_BouncyCastle_Asn1_Asn1BitStringParser_PadBits">PadBits</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream GetBitStream()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> with its source as the BIT STRING content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetBytes_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetBytes*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetBytes" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetBytes">
+  GetBytes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetBytes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetBytesLength_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetBytesLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetBytesLength" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetBytesLength">
+  GetBytesLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetBytesLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetInstance_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetInstance_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)">
+  GetInstance(Asn1TaggedObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DerBitString GetInstance(Asn1TaggedObject obj, bool isExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>isExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerBitString.html">DerBitString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetInstance_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetInstance*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetInstance_System_Object_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetInstance(System.Object)">
+  GetInstance(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DerBitString GetInstance(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerBitString.html">DerBitString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetOctetStream_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetOctetStream*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetOctetStream" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetOctetStream">
+  GetOctetStream()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> representing the contents of the BIT STRING, where the content is
+expected to be octet-aligned (this will be automatically checked during parsing).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream GetOctetStream()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> with its source as the BIT STRING content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetOctets_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetOctets*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetOctets" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetOctets">
+  GetOctets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetOctets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetOptional_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetOptional*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetOptional_Org_BouncyCastle_Asn1_Asn1Encodable_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetOptional(Org.BouncyCastle.Asn1.Asn1Encodable)">
+  GetOptional(Asn1Encodable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DerBitString GetOptional(Asn1Encodable element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1Encodable.html">Asn1Encodable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerBitString.html">DerBitString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetString_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetString*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetString" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetString">
+  GetString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_GetTagged_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetTagged*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_GetTagged_Org_BouncyCastle_Asn1_Asn1TaggedObject_System_Boolean_" data-uid="Org.BouncyCastle.Asn1.DerBitString.GetTagged(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)">
+  GetTagged(Asn1TaggedObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DerBitString GetTagged(Asn1TaggedObject taggedObject, bool declaredExplicit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taggedObject</code> <a class="xref" href="Org.BouncyCastle.Asn1.Asn1TaggedObject.html">Asn1TaggedObject</a></dt>
+    <dd></dd>
+    <dt><code>declaredExplicit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerBitString.html">DerBitString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_DerBitString_IsOctetAligned_" data-uid="Org.BouncyCastle.Asn1.DerBitString.IsOctetAligned*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_DerBitString_IsOctetAligned" data-uid="Org.BouncyCastle.Asn1.DerBitString.IsOctetAligned">
+  IsOctetAligned()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsOctetAligned()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

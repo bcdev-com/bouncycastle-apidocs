@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PkixParameters | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PkixParameters | BouncyCastle Docs ">
+      
+      <meta name="description" content="Summary description for PkixParameters.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Pkix.PkixParameters">
+
+
+
+  <h1 id="Org_BouncyCastle_Pkix_PkixParameters" data-uid="Org.BouncyCastle.Pkix.PkixParameters" class="text-break">
+Class PkixParameters  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Pkix.html">Pkix</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Summary description for PkixParameters.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PkixParameters</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PkixParameters</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Pkix.PkixBuilderParameters.html">PkixBuilderParameters</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters__ctor_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters__ctor_System_Collections_Generic_ISet_Org_BouncyCastle_Pkix_TrustAnchor__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.#ctor(System.Collections.Generic.ISet{Org.BouncyCastle.Pkix.TrustAnchor})">
+  PkixParameters(ISet&lt;TrustAnchor&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PkixParameters(ISet&lt;TrustAnchor&gt; trustAnchors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trustAnchors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.TrustAnchor.html">TrustAnchor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_ChainValidityModel" data-uid="Org.BouncyCastle.Pkix.PkixParameters.ChainValidityModel">
+  ChainValidityModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ChainValidityModel = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_PkixValidityModel" data-uid="Org.BouncyCastle.Pkix.PkixParameters.PkixValidityModel">
+  PkixValidityModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PkixValidityModel = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_Date_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.Date*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_Date" data-uid="Org.BouncyCastle.Pkix.PkixParameters.Date">
+  Date
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime? Date { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsAdditionalLocationsEnabled_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsAdditionalLocationsEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsAdditionalLocationsEnabled" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsAdditionalLocationsEnabled">
+  IsAdditionalLocationsEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsAdditionalLocationsEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsAnyPolicyInhibited_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsAnyPolicyInhibited*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsAnyPolicyInhibited" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsAnyPolicyInhibited">
+  IsAnyPolicyInhibited
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsAnyPolicyInhibited { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsExplicitPolicyRequired_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsExplicitPolicyRequired*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsExplicitPolicyRequired" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsExplicitPolicyRequired">
+  IsExplicitPolicyRequired
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsExplicitPolicyRequired { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsPolicyMappingInhibited_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsPolicyMappingInhibited*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsPolicyMappingInhibited" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsPolicyMappingInhibited">
+  IsPolicyMappingInhibited
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPolicyMappingInhibited { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsPolicyQualifiersRejected_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsPolicyQualifiersRejected*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsPolicyQualifiersRejected" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsPolicyQualifiersRejected">
+  IsPolicyQualifiersRejected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPolicyQualifiersRejected { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsRevocationEnabled_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsRevocationEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsRevocationEnabled" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsRevocationEnabled">
+  IsRevocationEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsRevocationEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_IsUseDeltasEnabled_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsUseDeltasEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_IsUseDeltasEnabled" data-uid="Org.BouncyCastle.Pkix.PkixParameters.IsUseDeltasEnabled">
+  IsUseDeltasEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsUseDeltasEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_ValidityModel_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.ValidityModel*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_ValidityModel" data-uid="Org.BouncyCastle.Pkix.PkixParameters.ValidityModel">
+  ValidityModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ValidityModel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_AddCertPathChecker_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddCertPathChecker*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_AddCertPathChecker_Org_BouncyCastle_Pkix_PkixCertPathChecker_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddCertPathChecker(Org.BouncyCastle.Pkix.PkixCertPathChecker)">
+  AddCertPathChecker(PkixCertPathChecker)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddCertPathChecker(PkixCertPathChecker checker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>checker</code> <a class="xref" href="Org.BouncyCastle.Pkix.PkixCertPathChecker.html">PkixCertPathChecker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_AddStoreAttrCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddStoreAttrCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_AddStoreAttrCert_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509V2AttributeCertificate__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddStoreAttrCert(Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509V2AttributeCertificate})">
+  AddStoreAttrCert(IStore&lt;X509V2AttributeCertificate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddStoreAttrCert(IStore&lt;X509V2AttributeCertificate&gt; storeAttrCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storeAttrCert</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_AddStoreCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddStoreCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_AddStoreCert_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Certificate__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddStoreCert(Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509Certificate})">
+  AddStoreCert(IStore&lt;X509Certificate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddStoreCert(IStore&lt;X509Certificate&gt; storeCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storeCert</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_AddStoreCrl_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddStoreCrl*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_AddStoreCrl_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Crl__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.AddStoreCrl(Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509Crl})">
+  AddStoreCrl(IStore&lt;X509Crl&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddStoreCrl(IStore&lt;X509Crl&gt; storeCrl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storeCrl</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Crl.html">X509Crl</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_Clone_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.Clone*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_Clone" data-uid="Org.BouncyCastle.Pkix.PkixParameters.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetAttrCertCheckers_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetAttrCertCheckers*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetAttrCertCheckers" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetAttrCertCheckers">
+  GetAttrCertCheckers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;PkixAttrCertChecker&gt; GetAttrCertCheckers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.PkixAttrCertChecker.html">PkixAttrCertChecker</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetCertPathCheckers_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetCertPathCheckers*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetCertPathCheckers" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetCertPathCheckers">
+  GetCertPathCheckers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IList&lt;PkixCertPathChecker&gt; GetCertPathCheckers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.PkixCertPathChecker.html">PkixCertPathChecker</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetInitialPolicies_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetInitialPolicies*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetInitialPolicies" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetInitialPolicies">
+  GetInitialPolicies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;string&gt; GetInitialPolicies()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetNecessaryACAttributes_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetNecessaryACAttributes*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetNecessaryACAttributes" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetNecessaryACAttributes">
+  GetNecessaryACAttributes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;string&gt; GetNecessaryACAttributes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetProhibitedACAttributes_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetProhibitedACAttributes*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetProhibitedACAttributes" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetProhibitedACAttributes">
+  GetProhibitedACAttributes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;string&gt; GetProhibitedACAttributes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetStoresAttrCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetStoresAttrCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetStoresAttrCert" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetStoresAttrCert">
+  GetStoresAttrCert()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IList&lt;IStore&lt;X509V2AttributeCertificate&gt;&gt; GetStoresAttrCert()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetStoresCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetStoresCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetStoresCert" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetStoresCert">
+  GetStoresCert()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IList&lt;IStore&lt;X509Certificate&gt;&gt; GetStoresCert()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetStoresCrl_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetStoresCrl*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetStoresCrl" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetStoresCrl">
+  GetStoresCrl()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IList&lt;IStore&lt;X509Crl&gt;&gt; GetStoresCrl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Crl.html">X509Crl</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetTargetConstraintsAttrCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTargetConstraintsAttrCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetTargetConstraintsAttrCert" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTargetConstraintsAttrCert">
+  GetTargetConstraintsAttrCert()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISelector&lt;X509V2AttributeCertificate&gt; GetTargetConstraintsAttrCert()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetTargetConstraintsCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTargetConstraintsCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetTargetConstraintsCert" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTargetConstraintsCert">
+  GetTargetConstraintsCert()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISelector&lt;X509Certificate&gt; GetTargetConstraintsCert()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetTrustAnchors_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTrustAnchors*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetTrustAnchors" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTrustAnchors">
+  GetTrustAnchors()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;TrustAnchor&gt; GetTrustAnchors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.TrustAnchor.html">TrustAnchor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_GetTrustedACIssuers_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTrustedACIssuers*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_GetTrustedACIssuers" data-uid="Org.BouncyCastle.Pkix.PkixParameters.GetTrustedACIssuers">
+  GetTrustedACIssuers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;TrustAnchor&gt; GetTrustedACIssuers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.TrustAnchor.html">TrustAnchor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetAdditionalLocationsEnabled_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetAdditionalLocationsEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetAdditionalLocationsEnabled_System_Boolean_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetAdditionalLocationsEnabled(System.Boolean)">
+  SetAdditionalLocationsEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetAdditionalLocationsEnabled(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetAttrCertCheckers_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetAttrCertCheckers*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetAttrCertCheckers_System_Collections_Generic_ISet_Org_BouncyCastle_Pkix_PkixAttrCertChecker__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetAttrCertCheckers(System.Collections.Generic.ISet{Org.BouncyCastle.Pkix.PkixAttrCertChecker})">
+  SetAttrCertCheckers(ISet&lt;PkixAttrCertChecker&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetAttrCertCheckers(ISet&lt;PkixAttrCertChecker&gt; attrCertCheckers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attrCertCheckers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.PkixAttrCertChecker.html">PkixAttrCertChecker</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetAttrStoresCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetAttrStoresCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetAttrStoresCert_System_Collections_Generic_IList_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509V2AttributeCertificate___" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetAttrStoresCert(System.Collections.Generic.IList{Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509V2AttributeCertificate}})">
+  SetAttrStoresCert(IList&lt;IStore&lt;X509V2AttributeCertificate&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;SetStoresAttrCert&#39; instead&quot;)]
+public virtual void SetAttrStoresCert(IList&lt;IStore&lt;X509V2AttributeCertificate&gt;&gt; storesAttrCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storesAttrCert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetCertPathCheckers_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetCertPathCheckers*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetCertPathCheckers_System_Collections_Generic_IList_Org_BouncyCastle_Pkix_PkixCertPathChecker__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetCertPathCheckers(System.Collections.Generic.IList{Org.BouncyCastle.Pkix.PkixCertPathChecker})">
+  SetCertPathCheckers(IList&lt;PkixCertPathChecker&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCertPathCheckers(IList&lt;PkixCertPathChecker&gt; checkers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>checkers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.PkixCertPathChecker.html">PkixCertPathChecker</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetInitialPolicies_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetInitialPolicies*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetInitialPolicies_System_Collections_Generic_ISet_System_String__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetInitialPolicies(System.Collections.Generic.ISet{System.String})">
+  SetInitialPolicies(ISet&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetInitialPolicies(ISet&lt;string&gt; initialPolicies)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initialPolicies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetNecessaryACAttributes_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetNecessaryACAttributes*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetNecessaryACAttributes_System_Collections_Generic_ISet_System_String__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetNecessaryACAttributes(System.Collections.Generic.ISet{System.String})">
+  SetNecessaryACAttributes(ISet&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetNecessaryACAttributes(ISet&lt;string&gt; necessaryACAttributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>necessaryACAttributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetParams_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetParams*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetParams_Org_BouncyCastle_Pkix_PkixParameters_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetParams(Org.BouncyCastle.Pkix.PkixParameters)">
+  SetParams(PkixParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetParams(PkixParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="Org.BouncyCastle.Pkix.PkixParameters.html">PkixParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetProhibitedACAttributes_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetProhibitedACAttributes*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetProhibitedACAttributes_System_Collections_Generic_ISet_System_String__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetProhibitedACAttributes(System.Collections.Generic.ISet{System.String})">
+  SetProhibitedACAttributes(ISet&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetProhibitedACAttributes(ISet&lt;string&gt; prohibitedACAttributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prohibitedACAttributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetStoresAttrCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetStoresAttrCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetStoresAttrCert_System_Collections_Generic_IList_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509V2AttributeCertificate___" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetStoresAttrCert(System.Collections.Generic.IList{Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509V2AttributeCertificate}})">
+  SetStoresAttrCert(IList&lt;IStore&lt;X509V2AttributeCertificate&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetStoresAttrCert(IList&lt;IStore&lt;X509V2AttributeCertificate&gt;&gt; storesAttrCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storesAttrCert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetStoresCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetStoresCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetStoresCert_System_Collections_Generic_IList_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Certificate___" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetStoresCert(System.Collections.Generic.IList{Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509Certificate}})">
+  SetStoresCert(IList&lt;IStore&lt;X509Certificate&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetStoresCert(IList&lt;IStore&lt;X509Certificate&gt;&gt; storesCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storesCert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetStoresCrl_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetStoresCrl*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetStoresCrl_System_Collections_Generic_IList_Org_BouncyCastle_Utilities_Collections_IStore_Org_BouncyCastle_X509_X509Crl___" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetStoresCrl(System.Collections.Generic.IList{Org.BouncyCastle.Utilities.Collections.IStore{Org.BouncyCastle.X509.X509Crl}})">
+  SetStoresCrl(IList&lt;IStore&lt;X509Crl&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetStoresCrl(IList&lt;IStore&lt;X509Crl&gt;&gt; storesCrl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>storesCrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Utilities.Collections.IStore-1.html">IStore</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Crl.html">X509Crl</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetTargetConstraintsAttrCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTargetConstraintsAttrCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetTargetConstraintsAttrCert_Org_BouncyCastle_Utilities_Collections_ISelector_Org_BouncyCastle_X509_X509V2AttributeCertificate__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTargetConstraintsAttrCert(Org.BouncyCastle.Utilities.Collections.ISelector{Org.BouncyCastle.X509.X509V2AttributeCertificate})">
+  SetTargetConstraintsAttrCert(ISelector&lt;X509V2AttributeCertificate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTargetConstraintsAttrCert(ISelector&lt;X509V2AttributeCertificate&gt; targetConstraintsAttrCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetConstraintsAttrCert</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetTargetConstraintsCert_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTargetConstraintsCert*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetTargetConstraintsCert_Org_BouncyCastle_Utilities_Collections_ISelector_Org_BouncyCastle_X509_X509Certificate__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTargetConstraintsCert(Org.BouncyCastle.Utilities.Collections.ISelector{Org.BouncyCastle.X509.X509Certificate})">
+  SetTargetConstraintsCert(ISelector&lt;X509Certificate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTargetConstraintsCert(ISelector&lt;X509Certificate&gt; targetConstraintsCert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetConstraintsCert</code> <a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetTrustAnchors_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTrustAnchors*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetTrustAnchors_System_Collections_Generic_ISet_Org_BouncyCastle_Pkix_TrustAnchor__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTrustAnchors(System.Collections.Generic.ISet{Org.BouncyCastle.Pkix.TrustAnchor})">
+  SetTrustAnchors(ISet&lt;TrustAnchor&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTrustAnchors(ISet&lt;TrustAnchor&gt; tas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tas</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.TrustAnchor.html">TrustAnchor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Pkix_PkixParameters_SetTrustedACIssuers_" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTrustedACIssuers*"></a>
+
+  <h3 id="Org_BouncyCastle_Pkix_PkixParameters_SetTrustedACIssuers_System_Collections_Generic_ISet_Org_BouncyCastle_Pkix_TrustAnchor__" data-uid="Org.BouncyCastle.Pkix.PkixParameters.SetTrustedACIssuers(System.Collections.Generic.ISet{Org.BouncyCastle.Pkix.TrustAnchor})">
+  SetTrustedACIssuers(ISet&lt;TrustAnchor&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTrustedACIssuers(ISet&lt;TrustAnchor&gt; trustedACIssuers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trustedACIssuers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.Pkix.TrustAnchor.html">TrustAnchor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

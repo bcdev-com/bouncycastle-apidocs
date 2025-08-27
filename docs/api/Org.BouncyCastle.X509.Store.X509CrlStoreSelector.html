@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class X509CrlStoreSelector | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class X509CrlStoreSelector | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector">
+
+
+
+  <h1 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector" class="text-break">
+Class X509CrlStoreSelector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.X509.html">X509</a>.<a class="xref" href="Org.BouncyCastle.X509.Store.html">Store</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class X509CrlStoreSelector : ISelector&lt;X509Crl&gt;, ICloneable, ICheckingCertificate</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">X509CrlStoreSelector</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Utilities.Collections.ISelector-1.html">ISelector</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509Crl.html">X509Crl</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.X509.Store.ICheckingCertificate.html">ICheckingCertificate</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector__ctor_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector__ctor" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.#ctor">
+  X509CrlStoreSelector()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509CrlStoreSelector()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector__ctor_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector__ctor_Org_BouncyCastle_X509_Store_X509CrlStoreSelector_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.#ctor(Org.BouncyCastle.X509.Store.X509CrlStoreSelector)">
+  X509CrlStoreSelector(X509CrlStoreSelector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509CrlStoreSelector(X509CrlStoreSelector o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.html">X509CrlStoreSelector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_AttrCertChecking_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.AttrCertChecking*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_AttrCertChecking" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.AttrCertChecking">
+  AttrCertChecking
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509V2AttributeCertificate AttrCertChecking { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509V2AttributeCertificate.html">X509V2AttributeCertificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_CertificateChecking_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.CertificateChecking*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_CertificateChecking" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.CertificateChecking">
+  CertificateChecking
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Certificate CertificateChecking { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_CompleteCrlEnabled_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.CompleteCrlEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_CompleteCrlEnabled" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.CompleteCrlEnabled">
+  CompleteCrlEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CompleteCrlEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_DateAndTime_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.DateAndTime*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_DateAndTime" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.DateAndTime">
+  DateAndTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DateAndTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_DeltaCrlIndicatorEnabled_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.DeltaCrlIndicatorEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_DeltaCrlIndicatorEnabled" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.DeltaCrlIndicatorEnabled">
+  DeltaCrlIndicatorEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeltaCrlIndicatorEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_Issuers_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.Issuers*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_Issuers" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.Issuers">
+  Issuers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>An <pre><code class="lang-csharp">ICollection</code></pre> of <pre><code class="lang-csharp">X509Name</code></pre> objects
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;X509Name&gt; Issuers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_IssuingDistributionPoint_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.IssuingDistributionPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_IssuingDistributionPoint" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.IssuingDistributionPoint">
+  IssuingDistributionPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] IssuingDistributionPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_IssuingDistributionPointEnabled_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.IssuingDistributionPointEnabled*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_IssuingDistributionPointEnabled" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.IssuingDistributionPointEnabled">
+  IssuingDistributionPointEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IssuingDistributionPointEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_MaxBaseCrlNumber_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.MaxBaseCrlNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_MaxBaseCrlNumber" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.MaxBaseCrlNumber">
+  MaxBaseCrlNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger MaxBaseCrlNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_MaxCrlNumber_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.MaxCrlNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_MaxCrlNumber" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.MaxCrlNumber">
+  MaxCrlNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger MaxCrlNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_MinCrlNumber_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.MinCrlNumber*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_MinCrlNumber" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.MinCrlNumber">
+  MinCrlNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger MinCrlNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_Clone_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.Clone*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_Clone" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new object that is a copy of the current instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>A new object that is a copy of this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_Match_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.Match*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_Store_X509CrlStoreSelector_Match_Org_BouncyCastle_X509_X509Crl_" data-uid="Org.BouncyCastle.X509.Store.X509CrlStoreSelector.Match(Org.BouncyCastle.X509.X509Crl)">
+  Match(X509Crl)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Match the passed in object, returning true if it would be selected by this selector, false
+otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Match(X509Crl c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="Org.BouncyCastle.X509.X509Crl.html">X509Crl</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><pre><code class="lang-csharp">true</code></pre> if the objects is matched by this selector, false otherwise.
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

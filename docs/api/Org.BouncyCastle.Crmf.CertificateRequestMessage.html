@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CertificateRequestMessage | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CertificateRequestMessage | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage">
+
+
+
+  <h1 id="Org_BouncyCastle_Crmf_CertificateRequestMessage" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage" class="text-break">
+Class CertificateRequestMessage  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crmf.html">Crmf</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CertificateRequestMessage</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CertificateRequestMessage</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage__ctor_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage__ctor_Org_BouncyCastle_Asn1_Crmf_CertReqMsg_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.#ctor(Org.BouncyCastle.Asn1.Crmf.CertReqMsg)">
+  CertificateRequestMessage(CertReqMsg)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessage(CertReqMsg certReqMsg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>certReqMsg</code> <a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertReqMsg.html">CertReqMsg</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage__ctor_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage__ctor_System_Byte___" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.#ctor(System.Byte[])">
+  CertificateRequestMessage(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a CertificateRequestMessage from the passed in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateRequestMessage(byte[] encoded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>BER/DER encoding of the CertReqMsg structure.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_popKeyAgreement" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.popKeyAgreement">
+  popKeyAgreement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int popKeyAgreement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_popKeyEncipherment" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.popKeyEncipherment">
+  popKeyEncipherment
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int popKeyEncipherment</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_popRaVerified" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.popRaVerified">
+  popRaVerified
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int popRaVerified</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_popSigningKey" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.popSigningKey">
+  popSigningKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int popSigningKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasControls_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasControls*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasControls" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasControls">
+  HasControls
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not this request has control values associated with it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasControls { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if there are control values present, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasProofOfPossession_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasProofOfPossession*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasProofOfPossession" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasProofOfPossession">
+  HasProofOfPossession
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not this request message has a proof-of-possession field in it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProofOfPossession { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if proof-of-possession is present, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasSigningKeyProofOfPossessionWithPkMac_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasSigningKeyProofOfPossessionWithPkMac*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasSigningKeyProofOfPossessionWithPkMac" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasSigningKeyProofOfPossessionWithPkMac">
+  HasSigningKeyProofOfPossessionWithPkMac
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not the proof-of-possession (POP) is of the type popSigningKey and
+it has a public key MAC associated with it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSigningKeyProofOfPossessionWithPkMac { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if POP is popSigningKey and a PKMAC is present, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_ProofOfPossession_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.ProofOfPossession*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_ProofOfPossession" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.ProofOfPossession">
+  ProofOfPossession
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the type of the proof-of-possession this request message provides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ProofOfPossession { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>one of: popRaVerified, popSigningKey, popKeyEncipherment, popKeyAgreement</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_FindControl_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.FindControl*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_FindControl_Org_BouncyCastle_Asn1_DerObjectIdentifier_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.FindControl(Org.BouncyCastle.Asn1.DerObjectIdentifier)">
+  FindControl(DerObjectIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeTypeAndValue FindControl(DerObjectIdentifier type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.AttributeTypeAndValue.html">AttributeTypeAndValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetCertReqID_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetCertReqID*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetCertReqID" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetCertReqID">
+  GetCertReqID()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the certificate request ID for this message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DerInteger GetCertReqID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.DerInteger.html">DerInteger</a></dt>
+    <dd><p>the certificate request ID.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetCertTemplate_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetCertTemplate*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetCertTemplate" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetCertTemplate">
+  GetCertTemplate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the certificate template contained in this message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertTemplate GetCertTemplate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertTemplate.html">CertTemplate</a></dt>
+    <dd><p>a CertTemplate structure.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetControl_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetControl*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetControl_Org_BouncyCastle_Asn1_DerObjectIdentifier_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetControl(Org.BouncyCastle.Asn1.DerObjectIdentifier)">
+  GetControl(DerObjectIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return a control value of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControl GetControl(DerObjectIdentifier type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd><p>the type OID for the control value we are checking for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crmf.IControl.html">IControl</a></dt>
+    <dd><p>the control value if present, null otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetEncoded_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetEncoded*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_GetEncoded" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.GetEncoded">
+  GetEncoded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the ASN.1 encoding of the certReqMsg we wrap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetEncoded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>a byte array containing the binary encoding of the certReqMsg.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasControl_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasControl*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_HasControl_Org_BouncyCastle_Asn1_DerObjectIdentifier_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.HasControl(Org.BouncyCastle.Asn1.DerObjectIdentifier)">
+  HasControl(DerObjectIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not this request has a specific type of control value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasControl(DerObjectIdentifier objectIdentifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectIdentifier</code> <a class="xref" href="Org.BouncyCastle.Asn1.DerObjectIdentifier.html">DerObjectIdentifier</a></dt>
+    <dd><p>the type OID for the control value we are checking for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if a control value of type is present, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_IsValidSigningKeyPop_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.IsValidSigningKeyPop*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_IsValidSigningKeyPop_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.IsValidSigningKeyPop(Org.BouncyCastle.Crypto.IVerifierFactoryProvider)">
+  IsValidSigningKeyPop(IVerifierFactoryProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not a signing key proof-of-possession (POP) is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValidSigningKeyPop(IVerifierFactoryProvider verifierProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd><p>a provider that can produce content verifiers for the signature contained in this POP.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the POP is valid, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>if there is a problem in verification or content verifier creation.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>if POP not appropriate.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_IsValidSigningKeyPop_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.IsValidSigningKeyPop*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_IsValidSigningKeyPop_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_Org_BouncyCastle_Crmf_PKMacBuilder_System_Char___" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.IsValidSigningKeyPop(Org.BouncyCastle.Crypto.IVerifierFactoryProvider,Org.BouncyCastle.Crmf.PKMacBuilder,System.Char[])">
+  IsValidSigningKeyPop(IVerifierFactoryProvider, PKMacBuilder, char[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not a signing key proof-of-possession (POP), with an associated PKMAC, is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValidSigningKeyPop(IVerifierFactoryProvider verifierProvider, PKMacBuilder macBuilder, char[] password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd><p>a provider that can produce content verifiers for the signature contained in this POP.</p>
+</dd>
+    <dt><code>macBuilder</code> <a class="xref" href="Org.BouncyCastle.Crmf.PKMacBuilder.html">PKMacBuilder</a></dt>
+    <dd><p>a suitable PKMacBuilder to create the MAC verifier.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>the password used to key the MAC calculation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the POP is valid, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>if there is a problem in verification or content verifier creation.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>if POP not appropriate.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_IsValidSigningKeyPop_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.IsValidSigningKeyPop*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_IsValidSigningKeyPop_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_Org_BouncyCastle_Crmf_PKMacBuilder_System_ReadOnlySpan_System_Char__" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.IsValidSigningKeyPop(Org.BouncyCastle.Crypto.IVerifierFactoryProvider,Org.BouncyCastle.Crmf.PKMacBuilder,System.ReadOnlySpan{System.Char})">
+  IsValidSigningKeyPop(IVerifierFactoryProvider, PKMacBuilder, ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return whether or not a signing key proof-of-possession (POP), with an associated PKMAC, is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValidSigningKeyPop(IVerifierFactoryProvider verifierProvider, PKMacBuilder macBuilder, ReadOnlySpan&lt;char&gt; password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd><p>a provider that can produce content verifiers for the signature contained in this POP.</p>
+</dd>
+    <dt><code>macBuilder</code> <a class="xref" href="Org.BouncyCastle.Crmf.PKMacBuilder.html">PKMacBuilder</a></dt>
+    <dd><p>a suitable PKMacBuilder to create the MAC verifier.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd><p>the password used to key the MAC calculation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the POP is valid, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>if there is a problem in verification or content verifier creation.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>if POP not appropriate.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Crmf_CertificateRequestMessage_ToAsn1Structure_" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.ToAsn1Structure*"></a>
+
+  <h3 id="Org_BouncyCastle_Crmf_CertificateRequestMessage_ToAsn1Structure" data-uid="Org.BouncyCastle.Crmf.CertificateRequestMessage.ToAsn1Structure">
+  ToAsn1Structure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the underlying ASN.1 object defining this CertificateRequestMessage object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertReqMsg ToAsn1Structure()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertReqMsg.html">CertReqMsg</a></dt>
+    <dd><p>A CertReqMsg</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

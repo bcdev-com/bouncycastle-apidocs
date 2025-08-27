@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PgpSignatureSubpacketVector | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PgpSignatureSubpacketVector | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector">
+
+
+
+  <h1 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector" class="text-break">
+Class PgpSignatureSubpacketVector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Bcpg.html">Bcpg</a>.<a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.html">OpenPgp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PgpSignatureSubpacketVector</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PgpSignatureSubpacketVector</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Container for a list of signature subpackets.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_Count_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.Count*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_Count" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the number of packets this vector contains.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_FromSubpackets_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.FromSubpackets*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_FromSubpackets_Org_BouncyCastle_Bcpg_SignatureSubpacket___" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.FromSubpackets(Org.BouncyCastle.Bcpg.SignatureSubpacket[])">
+  FromSubpackets(SignatureSubpacket[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PgpSignatureSubpacketVector FromSubpackets(SignatureSubpacket[] packets)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packets</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.html">PgpSignatureSubpacketVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetCriticalTags_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetCriticalTags*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetCriticalTags" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetCriticalTags">
+  GetCriticalTags()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignatureSubpacketTag[] GetCriticalTags()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacketTag.html">SignatureSubpacketTag</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetEmbeddedSignatures_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetEmbeddedSignatures*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetEmbeddedSignatures" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetEmbeddedSignatures">
+  GetEmbeddedSignatures()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PgpSignatureList GetEmbeddedSignatures()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureList.html">PgpSignatureList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.OpenPgp.PgpException.html">PgpException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetExportable_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetExportable*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetExportable" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetExportable">
+  GetExportable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exportable GetExportable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.Exportable.html">Exportable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetFeatures_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetFeatures*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetFeatures" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetFeatures">
+  GetFeatures()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Features GetFeatures()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.Features.html">Features</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIntendedRecipientFingerprint_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIntendedRecipientFingerprint*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIntendedRecipientFingerprint" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIntendedRecipientFingerprint">
+  GetIntendedRecipientFingerprint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntendedRecipientFingerprint GetIntendedRecipientFingerprint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.IntendedRecipientFingerprint.html">IntendedRecipientFingerprint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIntendedRecipientFingerprints_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIntendedRecipientFingerprints*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIntendedRecipientFingerprints" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIntendedRecipientFingerprints">
+  GetIntendedRecipientFingerprints()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntendedRecipientFingerprint[] GetIntendedRecipientFingerprints()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.IntendedRecipientFingerprint.html">IntendedRecipientFingerprint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIssuerFingerprint_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIssuerFingerprint*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIssuerFingerprint" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIssuerFingerprint">
+  GetIssuerFingerprint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IssuerFingerprint GetIssuerFingerprint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.IssuerFingerprint.html">IssuerFingerprint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIssuerKeyId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIssuerKeyId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetIssuerKeyId" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetIssuerKeyId">
+  GetIssuerKeyId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetIssuerKeyId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetKeyExpirationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetKeyExpirationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetKeyExpirationTime" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetKeyExpirationTime">
+  GetKeyExpirationTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the number of seconds a key is valid for after its creation date.
+A value of zero means the key never expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetKeyExpirationTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Seconds a signature is valid for.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetKeyFlags_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetKeyFlags*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetKeyFlags" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetKeyFlags">
+  GetKeyFlags()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetKeyFlags()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetNotationDataOccurrences_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetNotationDataOccurrences*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetNotationDataOccurrences" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetNotationDataOccurrences">
+  GetNotationDataOccurrences()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotationData[] GetNotationDataOccurrences()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.NotationData.html">NotationData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetNotationDataOccurrences_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetNotationDataOccurrences*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetNotationDataOccurrences_System_String_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetNotationDataOccurrences(System.String)">
+  GetNotationDataOccurrences(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotationData[] GetNotationDataOccurrences(string notationName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notationName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.NotationData.html">NotationData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPolicyUrl_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPolicyUrl*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPolicyUrl" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPolicyUrl">
+  GetPolicyUrl()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolicyUrl GetPolicyUrl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.PolicyUrl.html">PolicyUrl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPolicyUrls_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPolicyUrls*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPolicyUrls" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPolicyUrls">
+  GetPolicyUrls()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolicyUrl[] GetPolicyUrls()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.PolicyUrl.html">PolicyUrl</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredAeadAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredAeadAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredAeadAlgorithms" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredAeadAlgorithms">
+  GetPreferredAeadAlgorithms()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetPreferredAeadAlgorithms()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredCompressionAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredCompressionAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredCompressionAlgorithms" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredCompressionAlgorithms">
+  GetPreferredCompressionAlgorithms()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetPreferredCompressionAlgorithms()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredHashAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredHashAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredHashAlgorithms" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredHashAlgorithms">
+  GetPreferredHashAlgorithms()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetPreferredHashAlgorithms()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredSymmetricAlgorithms_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredSymmetricAlgorithms*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetPreferredSymmetricAlgorithms" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetPreferredSymmetricAlgorithms">
+  GetPreferredSymmetricAlgorithms()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetPreferredSymmetricAlgorithms()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRegularExpression_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRegularExpression*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRegularExpression" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRegularExpression">
+  GetRegularExpression()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RegularExpression GetRegularExpression()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.RegularExpression.html">RegularExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRegularExpressions_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRegularExpressions*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRegularExpressions" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRegularExpressions">
+  GetRegularExpressions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RegularExpression[] GetRegularExpressions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.RegularExpression.html">RegularExpression</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRevocable_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRevocable*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRevocable" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRevocable">
+  GetRevocable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Revocable GetRevocable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.Revocable.html">Revocable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRevocationKeys_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRevocationKeys*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRevocationKeys" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRevocationKeys">
+  GetRevocationKeys()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RevocationKey[] GetRevocationKeys()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.RevocationKey.html">RevocationKey</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRevocationReason_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRevocationReason*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetRevocationReason" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetRevocationReason">
+  GetRevocationReason()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RevocationReason GetRevocationReason()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.RevocationReason.html">RevocationReason</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignatureCreationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignatureCreationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignatureCreationTime" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignatureCreationTime">
+  GetSignatureCreationTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetSignatureCreationTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignatureExpirationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignatureExpirationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignatureExpirationTime" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignatureExpirationTime">
+  GetSignatureExpirationTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the number of seconds a signature is valid for after its creation date.
+A value of zero means the signature never expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetSignatureExpirationTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Seconds a signature is valid for.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignatureTarget_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignatureTarget*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignatureTarget" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignatureTarget">
+  GetSignatureTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignatureTarget GetSignatureTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.SignatureTarget.html">SignatureTarget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignerUserId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignerUserId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSignerUserId" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSignerUserId">
+  GetSignerUserId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSignerUserId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSubpacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSubpacket*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSubpacket_Org_BouncyCastle_Bcpg_SignatureSubpacketTag_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSubpacket(Org.BouncyCastle.Bcpg.SignatureSubpacketTag)">
+  GetSubpacket(SignatureSubpacketTag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignatureSubpacket GetSubpacket(SignatureSubpacketTag type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacketTag.html">SignatureSubpacketTag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSubpackets_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSubpackets*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetSubpackets_Org_BouncyCastle_Bcpg_SignatureSubpacketTag_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetSubpackets(Org.BouncyCastle.Bcpg.SignatureSubpacketTag)">
+  GetSubpackets(SignatureSubpacketTag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignatureSubpacket[] GetSubpackets(SignatureSubpacketTag type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacketTag.html">SignatureSubpacketTag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetTrust_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetTrust*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_GetTrust" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.GetTrust">
+  GetTrust()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrustSignature GetTrust()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.Sig.TrustSignature.html">TrustSignature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_HasSignatureCreationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.HasSignatureCreationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_HasSignatureCreationTime" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.HasSignatureCreationTime">
+  HasSignatureCreationTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSignatureCreationTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_HasSignatureExpirationTime_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.HasSignatureExpirationTime*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_HasSignatureExpirationTime" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.HasSignatureExpirationTime">
+  HasSignatureExpirationTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSignatureExpirationTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_HasSubpacket_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.HasSubpacket*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_HasSubpacket_Org_BouncyCastle_Bcpg_SignatureSubpacketTag_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.HasSubpacket(Org.BouncyCastle.Bcpg.SignatureSubpacketTag)">
+  HasSubpacket(SignatureSubpacketTag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSubpacket(SignatureSubpacketTag type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacketTag.html">SignatureSubpacketTag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_IsExportable_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.IsExportable*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_IsExportable" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.IsExportable">
+  IsExportable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExportable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_IsPrimaryUserId_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.IsPrimaryUserId*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_IsPrimaryUserId" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.IsPrimaryUserId">
+  IsPrimaryUserId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrimaryUserId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_IsRevocable_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.IsRevocable*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_IsRevocable" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.IsRevocable">
+  IsRevocable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRevocable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_ToArray_" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.ToArray*"></a>
+
+  <h3 id="Org_BouncyCastle_Bcpg_OpenPgp_PgpSignatureSubpacketVector_ToArray" data-uid="Org.BouncyCastle.Bcpg.OpenPgp.PgpSignatureSubpacketVector.ToArray">
+  ToArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignatureSubpacket[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Bcpg.SignatureSubpacket.html">SignatureSubpacket</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

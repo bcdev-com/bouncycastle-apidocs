@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DsaParametersGenerator | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DsaParametersGenerator | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator" class="text-break">
+Class DsaParametersGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a>.<a class="xref" href="Org.BouncyCastle.Crypto.Generators.html">Generators</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DsaParametersGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DsaParametersGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator__ctor_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator__ctor" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.#ctor">
+  DsaParametersGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DsaParametersGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator__ctor_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator__ctor_Org_BouncyCastle_Crypto_IDigest_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.#ctor(Org.BouncyCastle.Crypto.IDigest)">
+  DsaParametersGenerator(IDigest)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DsaParametersGenerator(IDigest digest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>digest</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_CalculateGenerator_FIPS186_2_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.CalculateGenerator_FIPS186_2*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_CalculateGenerator_FIPS186_2_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.CalculateGenerator_FIPS186_2(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Security.SecureRandom)">
+  CalculateGenerator_FIPS186_2(BigInteger, BigInteger, SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual BigInteger CalculateGenerator_FIPS186_2(BigInteger p, BigInteger q, SecureRandom r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>q</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>r</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_CalculateGenerator_FIPS186_3_Unverifiable_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.CalculateGenerator_FIPS186_3_Unverifiable*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_CalculateGenerator_FIPS186_3_Unverifiable_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.CalculateGenerator_FIPS186_3_Unverifiable(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Security.SecureRandom)">
+  CalculateGenerator_FIPS186_3_Unverifiable(BigInteger, BigInteger, SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual BigInteger CalculateGenerator_FIPS186_3_Unverifiable(BigInteger p, BigInteger q, SecureRandom r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>q</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>r</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_CalculateGenerator_FIPS186_3_Verifiable_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.CalculateGenerator_FIPS186_3_Verifiable*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_CalculateGenerator_FIPS186_3_Verifiable_Org_BouncyCastle_Crypto_IDigest_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.CalculateGenerator_FIPS186_3_Verifiable(Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger,System.Byte[],System.Int32)">
+  CalculateGenerator_FIPS186_3_Verifiable(IDigest, BigInteger, BigInteger, byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual BigInteger CalculateGenerator_FIPS186_3_Verifiable(IDigest d, BigInteger p, BigInteger q, byte[] seed, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+    <dt><code>p</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>q</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.GenerateParameters*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.GenerateParameters">
+  GenerateParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a set of <code>DsaParameters</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DsaParameters GenerateParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.DsaParameters.html">DsaParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Can take a while...</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters_FIPS186_2_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.GenerateParameters_FIPS186_2*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters_FIPS186_2" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.GenerateParameters_FIPS186_2">
+  GenerateParameters_FIPS186_2()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DsaParameters GenerateParameters_FIPS186_2()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.DsaParameters.html">DsaParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters_FIPS186_3_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.GenerateParameters_FIPS186_3*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_GenerateParameters_FIPS186_3" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.GenerateParameters_FIPS186_3">
+  GenerateParameters_FIPS186_3()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DsaParameters GenerateParameters_FIPS186_3()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Crypto.Parameters.DsaParameters.html">DsaParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Hash_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Hash*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Hash_Org_BouncyCastle_Crypto_IDigest_System_Byte___System_Byte___" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Hash(Org.BouncyCastle.Crypto.IDigest,System.Byte[],System.Byte[])">
+  Hash(IDigest, byte[], byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void Hash(IDigest d, byte[] input, byte[] output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Inc_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Inc*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Inc_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Inc(System.Byte[])">
+  Inc(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void Inc(byte[] buf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Init_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Init_Org_BouncyCastle_Crypto_Parameters_DsaParameterGenerationParameters_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Init(Org.BouncyCastle.Crypto.Parameters.DsaParameterGenerationParameters)">
+  Init(DsaParameterGenerationParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialise the generator for DSA 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init(DsaParameterGenerationParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="Org.BouncyCastle.Crypto.Parameters.DsaParameterGenerationParameters.html">DsaParameterGenerationParameters</a></dt>
+    <dd><p>An instance of <code>DsaParameterGenerationParameters</code> used to configure this generator</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Init_Org_BouncyCastle_Crypto_Parameters_DsaParameterGenerationParameters__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>You must use this Init method if you need to generate parameters for DSA 2 keys</p>
+</div>
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Init_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Init_System_Int32_System_Int32_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Crypto.Generators.DsaParametersGenerator.Init(System.Int32,System.Int32,Org.BouncyCastle.Security.SecureRandom)">
+  Init(int, int, SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialise the generator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init(int size, int certainty, SecureRandom random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the size of keys in bits (from 512 up to 1024, and a multiple of 64)</p>
+</dd>
+    <dt><code>certainty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>measure of robustness of primes (at least 80 for FIPS 186-2 compliance)</p>
+</dd>
+    <dt><code>random</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd><p>the source of randomness to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_BouncyCastle_Crypto_Generators_DsaParametersGenerator_Init_System_Int32_System_Int32_Org_BouncyCastle_Security_SecureRandom__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This form can only be used for older DSA (pre-DSA2) parameters</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

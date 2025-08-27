@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Asn1Encodable | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Asn1Encodable | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Asn1.Asn1Encodable">
+
+
+
+  <h1 id="Org_BouncyCastle_Asn1_Asn1Encodable" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable" class="text-break">
+Class Asn1Encodable  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Asn1.html">Asn1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Asn1Encodable : IAsn1Convertible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Asn1Encodable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IAsn1Convertible.html">IAsn1Convertible</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.BC.LinkedCertificate.html">LinkedCertificate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CAKeyUpdAnnContent.html">CAKeyUpdAnnContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertConfirmContent.html">CertConfirmContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertOrEncCert.html">CertOrEncCert</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertRepMessage.html">CertRepMessage</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertReqTemplateContent.html">CertReqTemplateContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertResponse.html">CertResponse</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertStatus.html">CertStatus</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CertifiedKeyPair.html">CertifiedKeyPair</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.Challenge.html">Challenge</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.Challenge.Rand.html">Challenge.Rand</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CmpCertificate.html">CmpCertificate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CrlAnnContent.html">CrlAnnContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CrlSource.html">CrlSource</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.CrlStatus.html">CrlStatus</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.DhbmParameter.html">DhbmParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.ErrorMsgContent.html">ErrorMsgContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.GenMsgContent.html">GenMsgContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.GenRepContent.html">GenRepContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.InfoTypeAndValue.html">InfoTypeAndValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.KemBMParameter.html">KemBMParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.KemCiphertextInfo.html">KemCiphertextInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.KemOtherInfo.html">KemOtherInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.KeyRecRepContent.html">KeyRecRepContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.OobCertHash.html">OobCertHash</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PbmParameter.html">PbmParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiBody.html">PkiBody</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiConfirmContent.html">PkiConfirmContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiFreeText.html">PkiFreeText</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiHeader.html">PkiHeader</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiMessage.html">PkiMessage</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiMessages.html">PkiMessages</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiStatusEncodable.html">PkiStatusEncodable</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PkiStatusInfo.html">PkiStatusInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PollRepContent.html">PollRepContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PollReqContent.html">PollReqContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PopoDecKeyChallContent.html">PopoDecKeyChallContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.PopoDecKeyRespContent.html">PopoDecKeyRespContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.ProtectedPart.html">ProtectedPart</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.RevAnnContent.html">RevAnnContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.RevDetails.html">RevDetails</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.RevRepContent.html">RevRepContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.RevReqContent.html">RevReqContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cmp.RootCaKeyUpdateContent.html">RootCaKeyUpdateContent</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.Attribute.html">Attribute</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.Attributes.html">Attributes</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.AuthEnvelopedData.html">AuthEnvelopedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.AuthenticatedData.html">AuthenticatedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.CcmParameters.html">CcmParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.CmsAlgorithmProtection.html">CmsAlgorithmProtection</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.CompressedData.html">CompressedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.ContentInfo.html">ContentInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.Ecc.MQVuserKeyingMaterial.html">MQVuserKeyingMaterial</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.EncryptedContentInfo.html">EncryptedContentInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.EncryptedData.html">EncryptedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.EnvelopedData.html">EnvelopedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.Evidence.html">Evidence</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.GcmParameters.html">GcmParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.IssuerAndSerialNumber.html">IssuerAndSerialNumber</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.KekIdentifier.html">KekIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.KekRecipientInfo.html">KekRecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.KemRecipientInfo.html">KemRecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.KeyAgreeRecipientIdentifier.html">KeyAgreeRecipientIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.KeyAgreeRecipientInfo.html">KeyAgreeRecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.KeyTransRecipientInfo.html">KeyTransRecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.MetaData.html">MetaData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.OriginatorIdentifierOrKey.html">OriginatorIdentifierOrKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.OriginatorInfo.html">OriginatorInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.OriginatorPublicKey.html">OriginatorPublicKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.OtherKeyAttribute.html">OtherKeyAttribute</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.OtherRecipientInfo.html">OtherRecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.OtherRevocationInfoFormat.html">OtherRevocationInfoFormat</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.PasswordRecipientInfo.html">PasswordRecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.RecipientEncryptedKey.html">RecipientEncryptedKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.RecipientIdentifier.html">RecipientIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.RecipientInfo.html">RecipientInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.RecipientKeyIdentifier.html">RecipientKeyIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.ScvpReqRes.html">ScvpReqRes</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.SignedData.html">SignedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.SignerIdentifier.html">SignerIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.SignerInfo.html">SignerInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.Time.html">Time</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.TimeStampAndCrl.html">TimeStampAndCrl</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.TimeStampTokenEvidence.html">TimeStampTokenEvidence</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Cms.TimeStampedData.html">TimeStampedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.AttributeTypeAndValue.html">AttributeTypeAndValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertId.html">CertId</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertReqMessages.html">CertReqMessages</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertReqMsg.html">CertReqMsg</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertRequest.html">CertRequest</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.CertTemplate.html">CertTemplate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.Controls.html">Controls</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.EncKeyWithID.html">EncKeyWithID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.EncryptedKey.html">EncryptedKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.EncryptedValue.html">EncryptedValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.OptionalValidity.html">OptionalValidity</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PKMacValue.html">PKMacValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PkiArchiveOptions.html">PkiArchiveOptions</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PkiPublicationInfo.html">PkiPublicationInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PopoPrivKey.html">PopoPrivKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PopoSigningKey.html">PopoSigningKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.PopoSigningKeyInput.html">PopoSigningKeyInput</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.ProofOfPossession.html">ProofOfPossession</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Crmf.SinglePubInfo.html">SinglePubInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.CryptoPro.ECGost3410ParamSetParameters.html">ECGost3410ParamSetParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.CryptoPro.Gost28147Parameters.html">Gost28147Parameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.CryptoPro.Gost3410ParamSetParameters.html">Gost3410ParamSetParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.CryptoPro.Gost3410PublicKeyAlgParameters.html">Gost3410PublicKeyAlgParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.DerExternalParser.html">DerExternalParser</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CertificateValues.html">CertificateValues</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CommitmentTypeIndication.html">CommitmentTypeIndication</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CommitmentTypeQualifier.html">CommitmentTypeQualifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CompleteCertificateRefs.html">CompleteCertificateRefs</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CompleteRevocationRefs.html">CompleteRevocationRefs</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CrlIdentifier.html">CrlIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CrlListID.html">CrlListID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CrlOcspRef.html">CrlOcspRef</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.CrlValidatedID.html">CrlValidatedID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OcspIdentifier.html">OcspIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OcspListID.html">OcspListID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OcspResponsesID.html">OcspResponsesID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OtherCertID.html">OtherCertID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OtherHash.html">OtherHash</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OtherHashAlgAndValue.html">OtherHashAlgAndValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OtherRevRefs.html">OtherRevRefs</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OtherRevVals.html">OtherRevVals</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.OtherSigningCertificate.html">OtherSigningCertificate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.RevocationValues.html">RevocationValues</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.SigPolicyQualifierInfo.html">SigPolicyQualifierInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.SignaturePolicyId.html">SignaturePolicyId</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.SignaturePolicyIdentifier.html">SignaturePolicyIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.SignerAttribute.html">SignerAttribute</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Esf.SignerLocation.html">SignerLocation</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ess.ContentHints.html">ContentHints</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ess.ContentIdentifier.html">ContentIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ess.EssCertID.html">EssCertID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ess.EssCertIDv2.html">EssCertIDv2</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ess.SigningCertificate.html">SigningCertificate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ess.SigningCertificateV2.html">SigningCertificateV2</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Icao.CscaMasterList.html">CscaMasterList</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Icao.DataGroupHash.html">DataGroupHash</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Icao.LdsSecurityObject.html">LdsSecurityObject</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Icao.LdsVersionInfo.html">LdsVersionInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.Ocsp.CertHash.html">CertHash</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.Ocsp.RequestedCertificate.html">RequestedCertificate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.AdditionalInformationSyntax.html">AdditionalInformationSyntax</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.AdmissionSyntax.html">AdmissionSyntax</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.Admissions.html">Admissions</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.DeclarationOfMajority.html">DeclarationOfMajority</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.MonetaryLimit.html">MonetaryLimit</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.NamingAuthority.html">NamingAuthority</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.ProcurationSyntax.html">ProcurationSyntax</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.ProfessionInfo.html">ProfessionInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.IsisMtt.X509.Restriction.html">Restriction</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Misc.Cast5CbcParameters.html">Cast5CbcParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Misc.IdeaCbcPar.html">IdeaCbcPar</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Mozilla.PublicKeyAndChallenge.html">PublicKeyAndChallenge</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Mozilla.SignedPublicKeyAndChallenge.html">SignedPublicKeyAndChallenge</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Nist.KMacWithShake128Params.html">KMacWithShake128Params</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Nist.KMacWithShake256Params.html">KMacWithShake256Params</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.BasicOcspResponse.html">BasicOcspResponse</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.CertID.html">CertID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.CertStatus.html">CertStatus</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.CrlID.html">CrlID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.OcspRequest.html">OcspRequest</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.OcspResponse.html">OcspResponse</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.Request.html">Request</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.ResponderID.html">ResponderID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.ResponseBytes.html">ResponseBytes</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.ResponseData.html">ResponseData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.RevokedInfo.html">RevokedInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.ServiceLocator.html">ServiceLocator</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.Signature.html">Signature</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.SingleResponse.html">SingleResponse</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Ocsp.TbsRequest.html">TbsRequest</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Oiw.ElGamalParameter.html">ElGamalParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.AttributePkcs.html">AttributePkcs</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.AuthenticatedSafe.html">AuthenticatedSafe</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertBag.html">CertBag</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequest.html">CertificationRequest</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CertificationRequestInfo.html">CertificationRequestInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.ContentInfo.html">ContentInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.CrlBag.html">CrlBag</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.DHParameter.html">DHParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.EncryptedData.html">EncryptedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo.html">EncryptedPrivateKeyInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.IssuerAndSerialNumber.html">IssuerAndSerialNumber</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.MacData.html">MacData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.PbeParameter.html">PbeParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.PbeS2Parameters.html">PbeS2Parameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.Pbkdf2Params.html">Pbkdf2Params</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.Pbmac1Params.html">Pbmac1Params</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.Pfx.html">Pfx</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.Pkcs12PbeParams.html">Pkcs12PbeParams</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.PrivateKeyInfo.html">PrivateKeyInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RC2CbcParameter.html">RC2CbcParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RsaPrivateKeyStructure.html">RsaPrivateKeyStructure</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RsaesOaepParameters.html">RsaesOaepParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.RsassaPssParameters.html">RsassaPssParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.SafeBag.html">SafeBag</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.SignedData.html">SignedData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Pkcs.SignerInfo.html">SignerInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Sec.ECPrivateKeyStructure.html">ECPrivateKeyStructure</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Smime.SmimeCapabilities.html">SmimeCapabilities</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Smime.SmimeCapability.html">SmimeCapability</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.Accuracy.html">Accuracy</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.ArchiveTimeStamp.html">ArchiveTimeStamp</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.ArchiveTimeStampChain.html">ArchiveTimeStampChain</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.ArchiveTimeStampSequence.html">ArchiveTimeStampSequence</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.CryptoInfos.html">CryptoInfos</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.EncryptionInfo.html">EncryptionInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.EvidenceRecord.html">EvidenceRecord</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.MessageImprint.html">MessageImprint</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.PartialHashtree.html">PartialHashtree</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.TimeStampReq.html">TimeStampReq</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.TimeStampResp.html">TimeStampResp</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.Tsp.TstInfo.html">TstInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X500.AttributeTypeAndValue.html">AttributeTypeAndValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X500.DirectoryString.html">DirectoryString</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X500.Rdn.html">Rdn</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AccessDescription.html">AccessDescription</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier.html">AlgorithmIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AltSignatureAlgorithm.html">AltSignatureAlgorithm</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AltSignatureValue.html">AltSignatureValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AttCertIssuer.html">AttCertIssuer</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AttCertValidityPeriod.html">AttCertValidityPeriod</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AttributeCertificate.html">AttributeCertificate</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AttributeCertificateInfo.html">AttributeCertificateInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AttributeX509.html">AttributeX509</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AuthorityInformationAccess.html">AuthorityInformationAccess</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.AuthorityKeyIdentifier.html">AuthorityKeyIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.BasicConstraints.html">BasicConstraints</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.CertificateList.html">CertificateList</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.CertificatePair.html">CertificatePair</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.CertificatePolicies.html">CertificatePolicies</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.CrlDistPoint.html">CrlDistPoint</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.CrlEntry.html">CrlEntry</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.DeltaCertificateDescriptor.html">DeltaCertificateDescriptor</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.DigestInfo.html">DigestInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.DisplayText.html">DisplayText</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.DistributionPoint.html">DistributionPoint</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.DistributionPointName.html">DistributionPointName</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.DsaParameter.html">DsaParameter</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.EdiPartyName.html">EdiPartyName</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.ExtendedKeyUsage.html">ExtendedKeyUsage</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Extension.html">Extension</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.GeneralName.html">GeneralName</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.GeneralNames.html">GeneralNames</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.GeneralSubtree.html">GeneralSubtree</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Holder.html">Holder</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.IetfAttrSyntax.html">IetfAttrSyntax</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.IssuerSerial.html">IssuerSerial</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.IssuingDistributionPoint.html">IssuingDistributionPoint</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.NameConstraints.html">NameConstraints</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.NoticeReference.html">NoticeReference</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.ObjectDigestInfo.html">ObjectDigestInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.OtherName.html">OtherName</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.PolicyInformation.html">PolicyInformation</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.PolicyMappings.html">PolicyMappings</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.PolicyQualifierInfo.html">PolicyQualifierInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.PrivateKeyUsagePeriod.html">PrivateKeyUsagePeriod</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Qualified.BiometricData.html">BiometricData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Qualified.Iso4217CurrencyCode.html">Iso4217CurrencyCode</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Qualified.MonetaryValue.html">MonetaryValue</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Qualified.QCStatement.html">QCStatement</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Qualified.SemanticsInformation.html">SemanticsInformation</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Qualified.TypeOfBiometricData.html">TypeOfBiometricData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.RoleSyntax.html">RoleSyntax</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.RsaPublicKeyStructure.html">RsaPublicKeyStructure</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.SigI.NameOrPseudonym.html">NameOrPseudonym</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.SigI.PersonalData.html">PersonalData</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectAltPublicKeyInfo.html">SubjectAltPublicKeyInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectDirectoryAttributes.html">SubjectDirectoryAttributes</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectKeyIdentifier.html">SubjectKeyIdentifier</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo.html">SubjectPublicKeyInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Target.html">Target</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.TargetInformation.html">TargetInformation</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Targets.html">Targets</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.TbsCertificateList.html">TbsCertificateList</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.TbsCertificateStructure.html">TbsCertificateStructure</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Time.html">Time</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.UserNotice.html">UserNotice</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.V2Form.html">V2Form</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.Validity.html">Validity</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509CertificateStructure.html">X509CertificateStructure</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.DHDomainParameters.html">DHDomainParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.DHPublicKey.html">DHPublicKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.DHValidationParms.html">DHValidationParms</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.KeySpecificInfo.html">KeySpecificInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.OtherInfo.html">OtherInfo</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.X962Parameters.html">X962Parameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.X9Curve.html">X9Curve</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.X9ECParameters.html">X9ECParameters</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.X9ECPoint.html">X9ECPoint</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.X9FieldElement.html">X9FieldElement</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Asn1.X9.X9FieldID.html">X9FieldID</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Pqc.Asn1.SphincsPlusPrivateKey.html">SphincsPlusPrivateKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Pqc.Asn1.SphincsPlusPublicKey.html">SphincsPlusPublicKey</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.X509.X509Attribute.html">X509Attribute</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.X509.X509KeyUsage.html">X509KeyUsage</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_Ber" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.Ber">
+  Ber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Ber = &quot;BER&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_DL" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.DL">
+  DL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DL = &quot;DL&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_Der" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.Der">
+  Der
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Der = &quot;DER&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.EncodeTo*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_System_IO_Stream_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.EncodeTo(System.IO.Stream)">
+  EncodeTo(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EncodeTo(Stream output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.EncodeTo*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_EncodeTo_System_IO_Stream_System_String_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.EncodeTo(System.IO.Stream,System.String)">
+  EncodeTo(Stream, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EncodeTo(Stream output, string encoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_Equals_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_Equals_System_Object_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_GetDerEncoded" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded">
+  GetDerEncoded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetDerEncoded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded">
+  GetEncoded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetEncoded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_GetEncoded_System_String_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)">
+  GetEncoded(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetEncoded(string encoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_GetHashCode" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Asn1_Asn1Encodable_ToAsn1Object_" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object*"></a>
+
+  <h3 id="Org_BouncyCastle_Asn1_Asn1Encodable_ToAsn1Object" data-uid="Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object">
+  ToAsn1Object()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Asn1Object ToAsn1Object()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.Asn1Object.html">Asn1Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BufferedAeadBlockCipher | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BufferedAeadBlockCipher | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher">
+
+
+
+  <h1 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher" class="text-break">
+Class BufferedAeadBlockCipher  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Crypto.html">Crypto</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BufferedAeadBlockCipher : BufferedCipherBase, IBufferedCipher</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html">BufferedCipherBase</a></div>
+      <div><span class="xref">BufferedAeadBlockCipher</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Crypto.IBufferedCipher.html">IBufferedCipher</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html#Org_BouncyCastle_Crypto_BufferedCipherBase_EmptyBuffer">BufferedCipherBase.EmptyBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html#Org_BouncyCastle_Crypto_BufferedCipherBase_ProcessBytes_System_Byte___">BufferedCipherBase.ProcessBytes(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html#Org_BouncyCastle_Crypto_BufferedCipherBase_ProcessBytes_System_Byte___System_Byte___System_Int32_">BufferedCipherBase.ProcessBytes(byte[], byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html#Org_BouncyCastle_Crypto_BufferedCipherBase_DoFinal_System_Byte___">BufferedCipherBase.DoFinal(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html#Org_BouncyCastle_Crypto_BufferedCipherBase_DoFinal_System_Byte___System_Byte___System_Int32_">BufferedCipherBase.DoFinal(byte[], byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.Crypto.BufferedCipherBase.html#Org_BouncyCastle_Crypto_BufferedCipherBase_DoFinal_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_">BufferedCipherBase.DoFinal(byte[], int, int, byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher__ctor_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher__ctor_Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor(Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher)">
+  BufferedAeadBlockCipher(IAeadBlockCipher)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferedAeadBlockCipher(IAeadBlockCipher cipher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cipher</code> <a class="xref" href="Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher.html">IAeadBlockCipher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_AlgorithmName_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_AlgorithmName" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName">
+  AlgorithmName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the algorithm this cipher implements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AlgorithmName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal">
+  DoFinal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] DoFinal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32)">
+  DoFinal(byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int DoFinal(byte[] output, int outOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>outOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_System_Byte___System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32,System.Int32)">
+  DoFinal(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] DoFinal(byte[] input, int inOff, int inLen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>inOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+  DoFinal(ReadOnlySpan&lt;byte&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int DoFinal(ReadOnlySpan&lt;byte&gt; input, Span&lt;byte&gt; output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_DoFinal_System_Span_System_Byte__" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Span{System.Byte})">
+  DoFinal(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int DoFinal(Span&lt;byte&gt; output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_GetBlockSize_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_GetBlockSize" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize">
+  GetBlockSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetBlockSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_GetOutputSize_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_GetOutputSize_System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize(System.Int32)">
+  GetOutputSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetOutputSize(int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_GetUpdateOutputSize_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_GetUpdateOutputSize_System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize(System.Int32)">
+  GetUpdateOutputSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetUpdateOutputSize(int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_Init_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_Init_System_Boolean_Org_BouncyCastle_Crypto_ICipherParameters_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)">
+  Init(bool, ICipherParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Init(bool forEncryption, ICipherParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forEncryption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="Org.BouncyCastle.Crypto.ICipherParameters.html">ICipherParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessByte_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessByte_System_Byte_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte)">
+  ProcessByte(byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] ProcessByte(byte input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessByte_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessByte_System_Byte_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte,System.Byte[],System.Int32)">
+  ProcessByte(byte, byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ProcessByte(byte input, byte[] output, int outOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>outOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessByte_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessByte_System_Byte_System_Span_System_Byte__" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte,System.Span{System.Byte})">
+  ProcessByte(byte, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ProcessByte(byte input, Span&lt;byte&gt; output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessBytes_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessBytes_System_Byte___System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32)">
+  ProcessBytes(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] ProcessBytes(byte[] input, int inOff, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>inOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessBytes_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessBytes_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+  ProcessBytes(byte[], int, int, byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ProcessBytes(byte[] input, int inOff, int length, byte[] output, int outOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>inOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>outOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessBytes_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_ProcessBytes_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.ReadOnlySpan{System.Byte},System.Span{System.Byte})">
+  ProcessBytes(ReadOnlySpan&lt;byte&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ProcessBytes(ReadOnlySpan&lt;byte&gt; input, Span&lt;byte&gt; output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_Reset_" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset*"></a>
+
+  <h3 id="Org_BouncyCastle_Crypto_BufferedAeadBlockCipher_Reset" data-uid="Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

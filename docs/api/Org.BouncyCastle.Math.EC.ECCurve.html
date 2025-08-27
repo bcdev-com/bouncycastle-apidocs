@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ECCurve | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ECCurve | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.Math.EC.ECCurve">
+
+
+
+  <h1 id="Org_BouncyCastle_Math_EC_ECCurve" data-uid="Org.BouncyCastle.Math.EC.ECCurve" class="text-break">
+Class ECCurve  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.Math.html">Math</a>.<a class="xref" href="Org.BouncyCastle.Math.EC.html">EC</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ECCurve</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ECCurve</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.Math.EC.AbstractF2mCurve.html">AbstractF2mCurve</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.Math.EC.AbstractFpCurve.html">AbstractFpCurve</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Org_BouncyCastle_Math_EC_ECCurve_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Base class for an elliptic curve.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve__ctor_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve__ctor_Org_BouncyCastle_Math_Field_IFiniteField_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.#ctor(Org.BouncyCastle.Math.Field.IFiniteField)">
+  ECCurve(IFiniteField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECCurve(IFiniteField field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Org.BouncyCastle.Math.Field.IFiniteField.html">IFiniteField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_AFFINE" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_AFFINE">
+  COORD_AFFINE
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_AFFINE = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_HOMOGENEOUS" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_HOMOGENEOUS">
+  COORD_HOMOGENEOUS
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_HOMOGENEOUS = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_JACOBIAN" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_JACOBIAN">
+  COORD_JACOBIAN
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_JACOBIAN = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_JACOBIAN_CHUDNOVSKY" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_JACOBIAN_CHUDNOVSKY">
+  COORD_JACOBIAN_CHUDNOVSKY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_JACOBIAN_CHUDNOVSKY = 3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_JACOBIAN_MODIFIED" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_JACOBIAN_MODIFIED">
+  COORD_JACOBIAN_MODIFIED
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_JACOBIAN_MODIFIED = 4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_LAMBDA_AFFINE" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_LAMBDA_AFFINE">
+  COORD_LAMBDA_AFFINE
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_LAMBDA_AFFINE = 5</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_LAMBDA_PROJECTIVE" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_LAMBDA_PROJECTIVE">
+  COORD_LAMBDA_PROJECTIVE
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_LAMBDA_PROJECTIVE = 6</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_COORD_SKEWED" data-uid="Org.BouncyCastle.Math.EC.ECCurve.COORD_SKEWED">
+  COORD_SKEWED
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_SKEWED = 7</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_a" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_a">
+  m_a
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECFieldElement m_a</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_b" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_b">
+  m_b
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECFieldElement m_b</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_cofactor" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_cofactor">
+  m_cofactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger m_cofactor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_coord" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_coord">
+  m_coord
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_coord</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_endomorphism" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_endomorphism">
+  m_endomorphism
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECEndomorphism m_endomorphism</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Endo.ECEndomorphism.html">ECEndomorphism</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_field" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_field">
+  m_field
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IFiniteField m_field</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.Field.IFiniteField.html">IFiniteField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_multiplier" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_multiplier">
+  m_multiplier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECMultiplier m_multiplier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier.html">ECMultiplier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_m_order" data-uid="Org.BouncyCastle.Math.EC.ECCurve.m_order">
+  m_order
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger m_order</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_A_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.A*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_A" data-uid="Org.BouncyCastle.Math.EC.ECCurve.A">
+  A
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECFieldElement A { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_B_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.B*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_B" data-uid="Org.BouncyCastle.Math.EC.ECCurve.B">
+  B
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECFieldElement B { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Cofactor_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Cofactor*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Cofactor" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Cofactor">
+  Cofactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger Cofactor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CoordinateSystem_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CoordinateSystem*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CoordinateSystem" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CoordinateSystem">
+  CoordinateSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CoordinateSystem { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Field_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Field*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Field" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Field">
+  Field
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IFiniteField Field { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.Field.IFiniteField.html">IFiniteField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_FieldElementEncodingLength_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.FieldElementEncodingLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_FieldElementEncodingLength" data-uid="Org.BouncyCastle.Math.EC.ECCurve.FieldElementEncodingLength">
+  FieldElementEncodingLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FieldElementEncodingLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_FieldSize_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.FieldSize*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_FieldSize" data-uid="Org.BouncyCastle.Math.EC.ECCurve.FieldSize">
+  FieldSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int FieldSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Infinity_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Infinity*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Infinity" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Infinity">
+  Infinity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ECPoint Infinity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Order_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Order*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Order" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Order">
+  Order
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger Order { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CheckPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CheckPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CheckPoint_Org_BouncyCastle_Math_EC_ECPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CheckPoint(Org.BouncyCastle.Math.EC.ECPoint)">
+  CheckPoint(ECPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckPoint(ECPoint point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CheckPoints*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_Org_BouncyCastle_Math_EC_ECPoint___" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CheckPoints(Org.BouncyCastle.Math.EC.ECPoint[])">
+  CheckPoints(ECPoint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckPoints(ECPoint[] points)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CheckPoints*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_Org_BouncyCastle_Math_EC_ECPoint___System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CheckPoints(Org.BouncyCastle.Math.EC.ECPoint[],System.Int32,System.Int32)">
+  CheckPoints(ECPoint[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckPoints(ECPoint[] points, int off, int len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</dt>
+    <dd></dd>
+    <dt><code>off</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CloneCurve_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CloneCurve*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CloneCurve" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CloneCurve">
+  CloneCurve()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECCurve CloneCurve()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Configure_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Configure*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Configure" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Configure">
+  Configure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECCurve.Config Configure()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a>.<a class="xref" href="Org.BouncyCastle.Math.EC.ECCurve.Config.html">Config</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CreateCacheSafeLookupTable_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateCacheSafeLookupTable*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CreateCacheSafeLookupTable_Org_BouncyCastle_Math_EC_ECPoint___System_Int32_System_Int32_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateCacheSafeLookupTable(Org.BouncyCastle.Math.EC.ECPoint[],System.Int32,System.Int32)">
+  CreateCacheSafeLookupTable(ECPoint[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECLookupTable CreateCacheSafeLookupTable(ECPoint[] points, int off, int len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</dt>
+    <dd></dd>
+    <dt><code>off</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECLookupTable.html">ECLookupTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CreateDefaultMultiplier_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateDefaultMultiplier*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CreateDefaultMultiplier" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateDefaultMultiplier">
+  CreateDefaultMultiplier()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ECMultiplier CreateDefaultMultiplier()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier.html">ECMultiplier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CreatePoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreatePoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CreatePoint_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreatePoint(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)">
+  CreatePoint(BigInteger, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint CreatePoint(BigInteger x, BigInteger y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)">
+  CreateRawPoint(ECFieldElement, ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECPoint CreateRawPoint(ECFieldElement x, ECFieldElement y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement_Org_BouncyCastle_Math_EC_ECFieldElement___" data-uid="Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement[])">
+  CreateRawPoint(ECFieldElement, ECFieldElement, ECFieldElement[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECPoint CreateRawPoint(ECFieldElement x, ECFieldElement y, ECFieldElement[] zs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+    <dt><code>zs</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_DecodePoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.DecodePoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_DecodePoint_System_Byte___" data-uid="Org.BouncyCastle.Math.EC.ECCurve.DecodePoint(System.Byte[])">
+  DecodePoint(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint DecodePoint(byte[] encoded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_DecodePoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.DecodePoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_DecodePoint_System_ReadOnlySpan_System_Byte__" data-uid="Org.BouncyCastle.Math.EC.ECCurve.DecodePoint(System.ReadOnlySpan{System.Byte})">
+  DecodePoint(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint DecodePoint(ReadOnlySpan&lt;byte&gt; encoded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_DecompressPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.DecompressPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_DecompressPoint_System_Int32_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.DecompressPoint(System.Int32,Org.BouncyCastle.Math.BigInteger)">
+  DecompressPoint(int, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECPoint DecompressPoint(int yTilde, BigInteger X1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>yTilde</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>X1</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Equals_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Equals_Org_BouncyCastle_Math_EC_ECCurve_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Equals(Org.BouncyCastle.Math.EC.ECCurve)">
+  Equals(ECCurve)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(ECCurve other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Equals_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Equals_System_Object_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_FromBigInteger_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.FromBigInteger*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_FromBigInteger_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.FromBigInteger(Org.BouncyCastle.Math.BigInteger)">
+  FromBigInteger(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ECFieldElement FromBigInteger(BigInteger x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_GetAffinePointEncodingLength_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetAffinePointEncodingLength*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_GetAffinePointEncodingLength_System_Boolean_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetAffinePointEncodingLength(System.Boolean)">
+  GetAffinePointEncodingLength(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetAffinePointEncodingLength(bool compressed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_GetAllCoordinateSystems_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetAllCoordinateSystems*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_GetAllCoordinateSystems" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetAllCoordinateSystems">
+  GetAllCoordinateSystems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] GetAllCoordinateSystems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_GetEndomorphism_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetEndomorphism*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_GetEndomorphism" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetEndomorphism">
+  GetEndomorphism()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECEndomorphism GetEndomorphism()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Endo.ECEndomorphism.html">ECEndomorphism</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_GetHashCode_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_GetHashCode" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_GetMultiplier_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetMultiplier*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_GetMultiplier" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetMultiplier">
+  GetMultiplier()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECMultiplier GetMultiplier()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier.html">ECMultiplier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_GetPreCompInfo_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetPreCompInfo*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_GetPreCompInfo_Org_BouncyCastle_Math_EC_ECPoint_System_String_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.GetPreCompInfo(Org.BouncyCastle.Math.EC.ECPoint,System.String)">
+  GetPreCompInfo(ECPoint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PreCompInfo GetPreCompInfo(ECPoint point, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo.html">PreCompInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_ImportPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.ImportPoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_ImportPoint_Org_BouncyCastle_Math_EC_ECPoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.ImportPoint(Org.BouncyCastle.Math.EC.ECPoint)">
+  ImportPoint(ECPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint ImportPoint(ECPoint p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_IsValidFieldElement_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.IsValidFieldElement*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_IsValidFieldElement_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.IsValidFieldElement(Org.BouncyCastle.Math.BigInteger)">
+  IsValidFieldElement(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsValidFieldElement(BigInteger x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_Org_BouncyCastle_Math_EC_ECPoint___" data-uid="Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll(Org.BouncyCastle.Math.EC.ECPoint[])">
+  NormalizeAll(ECPoint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NormalizeAll(ECPoint[] points)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_Org_BouncyCastle_Math_EC_ECPoint___System_Int32_System_Int32_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll(Org.BouncyCastle.Math.EC.ECPoint[],System.Int32,System.Int32,Org.BouncyCastle.Math.EC.ECFieldElement)">
+  NormalizeAll(ECPoint[], int, int, ECFieldElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NormalizeAll(ECPoint[] points, int off, int len, ECFieldElement iso)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</dt>
+    <dd></dd>
+    <dt><code>off</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>iso</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_Precompute_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Precompute*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_Precompute_Org_BouncyCastle_Math_EC_ECPoint_System_String_Org_BouncyCastle_Math_EC_Multiplier_IPreCompCallback_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.Precompute(Org.BouncyCastle.Math.EC.ECPoint,System.String,Org.BouncyCastle.Math.EC.Multiplier.IPreCompCallback)">
+  Precompute(ECPoint, string, IPreCompCallback)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PreCompInfo Precompute(ECPoint point, string name, IPreCompCallback callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Org.BouncyCastle.Math.EC.Multiplier.IPreCompCallback.html">IPreCompCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo.html">PreCompInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_RandomFieldElement_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.RandomFieldElement*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_RandomFieldElement_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.RandomFieldElement(Org.BouncyCastle.Security.SecureRandom)">
+  RandomFieldElement(SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ECFieldElement RandomFieldElement(SecureRandom r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_RandomFieldElementMult_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.RandomFieldElementMult*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_RandomFieldElementMult_Org_BouncyCastle_Security_SecureRandom_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.RandomFieldElementMult(Org.BouncyCastle.Security.SecureRandom)">
+  RandomFieldElementMult(SecureRandom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ECFieldElement RandomFieldElementMult(SecureRandom r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Org.BouncyCastle.Security.SecureRandom.html">SecureRandom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_SupportsCoordinateSystem_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.SupportsCoordinateSystem*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_SupportsCoordinateSystem_System_Int32_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.SupportsCoordinateSystem(System.Int32)">
+  SupportsCoordinateSystem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SupportsCoordinateSystem(int coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_Math_EC_ECCurve_ValidatePoint_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint*"></a>
+
+  <h3 id="Org_BouncyCastle_Math_EC_ECCurve_ValidatePoint_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)">
+  ValidatePoint(BigInteger, BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint ValidatePoint(BigInteger x, BigInteger y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

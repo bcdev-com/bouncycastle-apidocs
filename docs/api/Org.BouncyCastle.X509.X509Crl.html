@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class X509Crl | BouncyCastle Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class X509Crl | BouncyCastle Docs ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BouncyCastle Docs">
+            BouncyCastle Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.BouncyCastle.X509.X509Crl">
+
+
+
+  <h1 id="Org_BouncyCastle_X509_X509Crl" data-uid="Org.BouncyCastle.X509.X509Crl" class="text-break">
+Class X509Crl  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.BouncyCastle.html">BouncyCastle</a>.<a class="xref" href="Org.BouncyCastle.X509.html">X509</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BouncyCastle.Cryptography.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class X509Crl : X509ExtensionBase, IX509Extension</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html">X509ExtensionBase</a></div>
+      <div><span class="xref">X509Crl</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Org.BouncyCastle.X509.IX509Extension.html">IX509Extension</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionOids_System_Boolean_">X509ExtensionBase.GetExtensionOids(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetNonCriticalExtensionOids">X509ExtensionBase.GetNonCriticalExtensionOids()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetCriticalExtensionOids">X509ExtensionBase.GetCriticalExtensionOids()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtension_Org_BouncyCastle_Asn1_DerObjectIdentifier_">X509ExtensionBase.GetExtension(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionParsedValue_Org_BouncyCastle_Asn1_DerObjectIdentifier_">X509ExtensionBase.GetExtensionParsedValue(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.BouncyCastle.X509.X509ExtensionBase.html#Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionValue_Org_BouncyCastle_Asn1_DerObjectIdentifier_">X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl__ctor_" data-uid="Org.BouncyCastle.X509.X509Crl.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl__ctor_Org_BouncyCastle_Asn1_X509_CertificateList_" data-uid="Org.BouncyCastle.X509.X509Crl.#ctor(Org.BouncyCastle.Asn1.X509.CertificateList)">
+  X509Crl(CertificateList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Crl(CertificateList c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="Org.BouncyCastle.Asn1.X509.CertificateList.html">CertificateList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl__ctor_" data-uid="Org.BouncyCastle.X509.X509Crl.#ctor*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl__ctor_System_Byte___" data-uid="Org.BouncyCastle.X509.X509Crl.#ctor(System.Byte[])">
+  X509Crl(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Crl(byte[] encoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_CertificateList_" data-uid="Org.BouncyCastle.X509.X509Crl.CertificateList*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_CertificateList" data-uid="Org.BouncyCastle.X509.X509Crl.CertificateList">
+  CertificateList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CertificateList CertificateList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.CertificateList.html">CertificateList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_IsIndirectCrl_" data-uid="Org.BouncyCastle.X509.X509Crl.IsIndirectCrl*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_IsIndirectCrl" data-uid="Org.BouncyCastle.X509.X509Crl.IsIndirectCrl">
+  IsIndirectCrl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsIndirectCrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_IssuerDN_" data-uid="Org.BouncyCastle.X509.X509Crl.IssuerDN*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_IssuerDN" data-uid="Org.BouncyCastle.X509.X509Crl.IssuerDN">
+  IssuerDN
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual X509Name IssuerDN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Name.html">X509Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_NextUpdate_" data-uid="Org.BouncyCastle.X509.X509Crl.NextUpdate*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_NextUpdate" data-uid="Org.BouncyCastle.X509.X509Crl.NextUpdate">
+  NextUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime? NextUpdate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_SigAlgName_" data-uid="Org.BouncyCastle.X509.X509Crl.SigAlgName*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_SigAlgName" data-uid="Org.BouncyCastle.X509.X509Crl.SigAlgName">
+  SigAlgName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A meaningful version of the Signature Algorithm. (e.g. SHA1WITHRSA)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SigAlgName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string representing the signature algorithm.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_SigAlgOid_" data-uid="Org.BouncyCastle.X509.X509Crl.SigAlgOid*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_SigAlgOid" data-uid="Org.BouncyCastle.X509.X509Crl.SigAlgOid">
+  SigAlgOid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SigAlgOid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_SignatureAlgorithm_" data-uid="Org.BouncyCastle.X509.X509Crl.SignatureAlgorithm*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_SignatureAlgorithm" data-uid="Org.BouncyCastle.X509.X509Crl.SignatureAlgorithm">
+  SignatureAlgorithm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AlgorithmIdentifier SignatureAlgorithm { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier.html">AlgorithmIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_ThisUpdate_" data-uid="Org.BouncyCastle.X509.X509Crl.ThisUpdate*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_ThisUpdate" data-uid="Org.BouncyCastle.X509.X509Crl.ThisUpdate">
+  ThisUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime ThisUpdate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_Version_" data-uid="Org.BouncyCastle.X509.X509Crl.Version*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_Version" data-uid="Org.BouncyCastle.X509.X509Crl.Version">
+  Version
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_CheckSignature_" data-uid="Org.BouncyCastle.X509.X509Crl.CheckSignature*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_CheckSignature_Org_BouncyCastle_Crypto_IVerifierFactory_" data-uid="Org.BouncyCastle.X509.X509Crl.CheckSignature(Org.BouncyCastle.Crypto.IVerifierFactory)">
+  CheckSignature(IVerifierFactory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckSignature(IVerifierFactory verifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifier</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactory.html">IVerifierFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_CheckSignatureValid_" data-uid="Org.BouncyCastle.X509.X509Crl.CheckSignatureValid*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_CheckSignatureValid_Org_BouncyCastle_Crypto_IVerifierFactory_" data-uid="Org.BouncyCastle.X509.X509Crl.CheckSignatureValid(Org.BouncyCastle.Crypto.IVerifierFactory)">
+  CheckSignatureValid(IVerifierFactory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CheckSignatureValid(IVerifierFactory verifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifier</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactory.html">IVerifierFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_Equals_" data-uid="Org.BouncyCastle.X509.X509Crl.Equals*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_Equals_System_Object_" data-uid="Org.BouncyCastle.X509.X509Crl.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetEncoded_" data-uid="Org.BouncyCastle.X509.X509Crl.GetEncoded*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetEncoded" data-uid="Org.BouncyCastle.X509.X509Crl.GetEncoded">
+  GetEncoded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the DER encoding of this CRL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetEncoded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>A byte array containing the DER encoding of this CRL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Security.Certificates.CrlException.html">CrlException</a></dt>
+    <dd><p>If there is an error encoding the CRL.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetHashCode_" data-uid="Org.BouncyCastle.X509.X509Crl.GetHashCode*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetHashCode" data-uid="Org.BouncyCastle.X509.X509Crl.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetRevokedCertificate_" data-uid="Org.BouncyCastle.X509.X509Crl.GetRevokedCertificate*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetRevokedCertificate_Org_BouncyCastle_Math_BigInteger_" data-uid="Org.BouncyCastle.X509.X509Crl.GetRevokedCertificate(Org.BouncyCastle.Math.BigInteger)">
+  GetRevokedCertificate(BigInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual X509CrlEntry GetRevokedCertificate(BigInteger serialNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serialNumber</code> <a class="xref" href="Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.X509.X509CrlEntry.html">X509CrlEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetRevokedCertificates_" data-uid="Org.BouncyCastle.X509.X509Crl.GetRevokedCertificates*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetRevokedCertificates" data-uid="Org.BouncyCastle.X509.X509Crl.GetRevokedCertificates">
+  GetRevokedCertificates()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet&lt;X509CrlEntry&gt; GetRevokedCertificates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Org.BouncyCastle.X509.X509CrlEntry.html">X509CrlEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetSigAlgParams_" data-uid="Org.BouncyCastle.X509.X509Crl.GetSigAlgParams*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetSigAlgParams" data-uid="Org.BouncyCastle.X509.X509Crl.GetSigAlgParams">
+  GetSigAlgParams()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetSigAlgParams()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetSignature_" data-uid="Org.BouncyCastle.X509.X509Crl.GetSignature*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetSignature" data-uid="Org.BouncyCastle.X509.X509Crl.GetSignature">
+  GetSignature()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetSignature()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetTbsCertList_" data-uid="Org.BouncyCastle.X509.X509Crl.GetTbsCertList*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetTbsCertList" data-uid="Org.BouncyCastle.X509.X509Crl.GetTbsCertList">
+  GetTbsCertList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetTbsCertList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_GetX509Extensions_" data-uid="Org.BouncyCastle.X509.X509Crl.GetX509Extensions*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_GetX509Extensions" data-uid="Org.BouncyCastle.X509.X509Crl.GetX509Extensions">
+  GetX509Extensions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override X509Extensions GetX509Extensions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.BouncyCastle.Asn1.X509.X509Extensions.html">X509Extensions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_IsAlternativeSignatureValid_" data-uid="Org.BouncyCastle.X509.X509Crl.IsAlternativeSignatureValid*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_IsAlternativeSignatureValid_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_" data-uid="Org.BouncyCastle.X509.X509Crl.IsAlternativeSignatureValid(Org.BouncyCastle.Crypto.IVerifierFactoryProvider)">
+  IsAlternativeSignatureValid(IVerifierFactoryProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsAlternativeSignatureValid(IVerifierFactoryProvider verifierProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_IsRevoked_" data-uid="Org.BouncyCastle.X509.X509Crl.IsRevoked*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_IsRevoked_Org_BouncyCastle_X509_X509Certificate_" data-uid="Org.BouncyCastle.X509.X509Crl.IsRevoked(Org.BouncyCastle.X509.X509Certificate)">
+  IsRevoked(X509Certificate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsRevoked(X509Certificate cert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cert</code> <a class="xref" href="Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_IsSignatureValid_" data-uid="Org.BouncyCastle.X509.X509Crl.IsSignatureValid*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_IsSignatureValid_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.X509.X509Crl.IsSignatureValid(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  IsSignatureValid(AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSignatureValid(AsymmetricKeyParameter key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_IsSignatureValid_" data-uid="Org.BouncyCastle.X509.X509Crl.IsSignatureValid*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_IsSignatureValid_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_" data-uid="Org.BouncyCastle.X509.X509Crl.IsSignatureValid(Org.BouncyCastle.Crypto.IVerifierFactoryProvider)">
+  IsSignatureValid(IVerifierFactoryProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSignatureValid(IVerifierFactoryProvider verifierProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_ToString_" data-uid="Org.BouncyCastle.X509.X509Crl.ToString*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_ToString" data-uid="Org.BouncyCastle.X509.X509Crl.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_Verify_" data-uid="Org.BouncyCastle.X509.X509Crl.Verify*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_Verify_Org_BouncyCastle_Crypto_AsymmetricKeyParameter_" data-uid="Org.BouncyCastle.X509.X509Crl.Verify(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)">
+  Verify(AsymmetricKeyParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Verify(AsymmetricKeyParameter publicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publicKey</code> <a class="xref" href="Org.BouncyCastle.Crypto.AsymmetricKeyParameter.html">AsymmetricKeyParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_Verify_" data-uid="Org.BouncyCastle.X509.X509Crl.Verify*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_Verify_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_" data-uid="Org.BouncyCastle.X509.X509Crl.Verify(Org.BouncyCastle.Crypto.IVerifierFactoryProvider)">
+  Verify(IVerifierFactoryProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verify the CRL's signature using a verifier created using the passed in verifier provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Verify(IVerifierFactoryProvider verifierProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd><p>An appropriate provider for verifying the CRL's signature.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>If verifier provider is not appropriate or the CRL algorithm is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Org_BouncyCastle_X509_X509Crl_VerifyAltSignature_" data-uid="Org.BouncyCastle.X509.X509Crl.VerifyAltSignature*"></a>
+
+  <h3 id="Org_BouncyCastle_X509_X509Crl_VerifyAltSignature_Org_BouncyCastle_Crypto_IVerifierFactoryProvider_" data-uid="Org.BouncyCastle.X509.X509Crl.VerifyAltSignature(Org.BouncyCastle.Crypto.IVerifierFactoryProvider)">
+  VerifyAltSignature(IVerifierFactoryProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verify the CRL's alternative signature using a verifier created using the passed in
+verifier provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VerifyAltSignature(IVerifierFactoryProvider verifierProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifierProvider</code> <a class="xref" href="Org.BouncyCastle.Crypto.IVerifierFactoryProvider.html">IVerifierFactoryProvider</a></dt>
+    <dd><p>An appropriate provider for verifying the CRL's alternative signature.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>If verifier provider is not appropriate or the CRL alternative signature
+algorithm is invalid.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
