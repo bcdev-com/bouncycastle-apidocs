@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../bc-csharp-release-2.6.2",
+          "files": [
+            "crypto/src/BouncyCastle.Crypto.csproj"
+          ]
+        }
+      ],
+      "namespaceLayout": "nested",
+      "output": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "docs/**",
+          ".jj/**"
+        ]
+      }
+    ],
+    "resource": [],
+    "output": "docs",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "BouncyCastle Docs",
+      "_appTitle": "BouncyCastle Docs",
+      "_enableSearch": false,
+      "pdf": false
+    }
+  }
+}
